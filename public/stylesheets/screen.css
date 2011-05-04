@@ -64,15 +64,38 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+/* line 1, ../../app/stylesheets/_signin.sass */
+#signin {
+  margin: 10px;
+  float: left;
+  width: 100%;
+}
+/* line 5, ../../app/stylesheets/_signin.sass */
+#signin h1 {
+  color: #787979;
+  text-align: center;
+  font-size: x-large;
+}
+/* line 9, ../../app/stylesheets/_signin.sass */
+#signin ul.auth_services {
+  width: 512px;
+  margin-left: 225px;
+  margin-top: 20px;
+}
+/* line 13, ../../app/stylesheets/_signin.sass */
+#signin ul.auth_services li {
+  float: left;
+}
+
 /*========== FMONDRAGON STYLES ========== */
-/* line 4, ../../app/stylesheets/screen.sass */
+/* line 8, ../../app/stylesheets/screen.sass */
 body {
   background: #e7e7e0 white;
   font-family: Helvetica, Arial, sans-serif;
 }
 
 /*========== HEADER ========== */
-/* line 10, ../../app/stylesheets/screen.sass */
+/* line 14, ../../app/stylesheets/screen.sass */
 #header {
   border-top: solid 4px #333333;
   border-bottom: solid 4px #336699;
@@ -80,7 +103,7 @@ body {
   height: 90px;
 }
 
-/* line 16, ../../app/stylesheets/screen.sass */
+/* line 20, ../../app/stylesheets/screen.sass */
 #headerInner {
   width: 970px;
   margin: 0px auto;
@@ -88,19 +111,19 @@ body {
   overflow: hidden;
 }
 
-/* line 23, ../../app/stylesheets/screen.sass */
+/* line 27, ../../app/stylesheets/screen.sass */
 #header ul {
   float: right;
   margin-right: 4px;
 }
-/* line 26, ../../app/stylesheets/screen.sass */
+/* line 30, ../../app/stylesheets/screen.sass */
 #header ul li {
   float: left;
   width: 140px;
   text-align: center;
   background: url(/images/navBorder.png) repeat-y left top;
 }
-/* line 31, ../../app/stylesheets/screen.sass */
+/* line 35, ../../app/stylesheets/screen.sass */
 #header ul li a {
   display: block;
   height: 52px;
@@ -112,24 +135,24 @@ body {
   text-shadow: gray 0 1px 0;
   margin-left: 4px;
 }
-/* line 41, ../../app/stylesheets/screen.sass */
+/* line 45, ../../app/stylesheets/screen.sass */
 #header ul li a:hover {
   background: url(/images/navbg_over.gif) repeat-x left top;
 }
-/* line 43, ../../app/stylesheets/screen.sass */
+/* line 47, ../../app/stylesheets/screen.sass */
 #header #logo {
   float: left;
   width: 200px;
   background: none;
 }
-/* line 47, ../../app/stylesheets/screen.sass */
+/* line 51, ../../app/stylesheets/screen.sass */
 #header #logo a {
   border: none;
   padding: 0px;
   margin: 0px;
 }
 
-/* line 52, ../../app/stylesheets/screen.sass */
+/* line 56, ../../app/stylesheets/screen.sass */
 #logo span.logotext {
   position: absolute;
   top: -999px;
@@ -137,7 +160,7 @@ body {
 }
 
 /*========== HUB ========== */
-/* line 59, ../../app/stylesheets/screen.sass */
+/* line 63, ../../app/stylesheets/screen.sass */
 #hub {
   border: solid 1px black;
   min-height: 300px;
@@ -149,21 +172,21 @@ body {
 }
 
 /*========== FOOTER ========== */
-/* line 70, ../../app/stylesheets/screen.sass */
+/* line 74, ../../app/stylesheets/screen.sass */
 #footer {
   background: #959a8f;
   padding: 80px 0px 40px;
   margin-top: -45px;
 }
 
-/* line 75, ../../app/stylesheets/screen.sass */
+/* line 79, ../../app/stylesheets/screen.sass */
 #footerInner {
   width: 925px;
   margin: 0px auto;
   overflow: hidden;
 }
 
-/* line 80, ../../app/stylesheets/screen.sass */
+/* line 84, ../../app/stylesheets/screen.sass */
 .browse {
   text-shadow: gray 2px 2px 0;
   width: 285px;
@@ -172,24 +195,24 @@ body {
   overflow: hidden;
 }
 
-/* line 88, ../../app/stylesheets/screen.sass */
+/* line 92, ../../app/stylesheets/screen.sass */
 #footer h4 {
   margin: 0px 10px 10px;
 }
-/* line 90, ../../app/stylesheets/screen.sass */
+/* line 94, ../../app/stylesheets/screen.sass */
 #footer h4 a {
   color: #ffdf7f;
   text-decoration: none;
   font-size: 18px;
 }
-/* line 94, ../../app/stylesheets/screen.sass */
+/* line 98, ../../app/stylesheets/screen.sass */
 #footer p {
   color: white;
   font-size: 12px;
   margin: 0px 10px 10px;
   line-height: 16px;
 }
-/* line 99, ../../app/stylesheets/screen.sass */
+/* line 103, ../../app/stylesheets/screen.sass */
 #footer a.footerbutton {
   border: solid 3px white;
   background: yellow;
@@ -208,7 +231,7 @@ body {
   text-shadow: none;
   font-weight: bold;
 }
-/* line 116, ../../app/stylesheets/screen.sass */
+/* line 120, ../../app/stylesheets/screen.sass */
 #footer a.footerbutton:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#ffdf7f), to(white));
   background: -moz-linear-gradient(top, #ffdf7f, white);
@@ -226,7 +249,7 @@ body {
  *	font-weight: bold;
  *	behavior: url("../scripts/iepngfix.htc");
  *	} */
-/* line 133, ../../app/stylesheets/screen.sass */
+/* line 137, ../../app/stylesheets/screen.sass */
 #copyright {
   width: 925px;
   margin: 10px auto;
@@ -234,7 +257,7 @@ body {
   overflow: hidden;
 }
 
-/* line 139, ../../app/stylesheets/screen.sass */
+/* line 143, ../../app/stylesheets/screen.sass */
 #fmondragon {
   background: url(/images/fmondragon_logo.jpg) no-repeat center;
   padding: 5px 34px;

@@ -20,8 +20,25 @@
         %ul
           %li= link_to("Home","#")
           %li= link_to("About","#")
-          %li= link_to("Join","#")
-    =yield
+          %li= link_to("Join",signin_path)
+    #hub= yield
+    #footer
+      #footerInner
+        .browse.volunteers
+          %h4
+            %a{:href => "#"} Browse through Helper's Hub Volunteers
+          %p Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Register as a volunteer.
+          %a.footerbutton{:href => "#"} browse volunteers
+        .browse.volunteers
+          %h4
+            %a{:href => "#"} Browse through Helper's Hub Volunteers
+          %p Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Register as a volunteer.
+          %a.footerbutton{:href => "#"} browse volunteers
+        .browse.volunteers
+          %h4
+            %a{:href => "#"} Browse through Helper's Hub Volunteers
+          %p Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Register as a volunteer.
+          %a.footerbutton{:href => "#"} browse volunteers
     #copyright
       Copyright © 2011 Helper's Hub. All rights reserved. | Privacy | PolicyAbout Our AdsSafety | Terms of Service | Copyright/IP Policy
       %a#fmondragon{:href => "http://www.fmondragon.com"} Fmondragon Creative Studio

@@ -8,6 +8,8 @@ gem 'haml', '~> 3.1'
 gem 'sass', '~> 3.1'
 gem 'compass', '~> 0.11.1'
 gem 'jquery-rails'
+gem 'omniauth'
+gem 'thin'
 group :development, :test do
   gem 'capybara'
   gem 'rspec-rails'

@@ -1,0 +1,244 @@
+/* line 17, ../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 115, ../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/*========== FMONDRAGON STYLES ========== */
+/* line 4, ../../app/stylesheets/screen.sass */
+body {
+  background: #e7e7e0 white;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/*========== HEADER ========== */
+/* line 10, ../../app/stylesheets/screen.sass */
+#header {
+  border-top: solid 4px #333333;
+  border-bottom: solid 4px #336699;
+  background: url(/images/headerbg.gif) repeat-x left 0px;
+  height: 90px;
+}
+
+/* line 16, ../../app/stylesheets/screen.sass */
+#headerInner {
+  width: 970px;
+  margin: 0px auto;
+  background: url(/images/navBorder.png) repeat-y right top;
+  overflow: hidden;
+}
+
+/* line 23, ../../app/stylesheets/screen.sass */
+#header ul {
+  float: right;
+  margin-right: 4px;
+}
+/* line 26, ../../app/stylesheets/screen.sass */
+#header ul li {
+  float: left;
+  width: 140px;
+  text-align: center;
+  background: url(/images/navBorder.png) repeat-y left top;
+}
+/* line 31, ../../app/stylesheets/screen.sass */
+#header ul li a {
+  display: block;
+  height: 52px;
+  padding-top: 38px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  text-shadow: gray 0 1px 0;
+  margin-left: 4px;
+}
+/* line 41, ../../app/stylesheets/screen.sass */
+#header ul li a:hover {
+  background: url(/images/navbg_over.gif) repeat-x left top;
+}
+/* line 43, ../../app/stylesheets/screen.sass */
+#header #logo {
+  float: left;
+  width: 200px;
+  background: none;
+}
+/* line 47, ../../app/stylesheets/screen.sass */
+#header #logo a {
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 52, ../../app/stylesheets/screen.sass */
+#logo span.logotext {
+  position: absolute;
+  top: -999px;
+  left: -999px;
+}
+
+/*========== HUB ========== */
+/* line 59, ../../app/stylesheets/screen.sass */
+#hub {
+  border: solid 1px black;
+  min-height: 300px;
+  width: 970px;
+  margin: 0px auto;
+  position: relative;
+  z-index: 2;
+  background: white;
+}
+
+/*========== FOOTER ========== */
+/* line 70, ../../app/stylesheets/screen.sass */
+#footer {
+  background: #959a8f;
+  padding: 80px 0px 40px;
+  margin-top: -45px;
+}
+
+/* line 75, ../../app/stylesheets/screen.sass */
+#footerInner {
+  width: 925px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+/* line 80, ../../app/stylesheets/screen.sass */
+.browse {
+  text-shadow: gray 2px 2px 0;
+  width: 285px;
+  float: left;
+  margin: 0px 10px;
+  overflow: hidden;
+}
+
+/* line 88, ../../app/stylesheets/screen.sass */
+#footer h4 {
+  margin: 0px 10px 10px;
+}
+/* line 90, ../../app/stylesheets/screen.sass */
+#footer h4 a {
+  color: #ffdf7f;
+  text-decoration: none;
+  font-size: 18px;
+}
+/* line 94, ../../app/stylesheets/screen.sass */
+#footer p {
+  color: white;
+  font-size: 12px;
+  margin: 0px 10px 10px;
+  line-height: 16px;
+}
+/* line 99, ../../app/stylesheets/screen.sass */
+#footer a.footerbutton {
+  border: solid 3px white;
+  background: yellow;
+  padding: 5px 20px;
+  display: block;
+  text-align: center;
+  margin: 0px 7px;
+  -webkit-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  color: #666666;
+  text-decoration: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#ffdf7f));
+  background: -moz-linear-gradient(top, white, #ffdf7f);
+  text-shadow: none;
+  font-weight: bold;
+}
+/* line 116, ../../app/stylesheets/screen.sass */
+#footer a.footerbutton:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffdf7f), to(white));
+  background: -moz-linear-gradient(top, #ffdf7f, white);
+}
+
+/*#footer a.footerbutton{
+ *	background: url(../images/footerbutton.png) no-repeat center top;
+ *	display: block;
+ *	height: 35px;
+ *	text-align: center;
+ *	padding-top: 15px;
+ *	text-decoration: none;
+ *	text-shadow: none;
+ *	color: #666666;
+ *	font-weight: bold;
+ *	behavior: url("../scripts/iepngfix.htc");
+ *	} */
+/* line 133, ../../app/stylesheets/screen.sass */
+#copyright {
+  width: 925px;
+  margin: 10px auto;
+  font-size: 10px;
+  overflow: hidden;
+}
+
+/* line 139, ../../app/stylesheets/screen.sass */
+#fmondragon {
+  background: url(/images/fmondragon_logo.jpg) no-repeat center;
+  padding: 5px 34px;
+  text-indent: -99999px;
+  overflow: hidden;
+  float: right;
+}

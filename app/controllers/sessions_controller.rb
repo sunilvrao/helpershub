@@ -25,6 +25,13 @@ class SessionsController < ApplicationController
         @auth[:provider] = "google" # this is currently the only one we have
       end
 
+      if service_name=="twitter"
+        @auth[:uid] = omniauth['uid']
+        @auth[:uname] = omniauth['user_info']['name']
+        @auth[:provider] = "twitter"
+        @bio = omniauth['user_info']['description']
+      end
+
       # find out the associated user or else create one
       if @auth[:uid] and not @auth[:uid].blank?
         user = User.where("services.uid"=>@auth[:uid]).first
@@ -32,6 +39,7 @@ class SessionsController < ApplicationController
           session[:current_user_id]=user.id.to_s
         else
           u = User.new(:full_name=>@auth[:uname], :email=>@auth[:email])
+          u.bio = @bio if @bio
           s = u.services.build(@auth)
           u.save!
           session[:current_user_id]=u.id.to_s

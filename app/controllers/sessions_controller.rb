@@ -32,6 +32,13 @@ class SessionsController < ApplicationController
         @bio = omniauth['user_info']['description']
       end
 
+      if service_name=="linked_in"
+        @auth[:uid] = omniauth['uid']
+        @auth[:uname] = omniauth['user_info']['name']
+        @auth[:provider] = "linked_in"
+        @bio = omniauth['user_info']['description']
+      end
+
       # find out the associated user or else create one
       if @auth[:uid] and not @auth[:uid].blank?
         user = User.where("services.uid"=>@auth[:uid]).first

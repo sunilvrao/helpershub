@@ -18,9 +18,23 @@
             = image_tag("helpers_hub_logo.png")
             %span.logotext Helper's Hub
         %ul
-          %li= link_to("Home","#")
-          %li= link_to("About","#")
-          %li= link_to("Join",signin_path)
+          %li= link_to("Startups","#")
+          %li= link_to("Volunteers","#")
+          %li= link_to("Jobs","#")
+    #user_info
+      #user_info_inner
+        - if current_user
+          #logged_in
+            %p
+              You are signed in as #{current_user.full_name}. 
+              =link_to "Sign Out",signout_path
+        - else
+          #sign_up
+            %ul.sign_up_links
+              - %w(google twitter facebook linked_in).each do |service|
+                %li.small_button= link_to image_tag("#{service}_32.png",:alt=>service),"/auth/#{service}"
+            %p
+              Sign up/Sign in with 
     #hub= yield
     #footer
       #footerInner

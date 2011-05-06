@@ -111,19 +111,61 @@ body {
   overflow: hidden;
 }
 
-/* line 27, ../../app/stylesheets/screen.sass */
+/* line 26, ../../app/stylesheets/screen.sass */
+#user_info {
+  background-color: #336699;
+}
+/* line 28, ../../app/stylesheets/screen.sass */
+#user_info #user_info_inner {
+  width: 970px;
+  margin: 0 auto;
+  text-align: right;
+  overflow: visible;
+}
+/* line 33, ../../app/stylesheets/screen.sass */
+#user_info #user_info_inner p {
+  float: right;
+  color: #ffdf7e;
+  margin: 8px;
+}
+/* line 37, ../../app/stylesheets/screen.sass */
+#user_info #user_info_inner p a {
+  color: #ffdf7e;
+}
+/* line 39, ../../app/stylesheets/screen.sass */
+#user_info #user_info_inner ul {
+  float: right;
+}
+/* line 41, ../../app/stylesheets/screen.sass */
+#user_info #user_info_inner ul li {
+  float: left;
+}
+/* line 43, ../../app/stylesheets/screen.sass */
+#user_info #user_info_inner #logged_in {
+  height: 20px;
+}
+/* line 45, ../../app/stylesheets/screen.sass */
+#user_info #user_info_inner #logged_in p {
+  margin: 0;
+}
+/* line 47, ../../app/stylesheets/screen.sass */
+#user_info #user_info_inner #sign_up {
+  height: 32px;
+}
+
+/* line 51, ../../app/stylesheets/screen.sass */
 #header ul {
   float: right;
   margin-right: 4px;
 }
-/* line 30, ../../app/stylesheets/screen.sass */
+/* line 54, ../../app/stylesheets/screen.sass */
 #header ul li {
   float: left;
   width: 140px;
   text-align: center;
   background: url(/images/navBorder.png) repeat-y left top;
 }
-/* line 35, ../../app/stylesheets/screen.sass */
+/* line 59, ../../app/stylesheets/screen.sass */
 #header ul li a {
   display: block;
   height: 52px;
@@ -135,24 +177,24 @@ body {
   text-shadow: gray 0 1px 0;
   margin-left: 4px;
 }
-/* line 45, ../../app/stylesheets/screen.sass */
+/* line 69, ../../app/stylesheets/screen.sass */
 #header ul li a:hover {
   background: url(/images/navbg_over.gif) repeat-x left top;
 }
-/* line 47, ../../app/stylesheets/screen.sass */
+/* line 71, ../../app/stylesheets/screen.sass */
 #header #logo {
   float: left;
   width: 200px;
   background: none;
 }
-/* line 51, ../../app/stylesheets/screen.sass */
+/* line 75, ../../app/stylesheets/screen.sass */
 #header #logo a {
   border: none;
   padding: 0px;
   margin: 0px;
 }
 
-/* line 56, ../../app/stylesheets/screen.sass */
+/* line 80, ../../app/stylesheets/screen.sass */
 #logo span.logotext {
   position: absolute;
   top: -999px;
@@ -160,7 +202,7 @@ body {
 }
 
 /*========== HUB ========== */
-/* line 63, ../../app/stylesheets/screen.sass */
+/* line 87, ../../app/stylesheets/screen.sass */
 #hub {
   border: solid 1px black;
   min-height: 300px;
@@ -172,21 +214,21 @@ body {
 }
 
 /*========== FOOTER ========== */
-/* line 74, ../../app/stylesheets/screen.sass */
+/* line 98, ../../app/stylesheets/screen.sass */
 #footer {
   background: #959a8f;
   padding: 80px 0px 40px;
   margin-top: -45px;
 }
 
-/* line 79, ../../app/stylesheets/screen.sass */
+/* line 103, ../../app/stylesheets/screen.sass */
 #footerInner {
   width: 925px;
   margin: 0px auto;
   overflow: hidden;
 }
 
-/* line 84, ../../app/stylesheets/screen.sass */
+/* line 108, ../../app/stylesheets/screen.sass */
 .browse {
   text-shadow: gray 2px 2px 0;
   width: 285px;
@@ -195,24 +237,24 @@ body {
   overflow: hidden;
 }
 
-/* line 92, ../../app/stylesheets/screen.sass */
+/* line 116, ../../app/stylesheets/screen.sass */
 #footer h4 {
   margin: 0px 10px 10px;
 }
-/* line 94, ../../app/stylesheets/screen.sass */
+/* line 118, ../../app/stylesheets/screen.sass */
 #footer h4 a {
   color: #ffdf7f;
   text-decoration: none;
   font-size: 18px;
 }
-/* line 98, ../../app/stylesheets/screen.sass */
+/* line 122, ../../app/stylesheets/screen.sass */
 #footer p {
   color: white;
   font-size: 12px;
   margin: 0px 10px 10px;
   line-height: 16px;
 }
-/* line 103, ../../app/stylesheets/screen.sass */
+/* line 127, ../../app/stylesheets/screen.sass */
 #footer a.footerbutton {
   border: solid 3px white;
   background: yellow;
@@ -231,7 +273,7 @@ body {
   text-shadow: none;
   font-weight: bold;
 }
-/* line 120, ../../app/stylesheets/screen.sass */
+/* line 144, ../../app/stylesheets/screen.sass */
 #footer a.footerbutton:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#ffdf7f), to(white));
   background: -moz-linear-gradient(top, #ffdf7f, white);
@@ -249,7 +291,7 @@ body {
  *	font-weight: bold;
  *	behavior: url("../scripts/iepngfix.htc");
  *	} */
-/* line 137, ../../app/stylesheets/screen.sass */
+/* line 161, ../../app/stylesheets/screen.sass */
 #copyright {
   width: 925px;
   margin: 10px auto;
@@ -257,7 +299,7 @@ body {
   overflow: hidden;
 }
 
-/* line 143, ../../app/stylesheets/screen.sass */
+/* line 167, ../../app/stylesheets/screen.sass */
 #fmondragon {
   background: url(/images/fmondragon_logo.jpg) no-repeat center;
   padding: 5px 34px;

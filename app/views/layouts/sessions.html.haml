@@ -1,0 +1,48 @@
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Helper's Hub | Welcome
+    =stylesheet_link_tag "hhstyles"
+    /[if lt IE 7.]
+      <script defer type="text/javascript" src="scripts/pngfix.js"></script>
+  %body
+    #header
+      #headerInner
+        %h1#logo
+          %a{:href => "#"}
+            %img{:alt => "Helper's Hub Logo", :src => "images/helpers_hub_logo.png"}/
+            %span.logotext Helper's Hub
+        %ul
+          %li
+            %a{:href => "#"} Link One
+          %li
+            %a.selected{:href => "#"} Link Two
+          %li
+            %a{:href => "#"} Link Three
+          %li
+            %a{:href => "#"} Link four
+    #graybg
+      =yield
+      #footerOuter
+        #footer
+          #footerInner
+            .browse.startups
+              %h4
+                %a{:href => "#"} Helper's Hub
+              %p Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Register as a volunteer.
+              %a.footerbutton{:href => "#"} view start-up
+            .browse.helpers
+              %h4
+                %a{:href => "#"} Fmondragon Creative Studio
+              %p Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Register as a volunteer.
+              %a.footerbutton{:href => "#"} view helper
+            .browse.sponsors
+              %h4
+                %a{:href => "#"} ExcelerateLabs.com
+              %p Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Register as a volunteer.
+              %a.footerbutton{:href => "#"} view sponsor
+    #copyrightOuter
+      #copyright
+        %a#fmondragon{:href => "http://www.fmondragon.com"} Fmondragon Creative Studio
+        %span Copyright © 2011 Helper's Hub. All rights reserved. | Privacy | PolicyAbout Our AdsSafety | Terms of Service | Copyright/IP Policy

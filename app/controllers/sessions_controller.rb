@@ -1,5 +1,10 @@
 class SessionsController < ApplicationController
+  layout 'sessions'
   def new
+    if(current_user)
+      flash[:notice] = "You are already signed in as #{current_user.full_name}"
+      redirect_to root_url
+    end
   end
   def destroy
     session[:current_user_id]=nil

@@ -1,0 +1,452 @@
+@import "reset"
+@import "compass/css3/transform"
+@import "signin"
+
+/*========== HEADER ==========
+
+#header
+  border-top: solid 4px #333
+  border-bottom: solid 4px #fff
+  background: url(/images/headerbg.gif) repeat-x left 0px
+
+#headerInner
+  width: 970px
+  margin: 0px auto
+  background: url(/images/navBorder.png) repeat-y right top
+  overflow: hidden
+
+#header
+  ul
+    float: right
+    margin-right: 4px
+    li
+      float: left
+      width: 140px
+      text-align: center
+      background: url(/images/navBorder.png) repeat-y left top
+      a
+        display: block
+        height: 52px
+        padding-top: 38px
+        text-decoration: none
+        text-transform: uppercase
+        font-weight: bold
+        color: #666
+        text-shadow: #fff 0 2px 0
+        margin-left: 4px
+        &:hover, &.selected
+          background: url(/images/navbg_over.gif) repeat-x left top
+          color: #fff
+          text-shadow: #666 0 2px 0
+  #logo
+    float: left
+    width: 200px
+    background: none
+    a
+      border: none
+      padding: 0px
+      margin: 0px
+
+#logo span.logotext
+  position: absolute
+  top: -999px
+  left: -999px
+
+/*========== HUB ==========
+
+#graybg
+  background: #E7E7E7
+  border-top: solid 1px #666
+  padding-top: 20px
+
+#signed_in_as
+  width: 970px
+  margin: 0 auto 20px
+  margin-bottom: 20px
+  overflow: hidden
+  text-align: right
+  font-size: 0.7em
+
+#joinHelpersHub
+  width: 970px
+  margin: 0px auto 20px
+  overflow: hidden
+  h2
+    font-size: 26px
+    font-weight: bold
+    margin-bottom: 10px
+
+#whyJoin
+  width: 680px
+  float: left
+  font-size: 15px
+  line-height: 21px
+  a
+    color: #666
+    text-decoration: underline
+    &:hover
+      border-bottom: dotted 1px #666
+
+#joinButton
+  width: 250px
+  float: right
+  text-align: center
+  height: 97px
+  padding: 5px
+
+#join
+  -moz-box-shadow: 0px 0px 4px #999
+  -webkit-box-shadow: 0px 0px 4px #999
+  box-shadow: 0px 0px 4px #999
+  border: solid 3px #fff
+  padding: 10px 0px 0px 0px
+  display: block
+  text-align: center
+  margin: 0px 0px -30px
+  -webkit-border-radius: 60px
+  -khtml-border-radius: 60px
+  -moz-border-radius: 60px
+  border-radius: 60px
+  color: #fff
+  text-decoration: none
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#999999))
+  background: -moz-linear-gradient(top, white, #999999)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#999999')
+  font-weight: bold
+  font-size: 50px
+  text-shadow: #666 2px 2px 0
+  height: 80px
+  &:hover
+    background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(white))
+    background: -moz-linear-gradient(top, #999999, white)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#999999', EndColorStr='#ffffff')
+
+#signIn
+  color: #fff
+  text-decoration: none
+  text-shadow: none
+  &:hover
+    text-decoration: underline
+
+/*========== HUB ==========
+
+#hubMainContainer
+  width: 700px
+  margin-right: 15px
+  float: right
+
+#hub
+  width: 970px
+  margin: 0px auto
+  position: relative
+  z-index: 2
+  background: white url(/images/hubLine.gif) repeat-y right top
+  -webkit-border-radius: 5px
+  -khtml-border-radius: 5px
+  -moz-border-radius: 5px
+  -moz-box-shadow: 0px 0px 4px #999
+  -webkit-box-shadow: 0px 0px 4px #999
+  box-shadow: 0px 0px 4px #999
+
+/*========== POST ==========
+
+.post
+  border-bottom: solid 1px #ccc
+  padding: 20px 0px
+
+.orgLogo
+  float: left
+  border: solid 1px #ccc
+  margin-right: 10px
+
+.post
+  p
+    font-size: 12px
+    width: 300px
+    line-height: 15px
+  a
+    text-decoration: underline
+    color: #A4C2DB
+    &:hover
+      border-bottom: dotted 1px #A4C2DB
+  h3 a
+    text-decoration: none
+    font-weight: bold
+    font-size: 16px
+    color: #666
+    &:hover
+      border: none
+
+h5
+  margin-top: 3px
+  margin-bottom: 10px
+  font-size: 12px
+
+.applyDetails
+  float: right
+  width: 100px
+  text-align: center
+  a
+    font-size: 12px
+
+a.apply
+  -moz-box-shadow: 0px 0px 4px #999
+  -webkit-box-shadow: 0px 0px 4px #999
+  box-shadow: 0px 0px 4px #999
+  border: solid 3px #fff
+  padding: 10px
+  display: block
+  text-align: center
+  margin-bottom: 5px
+  line-height: 7px
+  -webkit-border-radius: 20px
+  -khtml-border-radius: 20px
+  -moz-border-radius: 20px
+  border-radius: 20px
+  color: #fff
+  text-decoration: none
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#999999))
+  background: -moz-linear-gradient(top, white, #999999)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#999999')
+  font-weight: bold
+  font-size: 20px
+  text-shadow: #666 2px 2px 0
+  &:hover
+    border-bottom: solid 3px #fff
+    background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(white))
+    background: -moz-linear-gradient(top, #999999, white)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#999999', EndColorStr='#ffffff')
+
+.post h5 a
+  color: #666
+  &:hover
+    border-bottom-color: #666
+
+/*========== JQUERY NAV ==========
+
+#nav
+  background: #A4C2DB
+  clear: both
+  margin-left: 239px
+  width: 731px
+  webkit-border-bottom-right-radius: 4px
+  -khtml-border-radius-bottomright: 4px
+  -moz-border-radius-bottomright: 4px
+  border-bottom-right-radius: 4px
+  overflow: hidden
+
+ul#bullets
+  float: left
+  margin: 15px
+  li
+    display: inline
+    a
+      float: left
+      padding: 0px 8px
+      margin-right: 9px
+      background: #E7E7E0
+      webkit-border-radius: 14px
+      -khtml-border-radius: 14px
+      -moz-border-radius: 14px
+      border-radius: 14px
+      text-indent: -9999px
+      border: solid 1px #999
+      &:hover
+        background: #FFDF7F
+
+#viewAll
+  margin: 17px
+  float: right
+  font-size: 12px
+  color: #fff
+  &:hover
+    border-bottom: dotted 1px #fff
+
+/*========== SIDE NAV ==========
+
+#sideNavContainer
+  width: 238px
+  float: left
+  margin: 20px 15px 20px -10px
+
+#sideNav
+  width: 240px
+  li
+    border-left: solid 1px #ccc
+  a
+    display: block
+    background: url(/images/sideNav.png) no-repeat right top
+    padding: 10px 10px 13px 22px
+    width: 190px
+    margin-bottom: 10px
+    text-decoration: none
+    color: #fff
+    &:hover
+      background: url(/images/sideNav.png) no-repeat right bottom
+      color: #666
+    &.selected
+      background: url(/images/sideNav.png) no-repeat right center
+      color: #FFDF7F
+      width: 210px
+
+.count
+  float: right
+  font-size: 12px
+  -webkit-border-radius: 10px
+  -khtml-border-radius: 10px
+  -moz-border-radius: 10px
+  background: #eee
+  padding: 3px 5px
+  color: #666
+  text-shadow: #fff 1px 1px 0
+
+#sideNav a
+  &:hover span, &.selected span
+    background: #FFDF7F
+
+/*========== SEARCH FIELD ==========
+
+li#search
+  background: url(/images/search.gif) no-repeat
+  padding: 8px 8px 5px
+  border: 0px 0px 0px 1px
+  overflow: hidden
+  margin-bottom: 10px
+
+#sideNav input
+  &[type=text]
+    color: #999
+    background: none
+    height: 20px
+    float: left
+    outline: none
+    border: none
+    padding: 9px 3px
+    width: 170px
+  &[type=image]
+    float: right
+    border: none
+
+/*========== FOOTER ==========
+
+#footer
+  background: #CDDEEB
+  padding: 80px 0px 40px
+  margin-top: 0px
+  border-top: solid 4px #fff
+
+#footerInner
+  width: 925px
+  margin: 0px auto
+  overflow: hidden
+
+#footerOuter
+  border-top: solid 1px #666
+  margin-top: -45px
+
+.browse
+  text-shadow: #fff 2px 2px 0
+  width: 285px
+  float: left
+  margin: 0px 10px
+  overflow: hidden
+  &.startups
+    margin-left: 0px
+  &.helpers
+    margin: 0px 25px
+  &.sponsors
+    float: right
+    margin-right: 0px
+
+#footer
+  h4
+    margin: 0px 10px 10px
+    a
+      color: #666
+      text-decoration: none
+      font-size: 18px
+      font-weight: bold
+  p
+    color: #666
+    font-size: 12px
+    margin: 0px 10px 10px
+    line-height: 16px
+    height: 80px
+  a.footerbutton
+    border: solid 3px #fff
+    background: yellow
+    padding: 5px 20px
+    display: block
+    text-align: center
+    margin: 0px 7px
+    -webkit-border-radius: 15px
+    -khtml-border-radius: 15px
+    -moz-border-radius: 15px
+    border-radius: 15px
+    color: #666
+    text-decoration: none
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#ffdf7f))
+    background: -moz-linear-gradient(top, white, #ffdf7f)
+    text-shadow: none
+    font-weight: bold
+    &:hover
+      background: -webkit-gradient(linear, left top, left bottom, from(#ffdf7f), to(white))
+      background: -moz-linear-gradient(top, #ffdf7f, white)
+
+/*#footer a.footerbutton{
+ *	background: url(../images/footerbutton.png) no-repeat center top;
+ *	display: block;
+ *	height: 35px;
+ *	text-align: center;
+ *	padding-top: 15px;
+ *	text-decoration: none;
+ *	text-shadow: none;
+ *	color: #666666;
+ *	font-weight: bold;
+ *	behavior: url("../scripts/iepngfix.htc");
+ *	}
+
+#copyright
+  width: 925px
+  margin: 10px auto
+  font-size: 10px
+  overflow: hidden
+  clear: both
+  span
+    float: left
+
+#fmondragon
+  background: url(/images/fmondragon_logo.png) no-repeat center
+  text-indent: -99999px
+  overflow: hidden
+  float: right
+  height: 17px
+  width: 110px
+
+#flash
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  background-color: #f4fc7c
+  text-align: center
+  color: #333
+  padding: 10px
+  border-bottom: 1px solid #777
+  .dismiss
+    position: fixed
+    right: 10px
+    top: 5px
+    border: 1px solid #333
+    padding: 2px 6px 4px
+    background-color: #333
+    a
+      color: #f4fc7c
+      font-weight: bold
+      text-decoration: none
+      font-size: larger
+
+
+.clear
+  clear: both

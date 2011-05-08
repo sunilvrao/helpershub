@@ -3,56 +3,163 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title Helper's Hub | Welcome
-    =stylesheet_link_tag 'screen.css'
-    = stylesheet_link_tag 'print.css', :media => 'print'
-    /[if IE]
-      = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
-    
+    =stylesheet_link_tag "hhstyles"
     /[if lt IE 7.]
       <script defer type="text/javascript" src="scripts/pngfix.js"></script>
   %body
     #header
       #headerInner
         %h1#logo
-          %a(href="/")
-            = image_tag("helpers_hub_logo.png")
+          %a{:href => "#"}
+            %img{:alt => "Helper's Hub Logo", :src => "images/helpers_hub_logo.png"}/
             %span.logotext Helper's Hub
         %ul
-          %li= link_to("Startups","#")
-          %li= link_to("Volunteers","#")
-          %li= link_to("Jobs","#")
-    #user_info
-      #user_info_inner
-        - if current_user
-          #logged_in
+          %li
+            %a{:href => "#"} Link One
+          %li
+            %a.selected{:href => "#"} Link Two
+          %li
+            %a{:href => "#"} Link Three
+          %li
+            %a{:href => "#"} Link four
+    #graybg
+      - if not current_user
+        #joinHelpersHub
+          #whyJoin
+            %h2 Why you should join Helper's Hub.
             %p
-              You are signed in as #{current_user.full_name}. 
-              =link_to "Sign Out",signout_path
-        - else
-          #sign_up
-            %ul.sign_up_links
-              - %w(google twitter facebook linked_in).each do |service|
-                %li.small_button= link_to image_tag("#{service}_32.png",:alt=>service),"/auth/#{service}"
-            %p
-              Sign up/Sign in with 
-    #hub= yield
-    #footer
-      #footerInner
-        .browse.volunteers
-          %h4
-            %a{:href => "#"} Browse through Helper's Hub Volunteers
-          %p Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Register as a volunteer.
-          %a.footerbutton{:href => "#"} browse volunteers
-        .browse.volunteers
-          %h4
-            %a{:href => "#"} Browse through Helper's Hub Volunteers
-          %p Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Register as a volunteer.
-          %a.footerbutton{:href => "#"} browse volunteers
-        .browse.volunteers
-          %h4
-            %a{:href => "#"} Browse through Helper's Hub Volunteers
-          %p Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Register as a volunteer.
-          %a.footerbutton{:href => "#"} browse volunteers
-    #copyright
-      Copyright © 2011 Helper's Hub. All rights reserved. | Privacy | PolicyAbout Our AdsSafety | Terms of Service | Copyright/IP Policy
-      %a#fmondragon{:href => "http://www.fmondragon.com"} Fmondragon Creative Studio
+              Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Ut vitae
+              %a{:href => "#"} enim eu est
+              vehicula gravida. Morbi ipsum ipsum, porta nec, tempor id, auctor vitae, purus. Pellentesque neque.
+          #joinButton
+            //%a#join{:href => "join"} Join
+            //%a#signIn{:href => "signIn"} Sign In
+            =link_to "Join", signin_path, :id=>"join"
+            =link_to "Sign In", signin_path, :id=>"signIn"
+      -else
+        #signed_in_as
+          You are currently signed in as #{current_user.full_name}. Not you? 
+          =link_to "Sign out", signout_path
+      #hub
+        #sideNavContainer
+          %ul#sideNav
+            %li#search
+              %form
+                %input{:type => "text", :value => "search"}/
+                %input{:src => "images/searchButton.gif", :type => "image", :value => "GO"}/
+            %li
+              %a{:href => "#"}
+                %span.count 76
+                introductions
+            %li
+              %a.selected{:href => "#"}
+                %span.count> 132
+                technology
+            %li
+              %a{:href => "#"}
+                %span.count> 32
+                legal
+            %li
+              %a{:href => "#"}
+                %span.count> 2
+                accounting
+            %li
+              %a{:href => "#"}
+                %span.count> 65
+                sales
+            %li
+              %a{:href => "#"}
+                %span.count> 23
+                strategy
+        #hubMainContainer
+          .post
+            %h3
+              %a{:href => "#"} Posting title ellentesque dapibus sodales enim.
+            %h5
+              Posted by:
+              %a{:href => "#"} Fmondragon Creative Studio
+              on Tuesday April 26, 2011
+            .applyDetails
+              %a.apply{:href => "#"} apply
+              %a{:href => "#"} view details
+            .orgLogo
+              %img{:src => "images/orgLogo_fmcs.gif"}/
+            .projectDescription
+              %p
+                Lorem ipsum dolor sit amet,
+                %a{:href => "#"} consectetuer
+                adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus etma.
+          .post
+            %h3
+              %a{:href => "#"} Aliquam ultrices scelerisque sem.
+            %h5
+              Posted by:
+              %a{:href => "#"} Helper's Hub
+              on Tuesday April 26, 2011
+            .applyDetails
+              %a.apply{:href => "#"} apply
+              %a{:href => "#"} view details
+            .orgLogo
+              %img{:src => "images/orgLogo_hh.gif"}/
+            .projectDescription
+              %p
+                Lorem ipsum dolor sit amet,
+                %a{:href => "#"} consectetuer
+                adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus etma.
+          .post
+            %h3
+              %a{:href => "#"} Suspendisse id velit vitae ligula volutpat condimentum.
+            %h5
+              Posted by:
+              %a{:href => "#"} Excelerate Labs
+              on Tuesday April 26, 2011
+            .applyDetails
+              %a.apply{:href => "#"} apply
+              %a{:href => "#"} view details
+            .orgLogo
+              %img{:src => "images/orgLogo_exc.gif"}/
+            .projectDescription
+              %p
+                Lorem ipsum dolor sit amet,
+                %a{:href => "#"} consectetuer
+                adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus etma.
+        #nav
+          %ul#bullets
+            %li
+              %a{:href => "#"} 1
+            %li
+              %a{:href => "#"} 2
+            %li
+              %a{:href => "#"} 3
+            %li
+              %a{:href => "#"} 4
+          %a#viewAll{:href => "#"} view all
+        .clear
+      #footerOuter
+        #footer
+          #footerInner
+            .browse.startups
+              %h4
+                %a{:href => "#"} Helper's Hub
+              %p Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Register as a volunteer.
+              %a.footerbutton{:href => "#"} view start-up
+            .browse.helpers
+              %h4
+                %a{:href => "#"} Fmondragon Creative Studio
+              %p Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Register as a volunteer.
+              %a.footerbutton{:href => "#"} view helper
+            .browse.sponsors
+              %h4
+                %a{:href => "#"} ExcelerateLabs.com
+              %p Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Register as a volunteer.
+              %a.footerbutton{:href => "#"} view sponsor
+    #copyrightOuter
+      #copyright
+        %a#fmondragon{:href => "http://www.fmondragon.com"} Fmondragon Creative Studio
+        %span Copyright © 2011 Helper's Hub. All rights reserved. | Privacy | PolicyAbout Our AdsSafety | Terms of Service | Copyright/IP Policy
+    -if flash[:notice]
+      #flash
+        =flash[:notice]
+        %span.dismiss
+          %a(href="#" title="Click here to dismiss") x
+    =javascript_include_tag "jquery.min.js", "rails.js", "application.js"

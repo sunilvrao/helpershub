@@ -1,14 +1,30 @@
 #signin
-  margin: 10px
-  float: left
-  width: 100%
+  width: 970px
+  margin: 0px auto
+  position: relative
+  z-index: 2
+  background-color: white
+  -webkit-border-radius: 5px
+  -khtml-border-radius: 5px
+  -moz-border-radius: 5px
+  -moz-box-shadow: 0px 0px 4px #999
+  -webkit-box-shadow: 0px 0px 4px #999
+  box-shadow: 0px 0px 4px #999
+  padding: 20px 0
   h1
     color: #787979
     text-align: center
     font-size: x-large
+    font-weight: bold
   ul.auth_services
-    width: 512px
+    width: 582px
+    float:left
     margin-left: 225px
     margin-top: 20px
     li
-      float: left
+      display: inline
+      margin: 0
+      a
+        img:hover
+          +rotate(-3deg)
+      

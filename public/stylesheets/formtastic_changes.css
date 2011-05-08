@@ -1,0 +1,14 @@
+/* line 5, ../../app/stylesheets/formtastic_changes.sass */
+form.formtastic fieldset ol li label {
+  width: 100%;
+  margin: 5px 0;
+}
+/* line 8, ../../app/stylesheets/formtastic_changes.sass */
+form.formtastic fieldset ol li input {
+  margin: 5px 0;
+  padding: 5px;
+}
+/* line 11, ../../app/stylesheets/formtastic_changes.sass */
+form.formtastic fieldset ol li p.inline-errors {
+  margin: 0.5em 0 0 0;
+}

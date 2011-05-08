@@ -4,5 +4,6 @@ class User
   field :full_name, :type => String
   field :bio, :type => String
   field :email, :type => String
+  references_many :startups, :inverse_of=>:owner
   embeds_many :services
 end

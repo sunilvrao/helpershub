@@ -3,7 +3,7 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title Helper's Hub | Welcome
-    =stylesheet_link_tag "hhstyles"
+    =stylesheet_link_tag "hhstyles", "formtastic", "formtastic_changes"
     /[if lt IE 7.]
       <script defer type="text/javascript" src="scripts/pngfix.js"></script>
   %body
@@ -11,7 +11,7 @@
       #headerInner
         %h1#logo
           %a{:href => "#"}
-            %img{:alt => "Helper's Hub Logo", :src => "images/helpers_hub_logo.png"}/
+            %img{:alt => "Helper's Hub Logo", :src => "/images/helpers_hub_logo.png"}/
             %span.logotext Helper's Hub
         %ul
           %li
@@ -46,7 +46,7 @@
             %li#search
               %form
                 %input{:type => "text", :value => "search"}/
-                %input{:src => "images/searchButton.gif", :type => "image", :value => "GO"}/
+                %input{:src => "/images/searchButton.gif", :type => "image", :value => "GO"}/
             %li
               %a{:href => "#"}
                 %span.count 76
@@ -71,69 +71,7 @@
               %a{:href => "#"}
                 %span.count> 23
                 strategy
-        #hubMainContainer
-          .post
-            %h3
-              %a{:href => "#"} Posting title ellentesque dapibus sodales enim.
-            %h5
-              Posted by:
-              %a{:href => "#"} Fmondragon Creative Studio
-              on Tuesday April 26, 2011
-            .applyDetails
-              %a.apply{:href => "#"} apply
-              %a{:href => "#"} view details
-            .orgLogo
-              %img{:src => "images/orgLogo_fmcs.gif"}/
-            .projectDescription
-              %p
-                Lorem ipsum dolor sit amet,
-                %a{:href => "#"} consectetuer
-                adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus etma.
-          .post
-            %h3
-              %a{:href => "#"} Aliquam ultrices scelerisque sem.
-            %h5
-              Posted by:
-              %a{:href => "#"} Helper's Hub
-              on Tuesday April 26, 2011
-            .applyDetails
-              %a.apply{:href => "#"} apply
-              %a{:href => "#"} view details
-            .orgLogo
-              %img{:src => "images/orgLogo_hh.gif"}/
-            .projectDescription
-              %p
-                Lorem ipsum dolor sit amet,
-                %a{:href => "#"} consectetuer
-                adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus etma.
-          .post
-            %h3
-              %a{:href => "#"} Suspendisse id velit vitae ligula volutpat condimentum.
-            %h5
-              Posted by:
-              %a{:href => "#"} Excelerate Labs
-              on Tuesday April 26, 2011
-            .applyDetails
-              %a.apply{:href => "#"} apply
-              %a{:href => "#"} view details
-            .orgLogo
-              %img{:src => "images/orgLogo_exc.gif"}/
-            .projectDescription
-              %p
-                Lorem ipsum dolor sit amet,
-                %a{:href => "#"} consectetuer
-                adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus etma.
-        #nav
-          %ul#bullets
-            %li
-              %a{:href => "#"} 1
-            %li
-              %a{:href => "#"} 2
-            %li
-              %a{:href => "#"} 3
-            %li
-              %a{:href => "#"} 4
-          %a#viewAll{:href => "#"} view all
+        =yield
         .clear
       #footerOuter
         #footer

@@ -115,46 +115,52 @@ body {
 #main_container form {
   margin: 20px;
 }
-/* line 11, ../../app/stylesheets/_startups.sass */
+/* line 10, ../../app/stylesheets/_startups.sass */
+#main_container form .current_logo {
+  padding: 5px;
+  border: 1px solid #cccccc;
+  margin: 10px 0;
+}
+/* line 15, ../../app/stylesheets/_startups.sass */
 #main_container .action_links {
   float: right;
 }
-/* line 13, ../../app/stylesheets/_startups.sass */
+/* line 17, ../../app/stylesheets/_startups.sass */
 #main_container .startup {
   float: left;
   clear: both;
   margin-top: 10px;
   border-bottom: 1px dashed #777777;
 }
-/* line 18, ../../app/stylesheets/_startups.sass */
+/* line 22, ../../app/stylesheets/_startups.sass */
 #main_container .startup .logo {
   width: 55px;
   float: left;
   padding: 3px;
   border: 1px solid #cccccc;
 }
-/* line 23, ../../app/stylesheets/_startups.sass */
+/* line 27, ../../app/stylesheets/_startups.sass */
 #main_container .startup .contents {
   float: left;
   width: 635px;
   margin: 0 10px;
 }
-/* line 27, ../../app/stylesheets/_startups.sass */
+/* line 31, ../../app/stylesheets/_startups.sass */
 #main_container .startup .contents h3.name {
   font-weight: bold;
   font-size: 20px;
 }
-/* line 30, ../../app/stylesheets/_startups.sass */
+/* line 34, ../../app/stylesheets/_startups.sass */
 #main_container .startup .contents h3.name a {
   text-decoration: none;
   color: #555555;
 }
-/* line 33, ../../app/stylesheets/_startups.sass */
+/* line 37, ../../app/stylesheets/_startups.sass */
 #main_container .startup .contents .time {
   margin-top: 5px;
   font-size: smaller;
 }
-/* line 36, ../../app/stylesheets/_startups.sass */
+/* line 40, ../../app/stylesheets/_startups.sass */
 #main_container .startup .contents p.description {
   margin: 10px 0;
 }

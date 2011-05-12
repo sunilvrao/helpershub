@@ -1,0 +1,13 @@
+=semantic_form_for @startup, :html=>{:enctype=>"multipart/form-data"} do |f|
+  %fieldset.inputs
+    %ol
+      =f.input :name, :label=>"Company Name"
+      =f.input :description, :as=>:text
+      =f.input :url
+      =f.input :address
+      =f.input :country, :as=>:select, :collection=>::COUNTRIES
+      -unless @startup.logo.thumb.blank?
+        %p Current Logo
+        %img.current_logo(src="#{@startup.logo.thumb.url}")
+      =f.input :logo, :as=>:file
+  =f.buttons

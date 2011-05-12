@@ -20,10 +20,21 @@ class StartupsController < ApplicationController
     @startup = Startup.where(:slug=>params[:id]).first
   end
   def edit
+    @startup = Startup.where(:slug=>params[:id]).first
   end
   def update
+    @startup = Startup.where(:slug=>params[:id]).first
+    if(@startup.update_attributes(params[:startup]))
+      flash[:notice]="Startup updated successfully"
+      redirect_to @startup
+    else
+      render :action=>:edit
+    end
   end
   def destroy
+    @startup = Startup.where(:slug=>params[:id]).first
+    @startup.soft_delete
+    redirect_to startups_path
   end
 
 end

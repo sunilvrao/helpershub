@@ -1,5 +1,13 @@
 class JobsController < ApplicationController
+  before_filter :authenticate_user!, :except=>[:index,:show]
   before_filter :set_categories
+  def index
+    @startup = Startup.where(:slug=>params[:startup_id]).first unless params[:startup_id]
+    @category = Category.where(:slug=>params[:category_id]).first unless params[:category_id]
+    @jobs = Job.all unless @startup or @category
+    @jobs = @startup.jobs if @startup
+    @jobs = @category.jobs if @category
+  end
   def new
     @startup = Startup.where(:slug=>params[:startup_id]).first if params[:startup_id]
     @job = Job.new unless @startup
@@ -35,6 +43,7 @@ class JobsController < ApplicationController
   
   def set_categories
     @categories=Category.all
+    @selected_category = params[:category_id] 
   end
 
 end

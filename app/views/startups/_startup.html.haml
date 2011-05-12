@@ -1,0 +1,11 @@
+.startup
+  .logo
+    %image(src="#{startup.logo.thumb.url}" title="#{startup.name} Logo}")
+  .contents
+    %h3.name= link_to startup.name, startup
+    %p.misc 
+      =link_to startup.url, startup.url
+      #{startup.address}, #{startup.country}
+    %p.time
+      Registered about #{time_ago_in_words startup.created_at} ago.
+    %p.description= startup.description

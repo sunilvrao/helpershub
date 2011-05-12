@@ -1,5 +1,8 @@
 @import "reset"
 @import "compass/css3/transform"
+@import "compass/css3/border-radius"
+@import "compass/css3/text-shadow"
+@import "compass/css3/gradient"
 @import "signin"
 @import "startups"
 /*========== HEADER ==========
@@ -135,7 +138,7 @@
   margin-right: 15px
   float: right
 #main_container
-  width: 700px
+  width: 720px
   margin-top: 20px
   float: left
 #hub
@@ -453,3 +456,21 @@ li#search
 
 .clear
   clear: both
+
+.actionbutton
+  background-color: #2b70bb
+  color: #fff
+  padding: 5px
+  display: block
+  float: left
+  text-decoration: none
+  font-weight: bold
+  margin: 2px
+  +border-radius(5px)
+  +single-text-shadow(#aaa,1px, 1px)
+  +linear-gradient(color-stops(#2b70bb,#29abe2))
+
+.actionbutton:hover
+  +linear-gradient(color-stops(#29abe2,#2b70bb))
+  
+  

@@ -1,0 +1,12 @@
+#main_container
+  =semantic_form_for @job do |f|
+    %fieldset.inputs
+      %ol
+        =f.input :title
+        =f.input :description
+        =f.input :start_date, :input_html=>{:class=>"date",:value=>@job.start_date.strftime("%d %b %Y")}
+        =f.input :end_date, :input_html=>{:class=>"date",:value=>@job.end_date.strftime("%d %b %Y")}
+        =f.input :location
+        =f.input :startup_id,:as=>:select, :collection=>@startups
+        =f.input :category_ids, :as=>:check_boxes, :collection=>@categories, :label=>"Categories"
+    =f.buttons

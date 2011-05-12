@@ -165,261 +165,68 @@ body {
   margin: 10px 0;
 }
 
-/*========== HEADER ========== */
-/* line 10, ../../app/stylesheets/hhstyles.sass */
-#header {
-  border-top: solid 4px #333333;
-  border-bottom: solid 4px white;
-  background: url(/images/headerbg.gif) repeat-x left 0px;
-}
-
-/* line 15, ../../app/stylesheets/hhstyles.sass */
-#headerInner {
-  width: 970px;
-  margin: 0px auto;
-  background: url(/images/navBorder.png) repeat-y right top;
-  overflow: hidden;
-}
-
-/* line 22, ../../app/stylesheets/hhstyles.sass */
-#header ul {
-  float: right;
-  margin-right: 4px;
-}
-/* line 25, ../../app/stylesheets/hhstyles.sass */
-#header ul li {
-  float: left;
-  width: 140px;
-  text-align: center;
-  background: url(/images/navBorder.png) repeat-y left top;
-}
-/* line 30, ../../app/stylesheets/hhstyles.sass */
-#header ul li a {
-  display: block;
-  height: 52px;
-  padding-top: 38px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #666666;
-  text-shadow: white 0 2px 0;
-  margin-left: 4px;
-}
-/* line 40, ../../app/stylesheets/hhstyles.sass */
-#header ul li a:hover, #header ul li a.selected {
-  background: url(/images/navbg_over.gif) repeat-x left top;
-  color: white;
-  text-shadow: #666666 0 2px 0;
-}
-/* line 44, ../../app/stylesheets/hhstyles.sass */
-#header #logo {
-  float: left;
-  width: 200px;
-  background: none;
-}
-/* line 48, ../../app/stylesheets/hhstyles.sass */
-#header #logo a {
-  border: none;
-  padding: 0px;
-  margin: 0px;
-}
-
-/* line 53, ../../app/stylesheets/hhstyles.sass */
-#logo span.logotext {
-  position: absolute;
-  top: -999px;
-  left: -999px;
-}
-
-/*========== HUB ========== */
-/* line 60, ../../app/stylesheets/hhstyles.sass */
-#graybg {
-  background: #e7e7e7;
-  border-top: solid 1px #666666;
-  padding-top: 20px;
-}
-
-/* line 65, ../../app/stylesheets/hhstyles.sass */
-#signed_in_as {
-  width: 970px;
-  margin: 0 auto 20px;
-  margin-bottom: 20px;
-  overflow: hidden;
-  text-align: right;
-  font-size: 0.7em;
-}
-
-/* line 73, ../../app/stylesheets/hhstyles.sass */
-#joinHelpersHub {
-  width: 970px;
-  margin: 0px auto 20px;
-  overflow: hidden;
-}
-/* line 77, ../../app/stylesheets/hhstyles.sass */
-#joinHelpersHub h2 {
-  font-size: 26px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-/* line 82, ../../app/stylesheets/hhstyles.sass */
-#whyJoin {
-  width: 680px;
-  float: left;
-  font-size: 15px;
-  line-height: 21px;
-}
-/* line 87, ../../app/stylesheets/hhstyles.sass */
-#whyJoin a {
-  color: #666666;
-  text-decoration: underline;
-}
-/* line 90, ../../app/stylesheets/hhstyles.sass */
-#whyJoin a:hover {
-  border-bottom: dotted 1px #666666;
-}
-
-/* line 93, ../../app/stylesheets/hhstyles.sass */
-#joinButton {
-  width: 250px;
-  float: right;
-  text-align: center;
-  height: 97px;
-  padding: 5px;
-}
-
-/* line 100, ../../app/stylesheets/hhstyles.sass */
-#join {
-  -moz-box-shadow: 0px 0px 4px #999999;
-  -webkit-box-shadow: 0px 0px 4px #999999;
-  box-shadow: 0px 0px 4px #999999;
-  border: solid 3px white;
-  padding: 10px 0px 0px 0px;
-  display: block;
-  text-align: center;
-  margin: 0px 0px -30px;
-  -webkit-border-radius: 60px;
-  -khtml-border-radius: 60px;
-  -moz-border-radius: 60px;
-  border-radius: 60px;
-  color: white;
-  text-decoration: none;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#999999));
-  background: -moz-linear-gradient(top, white, #999999);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#999999');
-  font-weight: bold;
-  font-size: 50px;
-  text-shadow: #666666 2px 2px 0;
-  height: 80px;
-}
-/* line 122, ../../app/stylesheets/hhstyles.sass */
-#join:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(white));
-  background: -moz-linear-gradient(top, #999999, white);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#999999', EndColorStr='#ffffff');
-}
-
-/* line 127, ../../app/stylesheets/hhstyles.sass */
-#signIn {
-  color: white;
-  text-decoration: none;
-  text-shadow: none;
-}
-/* line 131, ../../app/stylesheets/hhstyles.sass */
-#signIn:hover {
-  text-decoration: underline;
-}
-
-/*========== HUB ========== */
-/* line 136, ../../app/stylesheets/hhstyles.sass */
-#hubMainContainer {
-  width: 700px;
-  margin-right: 15px;
-  float: right;
-}
-
-/* line 140, ../../app/stylesheets/hhstyles.sass */
-#main_container {
-  width: 720px;
-  margin-top: 20px;
-  float: left;
-}
-
-/* line 144, ../../app/stylesheets/hhstyles.sass */
-#hub {
-  width: 970px;
-  margin: 0px auto;
-  position: relative;
-  z-index: 2;
-  background: white url(/images/hubLine.gif) repeat-y right top;
-  -webkit-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -moz-box-shadow: 0px 0px 4px #999999;
-  -webkit-box-shadow: 0px 0px 4px #999999;
-  box-shadow: 0px 0px 4px #999999;
-}
-
 /*========== POST ========== */
-/* line 159, ../../app/stylesheets/hhstyles.sass */
+/* line 3, ../../app/stylesheets/_jobs.sass */
 .post {
   border-bottom: solid 1px #cccccc;
   padding: 20px 0px;
+  float: left;
+  width: 100%;
 }
 
-/* line 163, ../../app/stylesheets/hhstyles.sass */
+/* line 9, ../../app/stylesheets/_jobs.sass */
 .orgLogo {
   float: left;
   border: solid 1px #cccccc;
   margin-right: 10px;
 }
 
-/* line 169, ../../app/stylesheets/hhstyles.sass */
+/* line 15, ../../app/stylesheets/_jobs.sass */
 .post p {
   font-size: 12px;
   width: 300px;
   line-height: 15px;
 }
-/* line 173, ../../app/stylesheets/hhstyles.sass */
+/* line 19, ../../app/stylesheets/_jobs.sass */
 .post a {
   text-decoration: underline;
   color: #a4c2db;
 }
-/* line 176, ../../app/stylesheets/hhstyles.sass */
+/* line 22, ../../app/stylesheets/_jobs.sass */
 .post a:hover {
   border-bottom: dotted 1px #a4c2db;
 }
-/* line 178, ../../app/stylesheets/hhstyles.sass */
+/* line 24, ../../app/stylesheets/_jobs.sass */
 .post h3 a {
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
   color: #666666;
 }
-/* line 183, ../../app/stylesheets/hhstyles.sass */
+/* line 29, ../../app/stylesheets/_jobs.sass */
 .post h3 a:hover {
   border: none;
 }
 
-/* line 186, ../../app/stylesheets/hhstyles.sass */
+/* line 32, ../../app/stylesheets/_jobs.sass */
 h5 {
   margin-top: 3px;
   margin-bottom: 10px;
   font-size: 12px;
 }
 
-/* line 191, ../../app/stylesheets/hhstyles.sass */
+/* line 37, ../../app/stylesheets/_jobs.sass */
 .applyDetails {
   float: right;
   width: 100px;
   text-align: center;
 }
-/* line 195, ../../app/stylesheets/hhstyles.sass */
+/* line 41, ../../app/stylesheets/_jobs.sass */
 .applyDetails a {
   font-size: 12px;
 }
 
-/* line 198, ../../app/stylesheets/hhstyles.sass */
+/* line 44, ../../app/stylesheets/_jobs.sass */
 a.apply {
   -moz-box-shadow: 0px 0px 4px #999999;
   -webkit-box-shadow: 0px 0px 4px #999999;
@@ -443,7 +250,7 @@ a.apply {
   font-size: 20px;
   text-shadow: #666666 2px 2px 0;
 }
-/* line 220, ../../app/stylesheets/hhstyles.sass */
+/* line 66, ../../app/stylesheets/_jobs.sass */
 a.apply:hover {
   border-bottom: solid 3px white;
   background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(white));
@@ -451,17 +258,212 @@ a.apply:hover {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#999999', EndColorStr='#ffffff');
 }
 
-/* line 226, ../../app/stylesheets/hhstyles.sass */
+/* line 72, ../../app/stylesheets/_jobs.sass */
 .post h5 a {
   color: #666666;
 }
-/* line 228, ../../app/stylesheets/hhstyles.sass */
+/* line 74, ../../app/stylesheets/_jobs.sass */
 .post h5 a:hover {
   border-bottom-color: #666666;
 }
 
+/*========== HEADER ========== */
+/* line 11, ../../app/stylesheets/hhstyles.sass */
+#header {
+  border-top: solid 4px #333333;
+  border-bottom: solid 4px white;
+  background: url(/images/headerbg.gif) repeat-x left 0px;
+}
+
+/* line 16, ../../app/stylesheets/hhstyles.sass */
+#headerInner {
+  width: 970px;
+  margin: 0px auto;
+  background: url(/images/navBorder.png) repeat-y right top;
+  overflow: hidden;
+}
+
+/* line 23, ../../app/stylesheets/hhstyles.sass */
+#header ul {
+  float: right;
+  margin-right: 4px;
+}
+/* line 26, ../../app/stylesheets/hhstyles.sass */
+#header ul li {
+  float: left;
+  width: 140px;
+  text-align: center;
+  background: url(/images/navBorder.png) repeat-y left top;
+}
+/* line 31, ../../app/stylesheets/hhstyles.sass */
+#header ul li a {
+  display: block;
+  height: 52px;
+  padding-top: 38px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #666666;
+  text-shadow: white 0 2px 0;
+  margin-left: 4px;
+}
+/* line 41, ../../app/stylesheets/hhstyles.sass */
+#header ul li a:hover, #header ul li a.selected {
+  background: url(/images/navbg_over.gif) repeat-x left top;
+  color: white;
+  text-shadow: #666666 0 2px 0;
+}
+/* line 45, ../../app/stylesheets/hhstyles.sass */
+#header #logo {
+  float: left;
+  width: 200px;
+  background: none;
+}
+/* line 49, ../../app/stylesheets/hhstyles.sass */
+#header #logo a {
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 54, ../../app/stylesheets/hhstyles.sass */
+#logo span.logotext {
+  position: absolute;
+  top: -999px;
+  left: -999px;
+}
+
+/*========== HUB ========== */
+/* line 61, ../../app/stylesheets/hhstyles.sass */
+#graybg {
+  background: #e7e7e7;
+  border-top: solid 1px #666666;
+  padding-top: 20px;
+}
+
+/* line 66, ../../app/stylesheets/hhstyles.sass */
+#signed_in_as {
+  width: 970px;
+  margin: 0 auto 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: right;
+  font-size: 0.7em;
+}
+
+/* line 74, ../../app/stylesheets/hhstyles.sass */
+#joinHelpersHub {
+  width: 970px;
+  margin: 0px auto 20px;
+  overflow: hidden;
+}
+/* line 78, ../../app/stylesheets/hhstyles.sass */
+#joinHelpersHub h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* line 83, ../../app/stylesheets/hhstyles.sass */
+#whyJoin {
+  width: 680px;
+  float: left;
+  font-size: 15px;
+  line-height: 21px;
+}
+/* line 88, ../../app/stylesheets/hhstyles.sass */
+#whyJoin a {
+  color: #666666;
+  text-decoration: underline;
+}
+/* line 91, ../../app/stylesheets/hhstyles.sass */
+#whyJoin a:hover {
+  border-bottom: dotted 1px #666666;
+}
+
+/* line 94, ../../app/stylesheets/hhstyles.sass */
+#joinButton {
+  width: 250px;
+  float: right;
+  text-align: center;
+  height: 97px;
+  padding: 5px;
+}
+
+/* line 101, ../../app/stylesheets/hhstyles.sass */
+#join {
+  -moz-box-shadow: 0px 0px 4px #999999;
+  -webkit-box-shadow: 0px 0px 4px #999999;
+  box-shadow: 0px 0px 4px #999999;
+  border: solid 3px white;
+  padding: 10px 0px 0px 0px;
+  display: block;
+  text-align: center;
+  margin: 0px 0px -30px;
+  -webkit-border-radius: 60px;
+  -khtml-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  color: white;
+  text-decoration: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#999999));
+  background: -moz-linear-gradient(top, white, #999999);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#999999');
+  font-weight: bold;
+  font-size: 50px;
+  text-shadow: #666666 2px 2px 0;
+  height: 80px;
+}
+/* line 123, ../../app/stylesheets/hhstyles.sass */
+#join:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(white));
+  background: -moz-linear-gradient(top, #999999, white);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#999999', EndColorStr='#ffffff');
+}
+
+/* line 128, ../../app/stylesheets/hhstyles.sass */
+#signIn {
+  color: white;
+  text-decoration: none;
+  text-shadow: none;
+}
+/* line 132, ../../app/stylesheets/hhstyles.sass */
+#signIn:hover {
+  text-decoration: underline;
+}
+
+/*========== HUB ========== */
+/* line 137, ../../app/stylesheets/hhstyles.sass */
+#hubMainContainer {
+  width: 700px;
+  margin-right: 15px;
+  float: right;
+}
+
+/* line 141, ../../app/stylesheets/hhstyles.sass */
+#main_container {
+  width: 720px;
+  margin-top: 20px;
+  float: left;
+}
+
+/* line 145, ../../app/stylesheets/hhstyles.sass */
+#hub {
+  width: 970px;
+  margin: 0px auto;
+  position: relative;
+  z-index: 2;
+  background: white url(/images/hubLine.gif) repeat-y right top;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -moz-box-shadow: 0px 0px 4px #999999;
+  -webkit-box-shadow: 0px 0px 4px #999999;
+  box-shadow: 0px 0px 4px #999999;
+}
+
 /*========== JQUERY NAV ========== */
-/* line 233, ../../app/stylesheets/hhstyles.sass */
+/* line 159, ../../app/stylesheets/hhstyles.sass */
 #nav {
   background: #a4c2db;
   clear: both;
@@ -474,16 +476,16 @@ a.apply:hover {
   overflow: hidden;
 }
 
-/* line 244, ../../app/stylesheets/hhstyles.sass */
+/* line 170, ../../app/stylesheets/hhstyles.sass */
 ul#bullets {
   float: left;
   margin: 15px;
 }
-/* line 247, ../../app/stylesheets/hhstyles.sass */
+/* line 173, ../../app/stylesheets/hhstyles.sass */
 ul#bullets li {
   display: inline;
 }
-/* line 249, ../../app/stylesheets/hhstyles.sass */
+/* line 175, ../../app/stylesheets/hhstyles.sass */
 ul#bullets li a {
   float: left;
   padding: 0px 8px;
@@ -496,40 +498,40 @@ ul#bullets li a {
   text-indent: -9999px;
   border: solid 1px #999999;
 }
-/* line 260, ../../app/stylesheets/hhstyles.sass */
+/* line 186, ../../app/stylesheets/hhstyles.sass */
 ul#bullets li a:hover {
   background: #ffdf7f;
 }
 
-/* line 263, ../../app/stylesheets/hhstyles.sass */
+/* line 189, ../../app/stylesheets/hhstyles.sass */
 #viewAll {
   margin: 17px;
   float: right;
   font-size: 12px;
   color: white;
 }
-/* line 268, ../../app/stylesheets/hhstyles.sass */
+/* line 194, ../../app/stylesheets/hhstyles.sass */
 #viewAll:hover {
   border-bottom: dotted 1px white;
 }
 
 /*========== SIDE NAV ========== */
-/* line 273, ../../app/stylesheets/hhstyles.sass */
+/* line 199, ../../app/stylesheets/hhstyles.sass */
 #sideNavContainer {
   width: 238px;
   float: left;
   margin: 20px 15px 20px -10px;
 }
 
-/* line 278, ../../app/stylesheets/hhstyles.sass */
+/* line 204, ../../app/stylesheets/hhstyles.sass */
 #sideNav {
   width: 240px;
 }
-/* line 280, ../../app/stylesheets/hhstyles.sass */
+/* line 206, ../../app/stylesheets/hhstyles.sass */
 #sideNav li {
   border-left: solid 1px #cccccc;
 }
-/* line 282, ../../app/stylesheets/hhstyles.sass */
+/* line 208, ../../app/stylesheets/hhstyles.sass */
 #sideNav a {
   display: block;
   background: url(/images/sideNav.png) no-repeat right top;
@@ -539,19 +541,19 @@ ul#bullets li a:hover {
   text-decoration: none;
   color: white;
 }
-/* line 290, ../../app/stylesheets/hhstyles.sass */
+/* line 216, ../../app/stylesheets/hhstyles.sass */
 #sideNav a:hover {
   background: url(/images/sideNav.png) no-repeat right bottom;
   color: #666666;
 }
-/* line 293, ../../app/stylesheets/hhstyles.sass */
+/* line 219, ../../app/stylesheets/hhstyles.sass */
 #sideNav a.selected {
   background: url(/images/sideNav.png) no-repeat right center;
   color: #ffdf7f;
   width: 210px;
 }
 
-/* line 298, ../../app/stylesheets/hhstyles.sass */
+/* line 224, ../../app/stylesheets/hhstyles.sass */
 .count {
   float: right;
   font-size: 12px;
@@ -564,13 +566,13 @@ ul#bullets li a:hover {
   text-shadow: white 1px 1px 0;
 }
 
-/* line 310, ../../app/stylesheets/hhstyles.sass */
+/* line 236, ../../app/stylesheets/hhstyles.sass */
 #sideNav a:hover span, #sideNav a.selected span {
   background: #ffdf7f;
 }
 
 /*========== SEARCH FIELD ========== */
-/* line 315, ../../app/stylesheets/hhstyles.sass */
+/* line 241, ../../app/stylesheets/hhstyles.sass */
 li#search {
   background: url(/images/search.gif) no-repeat;
   padding: 8px 8px 5px;
@@ -579,7 +581,7 @@ li#search {
   margin-bottom: 10px;
 }
 
-/* line 323, ../../app/stylesheets/hhstyles.sass */
+/* line 249, ../../app/stylesheets/hhstyles.sass */
 #sideNav input[type=text] {
   color: #999999;
   background: none;
@@ -590,14 +592,14 @@ li#search {
   padding: 9px 3px;
   width: 170px;
 }
-/* line 332, ../../app/stylesheets/hhstyles.sass */
+/* line 258, ../../app/stylesheets/hhstyles.sass */
 #sideNav input[type=image] {
   float: right;
   border: none;
 }
 
 /*========== FOOTER ========== */
-/* line 338, ../../app/stylesheets/hhstyles.sass */
+/* line 264, ../../app/stylesheets/hhstyles.sass */
 #footer {
   background: #cddeeb;
   padding: 80px 0px 40px;
@@ -605,20 +607,20 @@ li#search {
   border-top: solid 4px white;
 }
 
-/* line 344, ../../app/stylesheets/hhstyles.sass */
+/* line 270, ../../app/stylesheets/hhstyles.sass */
 #footerInner {
   width: 925px;
   margin: 0px auto;
   overflow: hidden;
 }
 
-/* line 349, ../../app/stylesheets/hhstyles.sass */
+/* line 275, ../../app/stylesheets/hhstyles.sass */
 #footerOuter {
   border-top: solid 1px #666666;
   margin-top: -45px;
 }
 
-/* line 353, ../../app/stylesheets/hhstyles.sass */
+/* line 279, ../../app/stylesheets/hhstyles.sass */
 .browse {
   text-shadow: white 2px 2px 0;
   width: 285px;
@@ -626,32 +628,32 @@ li#search {
   margin: 0px 10px;
   overflow: hidden;
 }
-/* line 359, ../../app/stylesheets/hhstyles.sass */
+/* line 285, ../../app/stylesheets/hhstyles.sass */
 .browse.startups {
   margin-left: 0px;
 }
-/* line 361, ../../app/stylesheets/hhstyles.sass */
+/* line 287, ../../app/stylesheets/hhstyles.sass */
 .browse.helpers {
   margin: 0px 25px;
 }
-/* line 363, ../../app/stylesheets/hhstyles.sass */
+/* line 289, ../../app/stylesheets/hhstyles.sass */
 .browse.sponsors {
   float: right;
   margin-right: 0px;
 }
 
-/* line 368, ../../app/stylesheets/hhstyles.sass */
+/* line 294, ../../app/stylesheets/hhstyles.sass */
 #footer h4 {
   margin: 0px 10px 10px;
 }
-/* line 370, ../../app/stylesheets/hhstyles.sass */
+/* line 296, ../../app/stylesheets/hhstyles.sass */
 #footer h4 a {
   color: #666666;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
 }
-/* line 375, ../../app/stylesheets/hhstyles.sass */
+/* line 301, ../../app/stylesheets/hhstyles.sass */
 #footer p {
   color: #666666;
   font-size: 12px;
@@ -659,7 +661,7 @@ li#search {
   line-height: 16px;
   height: 80px;
 }
-/* line 381, ../../app/stylesheets/hhstyles.sass */
+/* line 307, ../../app/stylesheets/hhstyles.sass */
 #footer a.footerbutton {
   border: solid 3px white;
   background: yellow;
@@ -678,7 +680,7 @@ li#search {
   text-shadow: none;
   font-weight: bold;
 }
-/* line 398, ../../app/stylesheets/hhstyles.sass */
+/* line 324, ../../app/stylesheets/hhstyles.sass */
 #footer a.footerbutton:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#ffdf7f), to(white));
   background: -moz-linear-gradient(top, #ffdf7f, white);
@@ -696,7 +698,7 @@ li#search {
  *	font-weight: bold;
  *	behavior: url("../scripts/iepngfix.htc");
  *	} */
-/* line 415, ../../app/stylesheets/hhstyles.sass */
+/* line 341, ../../app/stylesheets/hhstyles.sass */
 #copyright {
   width: 925px;
   margin: 10px auto;
@@ -704,12 +706,12 @@ li#search {
   overflow: hidden;
   clear: both;
 }
-/* line 421, ../../app/stylesheets/hhstyles.sass */
+/* line 347, ../../app/stylesheets/hhstyles.sass */
 #copyright span {
   float: left;
 }
 
-/* line 424, ../../app/stylesheets/hhstyles.sass */
+/* line 350, ../../app/stylesheets/hhstyles.sass */
 #fmondragon {
   background: url(/images/fmondragon_logo.png) no-repeat center;
   text-indent: -99999px;
@@ -719,7 +721,7 @@ li#search {
   width: 110px;
 }
 
-/* line 432, ../../app/stylesheets/hhstyles.sass */
+/* line 358, ../../app/stylesheets/hhstyles.sass */
 #flash {
   display: none;
   position: fixed;
@@ -732,7 +734,7 @@ li#search {
   padding: 10px;
   border-bottom: 1px solid #777777;
 }
-/* line 443, ../../app/stylesheets/hhstyles.sass */
+/* line 369, ../../app/stylesheets/hhstyles.sass */
 #flash .dismiss {
   position: fixed;
   right: 10px;
@@ -741,7 +743,7 @@ li#search {
   padding: 2px 6px 4px;
   background-color: #333333;
 }
-/* line 450, ../../app/stylesheets/hhstyles.sass */
+/* line 376, ../../app/stylesheets/hhstyles.sass */
 #flash .dismiss a {
   color: #f4fc7c;
   font-weight: bold;
@@ -749,12 +751,12 @@ li#search {
   font-size: larger;
 }
 
-/* line 457, ../../app/stylesheets/hhstyles.sass */
+/* line 383, ../../app/stylesheets/hhstyles.sass */
 .clear {
   clear: both;
 }
 
-/* line 460, ../../app/stylesheets/hhstyles.sass */
+/* line 386, ../../app/stylesheets/hhstyles.sass */
 .actionbutton {
   background-color: #2b70bb;
   color: white;
@@ -778,7 +780,7 @@ li#search {
   background-image: linear-gradient(top, #2b70bb, #29abe2);
 }
 
-/* line 473, ../../app/stylesheets/hhstyles.sass */
+/* line 399, ../../app/stylesheets/hhstyles.sass */
 .actionbutton:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #29abe2), color-stop(100%, #2b70bb));
   background-image: -webkit-linear-gradient(top, #29abe2, #2b70bb);

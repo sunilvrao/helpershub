@@ -6,4 +6,5 @@ class User
   field :email, :type => String
   references_many :startups, :inverse_of=>:owner
   embeds_many :services
+  references_many :jobs, :inverse_of=>:owner
 end

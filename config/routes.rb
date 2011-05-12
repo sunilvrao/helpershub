@@ -1,7 +1,13 @@
 Helpershub::Application.routes.draw do
-  resources :categories
+  resources :jobs
 
-  resources :startups
+  resources :categories, :only=>[] do
+    resources :jobs, :only=>[:index]
+  end
+
+  resources :startups do
+    resources :jobs, :shallow=>true
+  end
 
   root :to=>"welcome#index"
   match '/signin'=>'sessions#new'

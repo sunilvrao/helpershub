@@ -10,6 +10,7 @@ class Startup
   field :deleted, :type=>Boolean
   field :deleted_at, :type=>DateTime
   referenced_in :owner, :class_name=>'User'
+  references_many :jobs
   mount_uploader :logo, LogoUploader
   validates_presence_of :name, :url
   validates_uniqueness_of :slug

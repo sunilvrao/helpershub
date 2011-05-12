@@ -8,13 +8,13 @@ class Category
   validates_presence_of :name
   validates_uniqueness_of :name, :slug
   before_create :set_slug
-  
+  has_and_belongs_to_many :jobs
   def set_slug
     unless self.slug
       slug_text = self.name.strip.downcase.gsub(/[^a-z0-9]+/,'-')
       count=0
       check_text = slug_text
-      while(Startup.where(:slug=>check_text).count>0)
+      while(Category.where(:slug=>check_text).count>0)
         count=count+1
         check_text = slug_text + "-#{count}"
       end

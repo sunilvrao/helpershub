@@ -1,0 +1,13 @@
+.post
+  %h3= link_to job.title, job
+  %h5
+    Posted by:
+    =link_to job.startup.name, job.startup
+    on #{job.created_at}
+  .applyDetails
+    %a.apply{:href => "#"} apply
+    =link_to "view details", job
+  .orgLogo
+    %img(src="#{job.startup.logo.thumb.url}")
+  .projectDescription
+    %p= job.description

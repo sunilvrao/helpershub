@@ -1,5 +1,6 @@
 class StartupsController < ApplicationController
   before_filter :authenticate_user!, :except=>[:index,:show]
+  before_filter :set_categories
   def index
     @startups = Startup.order_by(:created_at, :desc).all
   end
@@ -36,5 +37,7 @@ class StartupsController < ApplicationController
     @startup.soft_delete
     redirect_to startups_path
   end
-
+  def set_categories
+    @categories = Category.all
+  end
 end

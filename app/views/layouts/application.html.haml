@@ -4,6 +4,7 @@
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title Helper's Hub | Welcome
     =stylesheet_link_tag "hhstyles", "formtastic", "formtastic_changes"
+    =stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/base/jquery-ui.css"
     /[if lt IE 7.]
       <script defer type="text/javascript" src="scripts/pngfix.js"></script>
   %body
@@ -78,4 +79,4 @@
         =flash[:notice]
         %span.dismiss
           %a(href="#" title="Click here to dismiss") x
-    =javascript_include_tag "jquery.min.js", "rails.js", "application.js"
+    =javascript_include_tag "jquery.min.js", "rails.js","https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.js","application.js"

@@ -47,30 +47,8 @@
               %form
                 %input{:type => "text", :value => "search"}/
                 %input{:src => "/images/searchButton.gif", :type => "image", :value => "GO"}/
-            %li
-              %a{:href => "#"}
-                %span.count 76
-                introductions
-            %li
-              %a.selected{:href => "#"}
-                %span.count> 132
-                technology
-            %li
-              %a{:href => "#"}
-                %span.count> 32
-                legal
-            %li
-              %a{:href => "#"}
-                %span.count> 2
-                accounting
-            %li
-              %a{:href => "#"}
-                %span.count> 65
-                sales
-            %li
-              %a{:href => "#"}
-                %span.count> 23
-                strategy
+            - @categories.each do |cat|
+              =render :partial=>"categories/category_job", :locals=>{:category=>cat, :selected=>@selected_category}
         =yield
         .clear
       #footerOuter

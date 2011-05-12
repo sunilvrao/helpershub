@@ -1,4 +1,6 @@
 Helpershub::Application.routes.draw do
+  resources :categories
+
   resources :startups
 
   root :to=>"welcome#index"

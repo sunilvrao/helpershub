@@ -2,5 +2,5 @@
   - if current_user and @startup.owner==current_user
     .action_links
       =link_to "Edit Startup", edit_startup_path(@startup), :class=>"actionbutton", :id=>"edit_startup"
-      =link_to "Delete Startup", startup_path(@startup),:method=>:delete, :confirm=>"Are you sure you want to delete your startup?", :class=>"actionbutton", :id=>"delete_startup"
+      =link_to "Delete Startup", startup_url(@startup),:method=>:delete, :confirm=>"Are you sure you want to delete your startup?", :class=>"actionbutton", :id=>"delete_startup"
   =render @startup

@@ -59,7 +59,8 @@ class SessionsController < ApplicationController
       else
         flash[:error] = "I am sorry but we could not sign you in."
       end
-      redirect_to root_url
+      redirect_to request.env['omniauth.origin'] if request.env['omniauth.origin']
+      redirect_to root_url unless request.env['omniauth.origin']
     end
   end
 end

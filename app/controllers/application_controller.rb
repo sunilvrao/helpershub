@@ -6,7 +6,8 @@ class ApplicationController < ActionController::Base
   
   def authenticate_user!
     unless current_user
-      redirect_to signin_path
+      session[:previous_path] = request.path
+      redirect_to "/signin?origin=#{request.path}"
     end
   end
   

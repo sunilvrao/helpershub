@@ -2,4 +2,4 @@
   %h1 You can sign with any of the following services
   %ul.auth_services
     - %w(google twitter facebook linked_in).each do |service|
-      %li(class="#{service}")= link_to image_tag("#{service}_128.png"), "/auth/#{service}"
+      %li(class="#{service}")= link_to image_tag("#{service}_128.png"), "/auth/#{service}?origin=#{params[:origin]}"

@@ -1,5 +1,4 @@
 #main_container
   %h1 Recent Startups
-  - if current_user
-    =link_to "Create your startup", new_startup_path, :class=>"actionbutton", :id=>"create_startup"
+  =link_to "Create your startup", new_startup_path, :class=>"actionbutton", :id=>"create_startup"
   =render @startups

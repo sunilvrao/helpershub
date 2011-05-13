@@ -16,11 +16,11 @@
             %span.logotext Helper's Hub
         %ul
           %li
-            %a.selected{:href => "#{jobs_path}"} Jobs
+            %a(href="#{jobs_path}" class="#{'selected' if controller_name=='jobs'}") Jobs
           %li
             %a{:href => "#"} Volunteers
           %li
-            %a{:href => "#{startups_path}"}Startups
+            %a(href="#{startups_path}" class="#{'selected' if controller_name=='startups'}") Startups
           %li
             %a{:href => "#"} About Us
     #graybg

@@ -17,8 +17,10 @@ class JobsController < ApplicationController
 
   def create
     @startup = Startup.where(:slug=>params[:startup_id]).first if params[:startup_id]
+    category_ids = params[:job].delete(:category_ids)
+    category_ids.delete("")
+    params[:job][:category_ids]=category_ids
     @job = Job.new(params[:job])
-    category_ids = params[:job][:category_ids]
     categories = Category.find(category_ids)
     @startups = Startup.all
     @job.owner = current_user

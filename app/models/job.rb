@@ -15,6 +15,8 @@ class Job
   belongs_to :startup
   belongs_to :owner, :class_name=>"User"
   has_and_belongs_to_many :categories
+
+  validates_presence_of :title, :start_date, :end_date, :startup
   
   before_create :set_slug
   paginates_per 5

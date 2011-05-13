@@ -1,9 +1,10 @@
 #main_container
+  %h3.new_job_title Create a new job
   =semantic_form_for @job do |f|
     %fieldset.inputs
       %ol
-        =f.input :title
-        =f.input :description
+        =f.input :title, :label=>"Job Title"
+        =f.input :description, :as=>:text, :input_html=>{:rows=>5}, :label=>"Job Description"
         =f.input :start_date, :input_html=>{:class=>"date",:value=>@job.start_date.strftime("%d %b %Y")}
         =f.input :end_date, :input_html=>{:class=>"date",:value=>@job.end_date.strftime("%d %b %Y")}
         =f.input :location

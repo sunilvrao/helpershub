@@ -9,7 +9,7 @@ Helpershub::Application.routes.draw do
     resources :jobs, :shallow=>true
   end
 
-  root :to=>"welcome#index"
+  root :to=>"jobs#index"
   match '/signin'=>'sessions#new'
   match '/signout'=>'sessions#destroy'
   match '/auth/:service/callback'=>'sessions#create'

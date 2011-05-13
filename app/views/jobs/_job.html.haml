@@ -3,11 +3,11 @@
   %h5
     Posted by:
     =link_to job.startup.name, job.startup
-    on #{job.created_at}
+    on #{job.created_at.strftime("%d %b %Y")}
   .applyDetails
     %a.apply{:href => "#"} apply
     =link_to "view details", job
   .orgLogo
     %img(src="#{job.startup.logo.thumb.url}")
   .projectDescription
-    %p= job.description
+    %p= shrink(job.description)

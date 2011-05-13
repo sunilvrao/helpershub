@@ -1,5 +1,64 @@
 /*========== POST ==========
 
+
+#main_container
+  h3.new_job_title
+    margin-left: 18px
+    font-size: 22px
+    font-weight: bold
+  #sub_header
+    float: left
+    width: 100%
+    clear: both
+    h3
+      float: left
+      font-size: 22px
+      font-weight: bold
+    #new_job
+      float: right
+  #pagination
+    background: #A4C2DB
+    float: left
+    clear: both
+    width: 100%
+    margin-left: -5px
+    padding: 6px
+    #links
+      float: left
+      .page
+        a
+          float: left
+          padding: 0px 8px
+          margin-right: 9px
+          background: #E7E7E0
+          +border-radius(14px)
+          text-indent: -9999px
+          border: solid 1px #999
+          &:hover
+            background: #FFDF7F
+      .page.current
+        float: left
+        padding: 0px 4px
+        margin-right: 9px
+        background: #E7E7E0
+        +border-radius(14px)
+        text-indent: -9999px
+        border: solid 1px #999
+      .next
+        display: none
+      .last
+        display: none
+      .prev
+        display: none
+      .first
+        display: none
+    #view_all
+      float: right
+      margin-right: 10px
+      a
+        color: #eee
+        font-size: smaller
+
 .post
   border-bottom: solid 1px #ccc
   padding: 20px 0px
@@ -14,20 +73,24 @@
 .post
   p
     font-size: 12px
-    width: 300px
     line-height: 15px
+    display: block
+    float: left
+    width: 550px
   a
     text-decoration: underline
     color: #A4C2DB
     &:hover
       border-bottom: dotted 1px #A4C2DB
-  h3 a
-    text-decoration: none
-    font-weight: bold
-    font-size: 16px
-    color: #666
-    &:hover
-      border: none
+  h3 
+    margin-left: 0
+    a
+      text-decoration: none
+      font-weight: bold
+      font-size: 16px
+      color: #666
+      &:hover
+        border: none
 
 h5
   margin-top: 3px

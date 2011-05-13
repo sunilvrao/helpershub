@@ -17,7 +17,7 @@ class Job
   has_and_belongs_to_many :categories
   
   before_create :set_slug
-  
+  paginates_per 5
   def set_slug
     unless self.slug
       slug_text = self.title.strip.downcase.gsub(/[^a-z0-9]+/,'-')

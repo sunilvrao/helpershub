@@ -11,18 +11,18 @@
     #header
       #headerInner
         %h1#logo
-          %a{:href => "#"}
+          %a{:href => "#{root_path}"}
             %img{:alt => "Helper's Hub Logo", :src => "/images/helpers_hub_logo.png"}/
             %span.logotext Helper's Hub
         %ul
           %li
-            %a{:href => "#"} Link One
+            %a.selected{:href => "#{jobs_path}"} Jobs
           %li
-            %a.selected{:href => "#"} Link Two
+            %a{:href => "#"} Volunteers
           %li
-            %a{:href => "#"} Link Three
+            %a{:href => "#"} Startups
           %li
-            %a{:href => "#"} Link four
+            %a{:href => "#"} About Us
     #graybg
       - if not current_user
         #joinHelpersHub

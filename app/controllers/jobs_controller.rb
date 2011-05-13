@@ -39,6 +39,34 @@ class JobsController < ApplicationController
     @job=Job.where(:slug=>params[:id]).first
   end
 
+  def edit
+    @job=Job.where(:slug=>params[:id]).first
+    @startups = Startup.all
+  end
+
+  def update
+    @job=Job.where(:slug=>params[:id]).first
+    category_ids = params[:job].delete(:category_ids)
+    category_ids.delete("")
+    removed_cats = @job.category_ids.collect(&:to_s) - category_ids
+    added_cats = category_ids - @job.category_ids.collect(&:to_s)
+    puts category_ids.inspect
+    puts removed_cats.inspect
+    puts added_cats.inspect
+    if(@job.update_attributes(params[:job]))
+      added_cats.each do |c|
+        Category.find(c).inc(:job_count,1)
+      end
+      removed_cats.each do |c|
+        Category.find(c).inc(:job_count,-1)
+      end
+      flash[:notice] = "Job updated successfully"
+      redirect_to @job
+    else
+      render :action=>:edit
+    end
+  end
+
   private
   
   def set_categories

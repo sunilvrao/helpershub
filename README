@@ -3,6 +3,6 @@ HelpersHub is a Rails application that does the following.
 1) Startups and Individuals can register
 2) Startups can post jobs
 3) Individuals can apply for jobs
-
-
+4) Also find a list of sponsors
+5) As an individual you can also follow startups
 It is based off Rails 3, MongoDB, HAML, Sass and MongoDB

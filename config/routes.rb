@@ -1,9 +1,14 @@
 Helpershub::Application.routes.draw do
 
-  resources :job_applications
+  devise_for :admins do 
+    get "/admin"=>"admin#index", :as=>:admin_root
+  end
+
+  resources :profiles
+
 
   resources :jobs do
-    resources :job_applications
+    resources :job_applications, :only=>[:create]
     resources :questions, :only=>[:create]
     member do
       get "apply"

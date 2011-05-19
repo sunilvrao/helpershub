@@ -1,0 +1,45 @@
+@import "compass/reset"
+@import "blueprint/grid"
+@import "compass/css3/border-radius"
+@import "compass/css3/box-shadow"
+body
+  background-color: #333
+  color: #eee
+  font-size: 1.2em
+  a
+    color: #fff
+.container
+  +container
+  font-family: "Helvetica Neue", "Helvetica"
+  h1
+    font-size: 2em
+    color: #eef
+    text-align: center
+  #sign_in_form
+    +column(12)
+    +push(6)
+    margin-top: 100px
+    border: 1px solid #eee
+    padding-bottom: 10px
+    +border-radius(8px)
+    h2
+      background-color: #ddd
+      padding: 5px
+      margin-bottom: 10px
+      color: #555
+      +border-top-left-radius(8px)
+      +border-top-right-radius(8px)
+    form
+      margin: 10px
+      input
+        margin: 5px 0
+        padding: 5px
+      input[type=email]
+        width: 90%
+      input[type=password]
+        width: 90%
+      label
+        margin: 5px 0
+    .devise_links
+      margin: 10px
+

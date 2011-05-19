@@ -7,4 +7,6 @@ class User
   references_many :startups, :inverse_of=>:owner
   embeds_many :services
   references_many :jobs, :inverse_of=>:owner
+  has_one :profile
+  accepts_nested_attributes_for :profile
 end

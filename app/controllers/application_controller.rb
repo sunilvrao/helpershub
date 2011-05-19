@@ -1,8 +1,16 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-
   
+  layout :layout_by_resource
   private
+
+  def layout_by_resource
+    if devise_controller? && resource_name == :admin
+      "admin"
+    else
+      "application"
+    end
+  end
   
   def authenticate_user!
     unless current_user

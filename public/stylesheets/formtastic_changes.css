@@ -30,3 +30,7 @@ form.formtastic fieldset ol li textarea {
 form.formtastic fieldset ol li p.inline-errors {
   margin: 0.5em 0 0 0;
 }
+/* line 20, ../../app/stylesheets/formtastic_changes.sass */
+form.formtastic fieldset.buttons {
+  padding-left: 0;
+}

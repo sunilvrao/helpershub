@@ -5,7 +5,7 @@
     =link_to job.startup.name, job.startup
     on #{job.created_at.strftime("%d %b %Y")}
   .applyDetails
-    %a.apply{:href => "#"} apply
+    =link_to "apply",apply_job_path(job), :class=>"apply"
     =link_to "view details", job
   .orgLogo
     %img(src="#{job.startup.logo.thumb.url}")

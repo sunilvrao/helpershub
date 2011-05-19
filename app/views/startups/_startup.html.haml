@@ -7,5 +7,6 @@
       =link_to startup.url, startup.url
       #{startup.address}, #{startup.country}
     %p.time
-      Registered about #{time_ago_in_words startup.created_at} ago.
+      Registered about #{time_ago_in_words startup.created_at} ago. 
+      %span.job_count (#{startup.jobs.count} jobs)
     %p.description= startup.description

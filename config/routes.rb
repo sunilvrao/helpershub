@@ -1,5 +1,14 @@
 Helpershub::Application.routes.draw do
-  resources :jobs
+
+  resources :job_applications
+
+  resources :jobs do
+    resources :job_applications
+    resources :questions, :only=>[:create]
+    member do
+      get "apply"
+    end
+  end
 
   resources :categories, :only=>[] do
     resources :jobs, :only=>[:index]

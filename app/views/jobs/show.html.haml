@@ -1,3 +1,7 @@
 #main_container
-  =link_to "Edit job", edit_job_path(@job), :class=>"actionbutton"
+  - if current_user==@job.owner
+    .action_buttons
+      =link_to "Edit job", edit_job_path(@job), :class=>"actionbutton"
   =render @job
+  %h3 Showing Job Applications
+  =render @job.job_applications

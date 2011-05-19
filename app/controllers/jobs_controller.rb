@@ -11,7 +11,7 @@ class JobsController < ApplicationController
   def new
     @startup = Startup.where(:slug=>params[:startup_id]).first if params[:startup_id]
     @job = Job.new unless @startup
-    @startups = Startup.all
+    @startups = current_user.startups
     @job = @startup.jobs.build if @startup
   end
 
@@ -43,7 +43,7 @@ class JobsController < ApplicationController
 
   def edit
     @job=Job.where(:slug=>params[:id]).first
-    @startups = Startup.all
+    @startups = current_user.startups
   end
 
   def update
@@ -69,11 +69,16 @@ class JobsController < ApplicationController
     end
   end
 
+  def apply
+    @job= Job.where(:slug=>params[:id]).first
+    @job_application = @job.job_applications.build
+  end
   private
   
   def set_categories
     @categories=Category.all
     @selected_category = params[:category_id] 
   end
+
 
 end

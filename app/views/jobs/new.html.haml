@@ -1,3 +1,9 @@
 #main_container
   %h3.new_job_title Create a new job
-  =render :partial=>"form"
+  - if @startups.blank?
+    %p.warn
+      Please 
+      =link_to "register your startup", new_startup_path
+      before creating a job.
+  -else
+    =render :partial=>"form"

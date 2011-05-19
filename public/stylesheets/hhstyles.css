@@ -124,71 +124,99 @@ body {
 /* line 15, ../../app/stylesheets/_startups.sass */
 #main_container .action_links {
   float: right;
+  clear: both;
 }
-/* line 17, ../../app/stylesheets/_startups.sass */
+/* line 18, ../../app/stylesheets/_startups.sass */
 #main_container .startup {
   float: left;
   clear: both;
+  width: 100%;
   margin-top: 10px;
-  border-bottom: 1px dashed #777777;
 }
-/* line 22, ../../app/stylesheets/_startups.sass */
+/* line 23, ../../app/stylesheets/_startups.sass */
 #main_container .startup .logo {
   width: 55px;
   float: left;
   padding: 3px;
   border: 1px solid #cccccc;
 }
-/* line 27, ../../app/stylesheets/_startups.sass */
+/* line 28, ../../app/stylesheets/_startups.sass */
 #main_container .startup .contents {
   float: left;
   width: 635px;
   margin: 0 10px;
 }
-/* line 31, ../../app/stylesheets/_startups.sass */
+/* line 32, ../../app/stylesheets/_startups.sass */
 #main_container .startup .contents h3.name {
   font-weight: bold;
   font-size: 20px;
 }
-/* line 34, ../../app/stylesheets/_startups.sass */
+/* line 35, ../../app/stylesheets/_startups.sass */
 #main_container .startup .contents h3.name a {
   text-decoration: none;
   color: #555555;
 }
-/* line 37, ../../app/stylesheets/_startups.sass */
+/* line 38, ../../app/stylesheets/_startups.sass */
 #main_container .startup .contents .time {
   margin-top: 5px;
   font-size: smaller;
 }
-/* line 40, ../../app/stylesheets/_startups.sass */
+/* line 41, ../../app/stylesheets/_startups.sass */
 #main_container .startup .contents p.description {
+  float: left;
   margin: 10px 0;
+}
+/* line 45, ../../app/stylesheets/_startups.sass */
+#main_container .jobs {
+  width: 100%;
+  clear: both;
+}
+/* line 48, ../../app/stylesheets/_startups.sass */
+#main_container .jobs h3.jobs_list {
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+}
+/* line 52, ../../app/stylesheets/_startups.sass */
+#main_container .jobs .action_links {
+  clear: none;
+}
+/* line 54, ../../app/stylesheets/_startups.sass */
+#main_container .jobs hr {
+  width: 100%;
 }
 
 /*========== POST ========== */
 /* line 5, ../../app/stylesheets/_jobs.sass */
+#main_container p.warn {
+  margin: 18px;
+  background-color: #ffffdd;
+  padding: 10px;
+  border: 1px solid #999933;
+}
+/* line 10, ../../app/stylesheets/_jobs.sass */
 #main_container h3.new_job_title {
   margin-left: 18px;
   font-size: 22px;
   font-weight: bold;
 }
-/* line 9, ../../app/stylesheets/_jobs.sass */
+/* line 14, ../../app/stylesheets/_jobs.sass */
 #main_container #sub_header {
   float: left;
   width: 100%;
   clear: both;
 }
-/* line 13, ../../app/stylesheets/_jobs.sass */
+/* line 18, ../../app/stylesheets/_jobs.sass */
 #main_container #sub_header h3 {
   float: left;
   font-size: 22px;
   font-weight: bold;
 }
-/* line 17, ../../app/stylesheets/_jobs.sass */
+/* line 22, ../../app/stylesheets/_jobs.sass */
 #main_container #sub_header #new_job {
   float: right;
 }
-/* line 19, ../../app/stylesheets/_jobs.sass */
+/* line 24, ../../app/stylesheets/_jobs.sass */
 #main_container #pagination {
   background: #a4c2db;
   float: left;
@@ -197,11 +225,11 @@ body {
   margin-left: -5px;
   padding: 6px;
 }
-/* line 26, ../../app/stylesheets/_jobs.sass */
+/* line 31, ../../app/stylesheets/_jobs.sass */
 #main_container #pagination #links {
   float: left;
 }
-/* line 29, ../../app/stylesheets/_jobs.sass */
+/* line 34, ../../app/stylesheets/_jobs.sass */
 #main_container #pagination #links .page a {
   float: left;
   padding: 0px 8px;
@@ -216,11 +244,11 @@ body {
   text-indent: -9999px;
   border: solid 1px #999999;
 }
-/* line 37, ../../app/stylesheets/_jobs.sass */
+/* line 42, ../../app/stylesheets/_jobs.sass */
 #main_container #pagination #links .page a:hover {
   background: #ffdf7f;
 }
-/* line 39, ../../app/stylesheets/_jobs.sass */
+/* line 44, ../../app/stylesheets/_jobs.sass */
 #main_container #pagination #links .page.current {
   float: left;
   padding: 0px 4px;
@@ -235,34 +263,34 @@ body {
   text-indent: -9999px;
   border: solid 1px #999999;
 }
-/* line 47, ../../app/stylesheets/_jobs.sass */
+/* line 52, ../../app/stylesheets/_jobs.sass */
 #main_container #pagination #links .next {
   display: none;
 }
-/* line 49, ../../app/stylesheets/_jobs.sass */
+/* line 54, ../../app/stylesheets/_jobs.sass */
 #main_container #pagination #links .last {
   display: none;
 }
-/* line 51, ../../app/stylesheets/_jobs.sass */
+/* line 56, ../../app/stylesheets/_jobs.sass */
 #main_container #pagination #links .prev {
   display: none;
 }
-/* line 53, ../../app/stylesheets/_jobs.sass */
+/* line 58, ../../app/stylesheets/_jobs.sass */
 #main_container #pagination #links .first {
   display: none;
 }
-/* line 55, ../../app/stylesheets/_jobs.sass */
+/* line 60, ../../app/stylesheets/_jobs.sass */
 #main_container #pagination #view_all {
   float: right;
   margin-right: 10px;
 }
-/* line 58, ../../app/stylesheets/_jobs.sass */
+/* line 63, ../../app/stylesheets/_jobs.sass */
 #main_container #pagination #view_all a {
   color: #eeeeee;
   font-size: smaller;
 }
 
-/* line 62, ../../app/stylesheets/_jobs.sass */
+/* line 67, ../../app/stylesheets/_jobs.sass */
 .post {
   border-bottom: solid 1px #cccccc;
   padding: 20px 0px;
@@ -270,14 +298,14 @@ body {
   width: 100%;
 }
 
-/* line 68, ../../app/stylesheets/_jobs.sass */
+/* line 73, ../../app/stylesheets/_jobs.sass */
 .orgLogo {
   float: left;
   border: solid 1px #cccccc;
   margin-right: 10px;
 }
 
-/* line 74, ../../app/stylesheets/_jobs.sass */
+/* line 79, ../../app/stylesheets/_jobs.sass */
 .post p {
   font-size: 12px;
   line-height: 15px;
@@ -285,50 +313,50 @@ body {
   float: left;
   width: 550px;
 }
-/* line 80, ../../app/stylesheets/_jobs.sass */
+/* line 85, ../../app/stylesheets/_jobs.sass */
 .post a {
   text-decoration: underline;
   color: #a4c2db;
 }
-/* line 83, ../../app/stylesheets/_jobs.sass */
+/* line 88, ../../app/stylesheets/_jobs.sass */
 .post a:hover {
   border-bottom: dotted 1px #a4c2db;
 }
-/* line 85, ../../app/stylesheets/_jobs.sass */
+/* line 90, ../../app/stylesheets/_jobs.sass */
 .post h3 {
   margin-left: 0;
 }
-/* line 87, ../../app/stylesheets/_jobs.sass */
+/* line 92, ../../app/stylesheets/_jobs.sass */
 .post h3 a {
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
   color: #666666;
 }
-/* line 92, ../../app/stylesheets/_jobs.sass */
+/* line 97, ../../app/stylesheets/_jobs.sass */
 .post h3 a:hover {
   border: none;
 }
 
-/* line 95, ../../app/stylesheets/_jobs.sass */
+/* line 100, ../../app/stylesheets/_jobs.sass */
 h5 {
   margin-top: 3px;
   margin-bottom: 10px;
   font-size: 12px;
 }
 
-/* line 100, ../../app/stylesheets/_jobs.sass */
+/* line 105, ../../app/stylesheets/_jobs.sass */
 .applyDetails {
   float: right;
   width: 100px;
   text-align: center;
 }
-/* line 104, ../../app/stylesheets/_jobs.sass */
+/* line 109, ../../app/stylesheets/_jobs.sass */
 .applyDetails a {
   font-size: 12px;
 }
 
-/* line 107, ../../app/stylesheets/_jobs.sass */
+/* line 112, ../../app/stylesheets/_jobs.sass */
 a.apply {
   -moz-box-shadow: 0px 0px 4px #999999;
   -webkit-box-shadow: 0px 0px 4px #999999;
@@ -352,7 +380,7 @@ a.apply {
   font-size: 20px;
   text-shadow: #666666 2px 2px 0;
 }
-/* line 129, ../../app/stylesheets/_jobs.sass */
+/* line 134, ../../app/stylesheets/_jobs.sass */
 a.apply:hover {
   border-bottom: solid 3px white;
   background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(white));
@@ -360,11 +388,11 @@ a.apply:hover {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#999999', EndColorStr='#ffffff');
 }
 
-/* line 135, ../../app/stylesheets/_jobs.sass */
+/* line 140, ../../app/stylesheets/_jobs.sass */
 .post h5 a {
   color: #666666;
 }
-/* line 137, ../../app/stylesheets/_jobs.sass */
+/* line 142, ../../app/stylesheets/_jobs.sass */
 .post h5 a:hover {
   border-bottom-color: #666666;
 }

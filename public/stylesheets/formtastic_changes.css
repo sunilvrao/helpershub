@@ -31,6 +31,11 @@ form.formtastic fieldset ol li p.inline-errors {
   margin: 0.5em 0 0 0;
 }
 /* line 20, ../../app/stylesheets/formtastic_changes.sass */
+form.formtastic fieldset ol li p.inline-hints {
+  margin: 0.5em 0 0 0;
+  font-size: smaller;
+}
+/* line 23, ../../app/stylesheets/formtastic_changes.sass */
 form.formtastic fieldset.buttons {
   padding-left: 0;
 }

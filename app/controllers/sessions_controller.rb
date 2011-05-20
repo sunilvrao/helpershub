@@ -43,24 +43,36 @@ class SessionsController < ApplicationController
         @auth[:provider] = "linked_in"
         @bio = omniauth['user_info']['description']
       end
+      if service_name=="facebook"
+        @auth[:uid] = omniauth['uid']
+        @auth[:uname] = omniauth['user_info']['name']
+        @auth[:provider] = "facebook"
+        @auth[:email] = omniauth['user_info']['email']
+        @bio = omniauth['user_info']['description']
+      end
 
       # find out the associated user or else create one
       if @auth[:uid] and not @auth[:uid].blank?
-        user = User.where("services.uid"=>@auth[:uid]).first
-        if(user) 
-          session[:current_user_id]=user.id.to_s
+        @user = User.where("services.uid"=>@auth[:uid]).first
+        if(@user) 
+          session[:current_user_id]=@user.id.to_s
         else
           u = User.new(:full_name=>@auth[:uname], :email=>@auth[:email])
           u.bio = @bio if @bio
           s = u.services.build(@auth)
           u.save!
           session[:current_user_id]=u.id.to_s
+          @user=u
         end
       else
         flash[:error] = "I am sorry but we could not sign you in."
       end
-      redirect_to request.env['omniauth.origin'] if request.env['omniauth.origin']
-      redirect_to root_url unless request.env['omniauth.origin']
+      if(@user and (not @user.activated))
+        redirect_to profile_path
+      else
+        redirect_to request.env['omniauth.origin'] if request.env['omniauth.origin']
+        redirect_to root_url unless request.env['omniauth.origin']
+      end
     end
   end
 end

@@ -1,5 +1,6 @@
 class StartupsController < ApplicationController
-  before_filter :authenticate_user!, :except=>[:index,:show]
+  before_filter :authenticate_user!
+  before_filter :must_be_activated!
   before_filter :set_categories
   def index
     @startups = Startup.order_by(:created_at, :desc).all

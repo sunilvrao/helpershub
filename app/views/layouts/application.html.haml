@@ -48,8 +48,10 @@
               %form
                 %input{:type => "text", :value => "search"}/
                 %input{:src => "/images/searchButton.gif", :type => "image", :value => "GO"}/
-            - @categories.each do |cat|
-              =render :partial=>"categories/category_job", :locals=>{:category=>cat, :selected=>@selected_category}
+            -if yield(:sidebar).blank?
+              =render :partial=>"categories_sidebar" 
+            -else
+              =yield :sidebar
         =yield
         .clear
       #footerOuter

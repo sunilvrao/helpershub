@@ -5,7 +5,7 @@ Helpershub::Application.routes.draw do
   end
 
   resources :profiles
-
+  resources :users, :only=>[:edit, :update]
 
   resources :jobs do
     resources :job_applications, :only=>[:create]
@@ -23,7 +23,10 @@ Helpershub::Application.routes.draw do
     resources :jobs, :shallow=>true
   end
 
-  root :to=>"jobs#index"
+  root :to=>"welcome#index"
+  match "not-activated"=>"welcome#not_activated", :as=>:not_activated
+  get "profile"=>"welcome#profile", :as=>:profile
+  get "dashboard"=>"welcome#dashboard"
   match '/signin'=>'sessions#new'
   match '/signout'=>'sessions#destroy'
   match '/auth/:service/callback'=>'sessions#create'

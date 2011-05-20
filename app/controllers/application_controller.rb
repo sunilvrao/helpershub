@@ -13,9 +13,15 @@ class ApplicationController < ActionController::Base
   end
   
   def authenticate_user!
-    unless current_user
+    if not current_user
       session[:previous_path] = request.path
       redirect_to "/signin?origin=#{request.path}"
+    end
+  end
+
+  def must_be_activated!
+    if(current_user and (not current_user.activated))
+      redirect_to not_activated_path
     end
   end
   

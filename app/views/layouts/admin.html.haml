@@ -3,8 +3,9 @@
   %head
     %title Helpers Hub
     =stylesheet_link_tag "admins"
+    =javascript_include_tag "jquery.min.js","rails.js","application.js"
     = csrf_meta_tag
   %body
     .container
-      %h1 Welcome to Helpers Hub Admin section
+      %h1 Manage Helpers Hub
       =yield

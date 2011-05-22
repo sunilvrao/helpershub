@@ -2,6 +2,7 @@ class RequestsController < ApplicationController
   before_filter :authenticate_user!
   before_filter :must_be_activated!
   before_filter :set_categories
+  
   def index
     @startup = Startup.where(:slug=>params[:startup_id]).first if params[:startup_id]
     @category = Category.where(:slug=>params[:category_id]).first if params[:category_id]
@@ -9,6 +10,7 @@ class RequestsController < ApplicationController
     @requests= @startup.requests.page(params[:page]) if @startup
     @requests= @category.requests.page(params[:page]) if @category
   end
+  
   def new
     @startup = Startup.where(:slug=>params[:startup_id]).first if params[:startup_id]
     @request= Request.new unless @startup
@@ -40,6 +42,7 @@ class RequestsController < ApplicationController
 
   def show
     @request=Request.where(:slug=>params[:id]).first
+    @comments = @request.comments
   end
 
   def edit
@@ -71,12 +74,11 @@ class RequestsController < ApplicationController
     @request= Request.where(:slug=>params[:id]).first
     @commitment= @request.commitments.build
   end
+  
   private
   
   def set_categories
     @categories=Category.all
     @selected_category = params[:category_id] 
   end
-
-
 end

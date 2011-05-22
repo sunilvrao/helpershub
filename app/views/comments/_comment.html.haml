@@ -1,0 +1,4 @@
+.comment
+  - require 'pp'; pp comment
+  .description #{comment.user.full_name} on #{comment.created_at.strftime("%d-%b-%y %I:%M %p")}
+  .content= comment.content

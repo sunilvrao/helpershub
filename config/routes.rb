@@ -16,6 +16,7 @@ Helpershub::Application.routes.draw do
 
   resources :requests do
     resources :commitments, :only=>[:create]
+    resources :comments, :only=>[:create]
     member do
       get "commit"
     end

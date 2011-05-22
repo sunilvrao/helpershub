@@ -604,9 +604,10 @@ a.apply:hover {
   width: 720px;
   margin-top: 20px;
   float: left;
+  border-left: 1px solid #777777;
 }
 
-/* line 146, ../../app/stylesheets/hhstyles.sass */
+/* line 147, ../../app/stylesheets/hhstyles.sass */
 #hub {
   width: 970px;
   margin: 0px auto;
@@ -622,7 +623,7 @@ a.apply:hover {
 }
 
 /*========== JQUERY NAV ========== */
-/* line 160, ../../app/stylesheets/hhstyles.sass */
+/* line 161, ../../app/stylesheets/hhstyles.sass */
 #nav {
   background: #a4c2db;
   clear: both;
@@ -635,16 +636,16 @@ a.apply:hover {
   overflow: hidden;
 }
 
-/* line 171, ../../app/stylesheets/hhstyles.sass */
+/* line 172, ../../app/stylesheets/hhstyles.sass */
 ul#bullets {
   float: left;
   margin: 15px;
 }
-/* line 174, ../../app/stylesheets/hhstyles.sass */
+/* line 175, ../../app/stylesheets/hhstyles.sass */
 ul#bullets li {
   display: inline;
 }
-/* line 176, ../../app/stylesheets/hhstyles.sass */
+/* line 177, ../../app/stylesheets/hhstyles.sass */
 ul#bullets li a {
   float: left;
   padding: 0px 8px;
@@ -657,40 +658,40 @@ ul#bullets li a {
   text-indent: -9999px;
   border: solid 1px #999999;
 }
-/* line 187, ../../app/stylesheets/hhstyles.sass */
+/* line 188, ../../app/stylesheets/hhstyles.sass */
 ul#bullets li a:hover {
   background: #ffdf7f;
 }
 
-/* line 190, ../../app/stylesheets/hhstyles.sass */
+/* line 191, ../../app/stylesheets/hhstyles.sass */
 #viewAll {
   margin: 17px;
   float: right;
   font-size: 12px;
   color: white;
 }
-/* line 195, ../../app/stylesheets/hhstyles.sass */
+/* line 196, ../../app/stylesheets/hhstyles.sass */
 #viewAll:hover {
   border-bottom: dotted 1px white;
 }
 
 /*========== SIDE NAV ========== */
-/* line 200, ../../app/stylesheets/hhstyles.sass */
+/* line 201, ../../app/stylesheets/hhstyles.sass */
 #sideNavContainer {
   width: 238px;
   float: left;
   margin: 20px 15px 20px -10px;
 }
 
-/* line 205, ../../app/stylesheets/hhstyles.sass */
+/* line 206, ../../app/stylesheets/hhstyles.sass */
 #sideNav {
   width: 240px;
 }
-/* line 207, ../../app/stylesheets/hhstyles.sass */
+/* line 208, ../../app/stylesheets/hhstyles.sass */
 #sideNav li {
   border-left: solid 1px #cccccc;
 }
-/* line 209, ../../app/stylesheets/hhstyles.sass */
+/* line 210, ../../app/stylesheets/hhstyles.sass */
 #sideNav a {
   display: block;
   background: url(/images/sideNav.png) no-repeat right top;
@@ -700,19 +701,19 @@ ul#bullets li a:hover {
   text-decoration: none;
   color: white;
 }
-/* line 217, ../../app/stylesheets/hhstyles.sass */
+/* line 218, ../../app/stylesheets/hhstyles.sass */
 #sideNav a:hover {
   background: url(/images/sideNav.png) no-repeat right bottom;
   color: #666666;
 }
-/* line 220, ../../app/stylesheets/hhstyles.sass */
+/* line 221, ../../app/stylesheets/hhstyles.sass */
 #sideNav a.selected {
   background: url(/images/sideNav.png) no-repeat right center;
   color: #ffdf7f;
   width: 210px;
 }
 
-/* line 225, ../../app/stylesheets/hhstyles.sass */
+/* line 226, ../../app/stylesheets/hhstyles.sass */
 .count {
   float: right;
   font-size: 12px;
@@ -725,13 +726,13 @@ ul#bullets li a:hover {
   text-shadow: white 1px 1px 0;
 }
 
-/* line 237, ../../app/stylesheets/hhstyles.sass */
+/* line 238, ../../app/stylesheets/hhstyles.sass */
 #sideNav a:hover span, #sideNav a.selected span {
   background: #ffdf7f;
 }
 
 /*========== SEARCH FIELD ========== */
-/* line 242, ../../app/stylesheets/hhstyles.sass */
+/* line 243, ../../app/stylesheets/hhstyles.sass */
 li#search {
   background: url(/images/search.gif) no-repeat;
   padding: 8px 8px 5px;
@@ -740,7 +741,7 @@ li#search {
   margin-bottom: 10px;
 }
 
-/* line 250, ../../app/stylesheets/hhstyles.sass */
+/* line 251, ../../app/stylesheets/hhstyles.sass */
 #sideNav input[type=text] {
   color: #999999;
   background: none;
@@ -751,14 +752,14 @@ li#search {
   padding: 9px 3px;
   width: 170px;
 }
-/* line 259, ../../app/stylesheets/hhstyles.sass */
+/* line 260, ../../app/stylesheets/hhstyles.sass */
 #sideNav input[type=image] {
   float: right;
   border: none;
 }
 
 /*========== FOOTER ========== */
-/* line 265, ../../app/stylesheets/hhstyles.sass */
+/* line 266, ../../app/stylesheets/hhstyles.sass */
 #footer {
   background: #cddeeb;
   padding: 80px 0px 40px;
@@ -766,20 +767,20 @@ li#search {
   border-top: solid 4px white;
 }
 
-/* line 271, ../../app/stylesheets/hhstyles.sass */
+/* line 272, ../../app/stylesheets/hhstyles.sass */
 #footerInner {
   width: 925px;
   margin: 0px auto;
   overflow: hidden;
 }
 
-/* line 276, ../../app/stylesheets/hhstyles.sass */
+/* line 277, ../../app/stylesheets/hhstyles.sass */
 #footerOuter {
   border-top: solid 1px #666666;
   margin-top: -45px;
 }
 
-/* line 280, ../../app/stylesheets/hhstyles.sass */
+/* line 281, ../../app/stylesheets/hhstyles.sass */
 .browse {
   text-shadow: white 2px 2px 0;
   width: 285px;
@@ -787,32 +788,32 @@ li#search {
   margin: 0px 10px;
   overflow: hidden;
 }
-/* line 286, ../../app/stylesheets/hhstyles.sass */
+/* line 287, ../../app/stylesheets/hhstyles.sass */
 .browse.startups {
   margin-left: 0px;
 }
-/* line 288, ../../app/stylesheets/hhstyles.sass */
+/* line 289, ../../app/stylesheets/hhstyles.sass */
 .browse.helpers {
   margin: 0px 25px;
 }
-/* line 290, ../../app/stylesheets/hhstyles.sass */
+/* line 291, ../../app/stylesheets/hhstyles.sass */
 .browse.sponsors {
   float: right;
   margin-right: 0px;
 }
 
-/* line 295, ../../app/stylesheets/hhstyles.sass */
+/* line 296, ../../app/stylesheets/hhstyles.sass */
 #footer h4 {
   margin: 0px 10px 10px;
 }
-/* line 297, ../../app/stylesheets/hhstyles.sass */
+/* line 298, ../../app/stylesheets/hhstyles.sass */
 #footer h4 a {
   color: #666666;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
 }
-/* line 302, ../../app/stylesheets/hhstyles.sass */
+/* line 303, ../../app/stylesheets/hhstyles.sass */
 #footer p {
   color: #666666;
   font-size: 12px;
@@ -820,7 +821,7 @@ li#search {
   line-height: 16px;
   height: 80px;
 }
-/* line 308, ../../app/stylesheets/hhstyles.sass */
+/* line 309, ../../app/stylesheets/hhstyles.sass */
 #footer a.footerbutton {
   border: solid 3px white;
   background: yellow;
@@ -839,7 +840,7 @@ li#search {
   text-shadow: none;
   font-weight: bold;
 }
-/* line 325, ../../app/stylesheets/hhstyles.sass */
+/* line 326, ../../app/stylesheets/hhstyles.sass */
 #footer a.footerbutton:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#ffdf7f), to(white));
   background: -moz-linear-gradient(top, #ffdf7f, white);
@@ -857,7 +858,7 @@ li#search {
  *	font-weight: bold;
  *	behavior: url("../scripts/iepngfix.htc");
  *	} */
-/* line 342, ../../app/stylesheets/hhstyles.sass */
+/* line 343, ../../app/stylesheets/hhstyles.sass */
 #copyright {
   width: 925px;
   margin: 10px auto;
@@ -865,12 +866,12 @@ li#search {
   overflow: visible;
   clear: both;
 }
-/* line 348, ../../app/stylesheets/hhstyles.sass */
+/* line 349, ../../app/stylesheets/hhstyles.sass */
 #copyright span {
   float: left;
 }
 
-/* line 351, ../../app/stylesheets/hhstyles.sass */
+/* line 352, ../../app/stylesheets/hhstyles.sass */
 #fmondragon {
   background: url(/images/fmondragon_logo.png) no-repeat center;
   text-indent: -99999px;
@@ -880,7 +881,7 @@ li#search {
   width: 110px;
 }
 
-/* line 358, ../../app/stylesheets/hhstyles.sass */
+/* line 359, ../../app/stylesheets/hhstyles.sass */
 #dharana {
   background: url(/images/dharana_logo_30px.png) no-repeat center;
   text-indent: -9999px;
@@ -892,7 +893,7 @@ li#search {
   margin-right: 10px;
 }
 
-/* line 368, ../../app/stylesheets/hhstyles.sass */
+/* line 369, ../../app/stylesheets/hhstyles.sass */
 #flash {
   display: none;
   position: fixed;
@@ -905,7 +906,7 @@ li#search {
   padding: 10px;
   border-bottom: 1px solid #777777;
 }
-/* line 379, ../../app/stylesheets/hhstyles.sass */
+/* line 380, ../../app/stylesheets/hhstyles.sass */
 #flash .dismiss {
   position: fixed;
   right: 10px;
@@ -914,7 +915,7 @@ li#search {
   padding: 2px 6px 4px;
   background-color: #333333;
 }
-/* line 386, ../../app/stylesheets/hhstyles.sass */
+/* line 387, ../../app/stylesheets/hhstyles.sass */
 #flash .dismiss a {
   color: #f4fc7c;
   font-weight: bold;
@@ -922,12 +923,12 @@ li#search {
   font-size: larger;
 }
 
-/* line 393, ../../app/stylesheets/hhstyles.sass */
+/* line 394, ../../app/stylesheets/hhstyles.sass */
 .clear {
   clear: both;
 }
 
-/* line 396, ../../app/stylesheets/hhstyles.sass */
+/* line 397, ../../app/stylesheets/hhstyles.sass */
 .actionbutton {
   background-color: #2b70bb;
   color: white;
@@ -951,7 +952,7 @@ li#search {
   background-image: linear-gradient(top, #2b70bb, #29abe2);
 }
 
-/* line 409, ../../app/stylesheets/hhstyles.sass */
+/* line 410, ../../app/stylesheets/hhstyles.sass */
 .actionbutton:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #29abe2), color-stop(100%, #2b70bb));
   background-image: -webkit-linear-gradient(top, #29abe2, #2b70bb);

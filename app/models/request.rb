@@ -16,6 +16,7 @@ class Request
   belongs_to :owner, :class_name=>"User"
   has_and_belongs_to_many :categories
   has_many :commitments
+  has_many :comments, :as=>:commentable
   validates_presence_of :title, :start_date, :end_date, :startup
   
   before_create :set_slug

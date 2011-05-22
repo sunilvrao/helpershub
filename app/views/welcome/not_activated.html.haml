@@ -1,5 +1,5 @@
 #main_container
   #not_activated
     %h2 Hello #{current_user.full_name}
-    %img(src="#{current_user.avatar.large}")
+    %img(src="#{current_user.avatar.large.url}")
     %p Sorry. But your account has to be activated before you can use the site. Please take a moment to #{link_to "verify", profile_path} if the email address you have provided is correct. You will be notified one your account is activated.

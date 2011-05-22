@@ -1,0 +1,9 @@
+#main_container
+  %h3.new_request_title Create a new request
+  - if @startups.blank?
+    %p.warn
+      Please 
+      =link_to "register your startup", new_startup_path
+      before creating a request.
+  -else
+    =render :partial=>"form"

@@ -14,20 +14,19 @@ Helpershub::Application.routes.draw do
   resources :profiles
   resources :users, :only=>[:edit, :update]
 
-  resources :jobs do
-    resources :job_applications, :only=>[:create]
-    resources :questions, :only=>[:create]
+  resources :requests do
+    resources :commitments, :only=>[:create]
     member do
-      get "apply"
+      get "commit"
     end
   end
 
   resources :categories, :only=>[] do
-    resources :jobs, :only=>[:index]
+    resources :requests, :only=>[:index]
   end
 
   resources :startups do
-    resources :jobs, :shallow=>true
+    resources :requests, :shallow=>true
   end
 
   root :to=>"welcome#index"

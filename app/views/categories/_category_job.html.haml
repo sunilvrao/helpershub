@@ -1,4 +1,4 @@
 %li.category
-  %a(href="#{category_jobs_path(category)}" class="#{'selected' if selected==category.slug}")
-    %span.count= category.job_count
+  %a(href="#{category_requests_path(category)}" class="#{'selected' if selected==category.slug}")
+    %span.count= category.request_count
     =category.name

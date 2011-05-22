@@ -1,0 +1,7 @@
+#main_container
+  - if current_user==@request.owner
+    .action_buttons
+      =link_to "Edit request", edit_request_path(@request), :class=>"actionbutton"
+  =render @request
+  %h3 Showing Commitments
+  =render @request.commitments

@@ -1,0 +1,13 @@
+.post
+  %h3= link_to request.title, request
+  %h5
+    Posted by:
+    =link_to request.startup.name, request.startup
+    on #{request.created_at.strftime("%d %b %Y")}
+  .applyDetails
+    =link_to "commit",commit_request_path(request), :class=>"apply"
+    =link_to "view details", request
+  .orgLogo
+    %img(src="#{request.startup.logo.thumb.url}")
+  .projectDescription
+    %p= shrink(request.description)

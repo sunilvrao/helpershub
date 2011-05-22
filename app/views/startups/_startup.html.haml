@@ -8,5 +8,5 @@
       #{startup.address}, #{startup.country}
     %p.time
       Registered about #{time_ago_in_words startup.created_at} ago. 
-      %span.job_count (#{startup.jobs.count} jobs)
+      %span.job_count (#{startup.requests.count} requests)
     %p.description= startup.description

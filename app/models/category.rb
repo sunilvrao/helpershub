@@ -2,13 +2,13 @@ class Category
   include Mongoid::Document
   include Mongoid::Timestamps
   field :name, :type => String
-  field :job_count, :type => Integer, :default=>0
+  field :request_count, :type => Integer, :default=>0
   field :volunteer_count, :type => Integer, :default=>0
   field :slug, :type=>String
   validates_presence_of :name
   validates_uniqueness_of :name, :slug
   before_create :set_slug
-  has_and_belongs_to_many :jobs
+  has_and_belongs_to_many :requests
   def set_slug
     unless self.slug
       slug_text = self.name.strip.downcase.gsub(/[^a-z0-9]+/,'-')

@@ -4,9 +4,9 @@
       =link_to "Edit Startup", edit_startup_path(@startup), :class=>"actionbutton", :id=>"edit_startup"
       =link_to "Delete Startup", startup_url(@startup),:method=>"delete", :confirm=>"Are you sure you want to delete your startup?", :class=>"actionbutton", :id=>"delete_startup"
   =render @startup
-  .jobs
-    %h3.jobs_list Listing Jobs
+  .requests
+    %h3.requests_list Listing requests
     .action_links
-      =link_to "New Job", new_startup_job_path(@startup), :class=>"actionbutton"
+      =link_to "New Request", new_startup_request_path(@startup), :class=>"actionbutton"
     %hr
-    =render @startup.jobs
+    =render @startup.requests

@@ -16,7 +16,7 @@
             %span.logotext Helper's Hub
         %ul
           %li
-            %a(href="#{jobs_path}" class="#{'selected' if controller_name=='jobs'}") Jobs
+            %a(href="#{requests_path}" class="#{'selected' if controller_name=='requests'}") Requests
           %li
             %a{:href => "#"} Volunteers
           %li
@@ -39,7 +39,9 @@
             =link_to "Sign In", signin_path, :id=>"signIn"
       -else
         #signed_in_as
-          You are currently signed in as #{current_user.full_name}. Not you? 
+          You are currently signed in as 
+          =link_to current_user.full_name,profile_path
+          \. Not you? 
           =link_to "Sign out", signout_path
       #hub
         #sideNavContainer

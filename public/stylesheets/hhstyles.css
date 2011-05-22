@@ -167,56 +167,56 @@ body {
   margin: 10px 0;
 }
 /* line 45, ../../app/stylesheets/_startups.sass */
-#main_container .jobs {
+#main_container .requests {
   width: 100%;
   clear: both;
 }
 /* line 48, ../../app/stylesheets/_startups.sass */
-#main_container .jobs h3.jobs_list {
+#main_container .requests h3.requests_list {
   font-size: 20px;
   font-weight: bold;
   float: left;
 }
 /* line 52, ../../app/stylesheets/_startups.sass */
-#main_container .jobs .action_links {
+#main_container .requests .action_links {
   clear: none;
 }
 /* line 54, ../../app/stylesheets/_startups.sass */
-#main_container .jobs hr {
+#main_container .requests hr {
   width: 100%;
 }
 
 /*========== POST ========== */
-/* line 5, ../../app/stylesheets/_jobs.sass */
+/* line 5, ../../app/stylesheets/_requests.sass */
 #main_container p.warn {
   margin: 18px;
   background-color: #ffffdd;
   padding: 10px;
   border: 1px solid #999933;
 }
-/* line 10, ../../app/stylesheets/_jobs.sass */
-#main_container h3.new_job_title {
+/* line 10, ../../app/stylesheets/_requests.sass */
+#main_container h3.new_request_title {
   margin-left: 18px;
   font-size: 22px;
   font-weight: bold;
 }
-/* line 14, ../../app/stylesheets/_jobs.sass */
+/* line 14, ../../app/stylesheets/_requests.sass */
 #main_container #sub_header {
   float: left;
   width: 100%;
   clear: both;
 }
-/* line 18, ../../app/stylesheets/_jobs.sass */
+/* line 18, ../../app/stylesheets/_requests.sass */
 #main_container #sub_header h3 {
   float: left;
   font-size: 22px;
   font-weight: bold;
 }
-/* line 22, ../../app/stylesheets/_jobs.sass */
-#main_container #sub_header #new_job {
+/* line 22, ../../app/stylesheets/_requests.sass */
+#main_container #sub_header #new_request {
   float: right;
 }
-/* line 24, ../../app/stylesheets/_jobs.sass */
+/* line 24, ../../app/stylesheets/_requests.sass */
 #main_container #pagination {
   background: #a4c2db;
   float: left;
@@ -225,11 +225,11 @@ body {
   margin-left: -5px;
   padding: 6px;
 }
-/* line 31, ../../app/stylesheets/_jobs.sass */
+/* line 31, ../../app/stylesheets/_requests.sass */
 #main_container #pagination #links {
   float: left;
 }
-/* line 34, ../../app/stylesheets/_jobs.sass */
+/* line 34, ../../app/stylesheets/_requests.sass */
 #main_container #pagination #links .page a {
   float: left;
   padding: 0px 8px;
@@ -244,11 +244,11 @@ body {
   text-indent: -9999px;
   border: solid 1px #999999;
 }
-/* line 42, ../../app/stylesheets/_jobs.sass */
+/* line 42, ../../app/stylesheets/_requests.sass */
 #main_container #pagination #links .page a:hover {
   background: #ffdf7f;
 }
-/* line 44, ../../app/stylesheets/_jobs.sass */
+/* line 44, ../../app/stylesheets/_requests.sass */
 #main_container #pagination #links .page.current {
   float: left;
   padding: 0px 4px;
@@ -263,34 +263,34 @@ body {
   text-indent: -9999px;
   border: solid 1px #999999;
 }
-/* line 52, ../../app/stylesheets/_jobs.sass */
+/* line 52, ../../app/stylesheets/_requests.sass */
 #main_container #pagination #links .next {
   display: none;
 }
-/* line 54, ../../app/stylesheets/_jobs.sass */
+/* line 54, ../../app/stylesheets/_requests.sass */
 #main_container #pagination #links .last {
   display: none;
 }
-/* line 56, ../../app/stylesheets/_jobs.sass */
+/* line 56, ../../app/stylesheets/_requests.sass */
 #main_container #pagination #links .prev {
   display: none;
 }
-/* line 58, ../../app/stylesheets/_jobs.sass */
+/* line 58, ../../app/stylesheets/_requests.sass */
 #main_container #pagination #links .first {
   display: none;
 }
-/* line 60, ../../app/stylesheets/_jobs.sass */
+/* line 60, ../../app/stylesheets/_requests.sass */
 #main_container #pagination #view_all {
   float: right;
   margin-right: 10px;
 }
-/* line 63, ../../app/stylesheets/_jobs.sass */
+/* line 63, ../../app/stylesheets/_requests.sass */
 #main_container #pagination #view_all a {
   color: #eeeeee;
   font-size: smaller;
 }
 
-/* line 67, ../../app/stylesheets/_jobs.sass */
+/* line 67, ../../app/stylesheets/_requests.sass */
 .post {
   border-bottom: solid 1px #cccccc;
   padding: 20px 0px;
@@ -298,14 +298,14 @@ body {
   width: 100%;
 }
 
-/* line 73, ../../app/stylesheets/_jobs.sass */
+/* line 73, ../../app/stylesheets/_requests.sass */
 .orgLogo {
   float: left;
   border: solid 1px #cccccc;
   margin-right: 10px;
 }
 
-/* line 79, ../../app/stylesheets/_jobs.sass */
+/* line 79, ../../app/stylesheets/_requests.sass */
 .post p {
   font-size: 12px;
   line-height: 15px;
@@ -313,50 +313,50 @@ body {
   float: left;
   width: 550px;
 }
-/* line 85, ../../app/stylesheets/_jobs.sass */
+/* line 85, ../../app/stylesheets/_requests.sass */
 .post a {
   text-decoration: underline;
   color: #a4c2db;
 }
-/* line 88, ../../app/stylesheets/_jobs.sass */
+/* line 88, ../../app/stylesheets/_requests.sass */
 .post a:hover {
   border-bottom: dotted 1px #a4c2db;
 }
-/* line 90, ../../app/stylesheets/_jobs.sass */
+/* line 90, ../../app/stylesheets/_requests.sass */
 .post h3 {
   margin-left: 0;
 }
-/* line 92, ../../app/stylesheets/_jobs.sass */
+/* line 92, ../../app/stylesheets/_requests.sass */
 .post h3 a {
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
   color: #666666;
 }
-/* line 97, ../../app/stylesheets/_jobs.sass */
+/* line 97, ../../app/stylesheets/_requests.sass */
 .post h3 a:hover {
   border: none;
 }
 
-/* line 100, ../../app/stylesheets/_jobs.sass */
+/* line 100, ../../app/stylesheets/_requests.sass */
 h5 {
   margin-top: 3px;
   margin-bottom: 10px;
   font-size: 12px;
 }
 
-/* line 105, ../../app/stylesheets/_jobs.sass */
+/* line 105, ../../app/stylesheets/_requests.sass */
 .applyDetails {
   float: right;
   width: 100px;
   text-align: center;
 }
-/* line 109, ../../app/stylesheets/_jobs.sass */
+/* line 109, ../../app/stylesheets/_requests.sass */
 .applyDetails a {
   font-size: 12px;
 }
 
-/* line 112, ../../app/stylesheets/_jobs.sass */
+/* line 112, ../../app/stylesheets/_requests.sass */
 a.apply {
   -moz-box-shadow: 0px 0px 4px #999999;
   -webkit-box-shadow: 0px 0px 4px #999999;
@@ -380,7 +380,7 @@ a.apply {
   font-size: 20px;
   text-shadow: #666666 2px 2px 0;
 }
-/* line 134, ../../app/stylesheets/_jobs.sass */
+/* line 134, ../../app/stylesheets/_requests.sass */
 a.apply:hover {
   border-bottom: solid 3px white;
   background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(white));
@@ -388,11 +388,11 @@ a.apply:hover {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#999999', EndColorStr='#ffffff');
 }
 
-/* line 140, ../../app/stylesheets/_jobs.sass */
+/* line 140, ../../app/stylesheets/_requests.sass */
 .post h5 a {
   color: #666666;
 }
-/* line 142, ../../app/stylesheets/_jobs.sass */
+/* line 142, ../../app/stylesheets/_requests.sass */
 .post h5 a:hover {
   border-bottom-color: #666666;
 }

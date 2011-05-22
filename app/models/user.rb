@@ -9,7 +9,7 @@ class User
   field :profile_set, :type=>Boolean, :default=>false
   references_many :startups, :inverse_of=>:owner
   embeds_many :services
-  references_many :jobs, :inverse_of=>:owner
+  references_many :requests, :inverse_of=>:owner
   has_one :profile
   accepts_nested_attributes_for :profile
   mount_uploader :avatar, AvatarUploader

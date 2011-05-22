@@ -1,0 +1,9 @@
+#main_container
+  #sub_header
+    %h3 Thanks for expressing your interest in (#{@request.title})
+  =semantic_form_for [@request,@commitment] do |f|
+    %fieldset.inputs
+      %ol
+        =f.input :description,:as=>:text,:label=>"How do you think that you would help us?"
+        =f.input :request_id, :as=>:hidden
+    =f.buttons

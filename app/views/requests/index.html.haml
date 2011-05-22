@@ -1,0 +1,11 @@
+#main_container
+  #sub_header
+    %h3 Requests
+    =link_to 'New Requst', new_request_path, :class=>"actionbutton", :id=>"new_request"
+  =render @requests
+  #pagination
+    #links
+      =paginate @requests
+    - if @category or @request
+      #view_all
+        =link_to 'view all', jobs_path

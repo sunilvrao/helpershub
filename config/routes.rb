@@ -1,5 +1,7 @@
 Helpershub::Application.routes.draw do
 
+  get "frontpage/index"
+
   devise_for :admins do 
     get "/admin"=>"admin#index", :as=>:admin_root
     namespace :admin do
@@ -30,7 +32,7 @@ Helpershub::Application.routes.draw do
     resources :requests, :shallow=>true
   end
 
-  root :to=>"welcome#index"
+  root :to=>"frontpage#index"
   match "not-activated"=>"welcome#not_activated", :as=>:not_activated
   get "profile"=>"welcome#profile", :as=>:profile
   get "dashboard"=>"welcome#dashboard"

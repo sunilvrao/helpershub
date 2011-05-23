@@ -1,0 +1,42 @@
+!!! 5
+%html
+  %head
+    %title Helpers Hub
+    =stylesheet_link_tag "frontpage"
+    =javascript_include_tag "jquery.min.js","rails.js","application.js"
+    = csrf_meta_tag
+  %body
+    #anticipate-top-shadow
+      #anticipate-center-highlight
+        #anticipate-container.clearfix
+          #anticipate-header
+            %h1#logo
+              %a{:href => "#{root_path}" }
+                %img{:alt => "Helper's Hub Logo", :src => "/images/helpers_hub_logo.png"}/
+              #joinButton
+                =link_to "Join", signin_path, :id=>"join"
+                =link_to "Sign In", signin_path, :id=>"signIn"
+            -#%ul
+            -#  %li
+            -#    %a(href="#{requests_path}" class="#{'selected' if controller_name=='requests'}") Requests
+            -#  %li
+            -#    %a{:href => "#"} Volunteers
+            -#  %li
+            -#    %a(href="#{startups_path}" class="#{'selected' if controller_name=='startups'}") Startups
+            -#  %li
+            -#    %a{:href => "#"} About Us
+          =yield
+          #anticipate-footer
+            #anticipate-social-icons
+              %a{:href => "http://www.twitter.com/helpershub", :target => "_blank"}
+                %img{:alt => "Twitter", :src => "/images/twitter.png"}/
+              %a{:href => "http://helpershub.com/?feed=rss2", :target => "_blank"}
+                %img{:alt => "Rss", :src => "/images/rss.png"}/
+              %a{:href => "http://www.facebook.com/helpershub", :target => "_blank"}
+                %img{:alt => "Facebook", :src => "/images/facebook.png"}/
+            / end #anticipate-social-icons
+            #anticipate-subscribe
+              %form#searchform{:action => "#", :method => "post"}
+                %input#searchinput{:name => "anticipate_email", :type => "text", :value => "Enter your email to receive updates..."}/
+                %input#searchsubmit{:type => "submit", :value => "Submit"}/
+            / end #anticipate-subscribe

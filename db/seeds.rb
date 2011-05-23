@@ -1,6 +1,6 @@
 puts "creating seed data. please wait"
 # create the admin user
-email="sunil2rao@gmail.com"
+email="srao@helpershub.com"
 Admin.create!(:email=>email, :password=>"password")
 puts "admin user with email #{email} created"
 

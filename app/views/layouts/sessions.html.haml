@@ -10,39 +10,24 @@
     #header
       #headerInner
         %h1#logo
-          %a{:href => "#"}
-            %img{:alt => "Helper's Hub Logo", :src => "images/helpers_hub_logo.png"}/
+          %a{:href => "#{root_path}"}
+            %img{:alt => "Helper's Hub Logo", :src => "/images/helpers_hub_logo.png"}/
             %span.logotext Helper's Hub
         %ul
           %li
-            %a{:href => "#"} Link One
+            %a(href="#{requests_path}" class="#{'selected' if controller_name=='requests'}") Requests
           %li
-            %a.selected{:href => "#"} Link Two
+            %a{:href => "#"} Volunteers
           %li
-            %a{:href => "#"} Link Three
+            %a(href="#{startups_path}" class="#{'selected' if controller_name=='startups'}") Startups
           %li
-            %a{:href => "#"} Link four
+            %a{:href => "#"} About Us
+
     #graybg
       =yield
       #footerOuter
-        #footer
-          #footerInner
-            .browse.startups
-              %h4
-                %a{:href => "#"} Helper's Hub
-              %p Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Register as a volunteer.
-              %a.footerbutton{:href => "#"} view start-up
-            .browse.helpers
-              %h4
-                %a{:href => "#"} Fmondragon Creative Studio
-              %p Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Register as a volunteer.
-              %a.footerbutton{:href => "#"} view helper
-            .browse.sponsors
-              %h4
-                %a{:href => "#"} ExcelerateLabs.com
-              %p Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Register as a volunteer.
-              %a.footerbutton{:href => "#"} view sponsor
+        =render :partial => '/layouts/footer'
+
     #copyrightOuter
-      #copyright
-        %a#fmondragon{:href => "http://www.fmondragon.com"} Fmondragon Creative Studio
-        %span Copyright © 2011 Helper's Hub. All rights reserved. | Privacy | PolicyAbout Our AdsSafety | Terms of Service | Copyright/IP Policy
+      =render :partial => '/layouts/copyright'
+

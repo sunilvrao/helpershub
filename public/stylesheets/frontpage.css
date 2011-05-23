@@ -153,6 +153,49 @@ position:absolute; text-indent:-9999px; top:38%; width:27px; z-index: 300; }
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#999999', EndColorStr='#ffffff');
 }
 
+
+
+/* line 1, ../../app/stylesheets/_signin.sass */
+#signin {
+  width: 100%;
+  margin: 20px auto;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -moz-box-shadow: 0px 0px 4px #999999;
+  -webkit-box-shadow: 0px 0px 4px #999999;
+  box-shadow: 0px 0px 4px #999999;
+  padding: 20px 0;
+}
+/* line 14, ../../app/stylesheets/_signin.sass */
+#signin h1 {
+  color: #787979;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+}
+/* line 19, ../../app/stylesheets/_signin.sass */
+#signin ul.auth_services {
+  margin-left: 120px;
+  margin-top: 20px;
+}
+/* line 24, ../../app/stylesheets/_signin.sass */
+#signin ul.auth_services li {
+  display: inline;
+  margin: 0;
+}
+/* line 28, ../../app/stylesheets/_signin.sass */
+#signin ul.auth_services li a img:hover {
+  -moz-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
 /* line 129, ../../app/stylesheets/hhstyles.sass */
 #signIn {
   color: white;

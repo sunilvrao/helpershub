@@ -1,0 +1,15 @@
+#header
+  #headerInner
+    %h1#logo
+      %a{:href => "#{root_path}"}
+        %img{:alt => "Helper's Hub Logo", :src => "/images/helpers_hub_logo.png"}/
+        %span.logotext Helper's Hub
+    %ul
+      %li
+        %a(href="#{requests_path}" class="#{'selected' if controller_name=='requests'}") Requests
+      %li
+        %a{:href => "#"} Contributors
+      %li
+        %a(href="#{startups_path}" class="#{'selected' if controller_name=='startups'}") Startups
+      %li
+        %a{:href => "#"} About Us

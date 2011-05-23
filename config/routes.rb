@@ -4,11 +4,9 @@ Helpershub::Application.routes.draw do
 
   devise_for :admins do 
     get "/admin"=>"admin#index", :as=>:admin_root
-    namespace :admin do
-      resources :users, :only=>[] do
-        member do
-          post "approve"=>"admin#approve"
-        end
+    resources :users, :only=>[] do
+      member do
+        post "approve"=>"admin#approve"
       end
     end
   end

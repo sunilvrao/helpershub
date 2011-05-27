@@ -22,7 +22,10 @@ class User
   end
 
   def follow(followable)
-    self.follows.create(:followable=>followable)
+    self.follows.create!(:followable=>followable)
+  end
+  def unfollow(followable)
+    self.is_following?(followable).destroy if self.is_following?(followable)
   end
   def followables(type=nil)
     self.follows.where(:followable_type=>type).collect(&:followable) if type

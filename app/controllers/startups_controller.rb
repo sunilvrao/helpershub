@@ -21,6 +21,17 @@ class StartupsController < ApplicationController
   def show
     @startup = Startup.where(:slug=>params[:id]).first
   end
+  def follow
+    @startup = Startup.where(:slug=>params[:id]).first
+    current_user.follow(@startup)
+    redirect_to @startup
+  end
+  def unfollow
+    @startup = Startup.where(:slug=>params[:id]).first
+    current_user.unfollow(@startup)
+    redirect_to @startup
+  end
+
   def edit
     @startup = Startup.where(:slug=>params[:id]).first
   end

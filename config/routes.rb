@@ -28,6 +28,10 @@ Helpershub::Application.routes.draw do
 
   resources :startups do
     resources :requests, :shallow=>true
+    member do
+      get 'follow' => "startups#follow"
+      get 'unfollow' => "startups#unfollow"
+    end
   end
 
   root :to=>"frontpage#index"

@@ -35,6 +35,7 @@ Helpershub::Application.routes.draw do
   get "profile"=>"welcome#profile", :as=>:profile
   get "dashboard"=>"welcome#dashboard"
   match '/signin'=>'sessions#new'
+  match '/signin_as' => 'sessions#sign_in_as'
   match '/signout'=>'sessions#destroy'
   match '/auth/:service/callback'=>'sessions#create'
   match '/auth/failure'=>'sessions#failure'

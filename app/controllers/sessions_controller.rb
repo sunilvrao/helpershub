@@ -6,6 +6,17 @@ class SessionsController < ApplicationController
       redirect_to root_url
     end
   end
+  def sign_in_as
+    flash[:error] = "Naughty Naughty"
+    redirect_to root_url unless Rails.env=="development"
+    u=User.where(:email=>params[:email]).first
+    if(u)
+      session[:current_user_id] = u.id.to_s
+    else
+      flash[:error]="User not found"
+    end
+    redirect_to root_url
+  end
   def destroy
     session[:current_user_id]=nil
     session.delete :current_user_id

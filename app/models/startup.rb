@@ -15,7 +15,7 @@ class Startup
   validates_presence_of :name, :url
   validates_uniqueness_of :slug
   before_create :set_slug
-
+  has_many :follows, :as=>:followable
 
   default_scope where(:deleted_at=>nil)
 
@@ -37,6 +37,11 @@ class Startup
       self.slug = check_text
     end
   end
+
+  def followers
+    self.follows.collect(&:user)
+  end
+
   def to_param
     self.slug
   end

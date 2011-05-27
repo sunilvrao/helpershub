@@ -28,5 +28,8 @@ class User
     self.follows.where(:followable_type=>type).collect(&:followable) if type
     self.follows.collect(&:followable) unless type
   end
+  def is_following?(followable)
+    self.follows.where(:followable_id=>followable.id,:followable_type=>followable.class.to_s).first
+  end
 
 end

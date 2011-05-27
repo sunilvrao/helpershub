@@ -42,6 +42,10 @@ class Startup
     self.follows.collect(&:user)
   end
 
+  def is_followed_by?(user)
+    self.follows.where(:user_id=>user.id).first
+  end
+
   def to_param
     self.slug
   end

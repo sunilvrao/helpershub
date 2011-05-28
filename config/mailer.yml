@@ -1,0 +1,8 @@
+development:
+  host: "localhost:3000"
+  user_name: "srao@helpershub.com"
+  password: "bangal0re"
+production:
+  host: "keeprecruiting.org"
+  user_name: "srao@helpershub.com"
+  password: "bangal0re"

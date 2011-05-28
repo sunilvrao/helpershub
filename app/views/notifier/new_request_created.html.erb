@@ -1,0 +1,13 @@
+<p>
+Hi <%=@user.full_name%>,
+</p>
+<p>
+<%=@startup.name%> has created a new request titled "<%=@request.title%>". Click on the link below to visit the site.
+</p>
+<p><%=link_to request_url(@request), request_url(@request)%></p>
+<p>
+Thanks and Regards,
+The Helpers' Hub Team
+</p>
+
+<p>Standard disclaimer and stuff</p>

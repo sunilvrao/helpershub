@@ -15,6 +15,7 @@ gem 'thin'
 gem 'formtastic'
 gem 'kaminari'
 gem 'devise'
+gem 'stalker'
 group :development, :test do
   gem 'capybara'
   gem 'rspec-rails'

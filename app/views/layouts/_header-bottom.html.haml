@@ -1,0 +1,12 @@
+#header-bottom
+  .container
+    -if yield(:secondary).blank?
+      =render :partial=>"welcome/categories_sidebar"
+    -else
+      =yield :secondary
+    #search-bar
+      %form#searchform{:action => "http://www.elegantthemes.com/preview/AskIt", :method => "get"}
+        %input#searchinput{:name => "s", :type => "text", :value => "search this site..."}/
+        %input#searchsubmit{:src => "http://www.elegantthemes.com/preview/AskIt/wp-content/themes/AskIt/images/search-icon.png", :type => "image"}/
+    / end #search-bar
+  / end .container

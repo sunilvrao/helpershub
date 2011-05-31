@@ -1,7 +1,7 @@
 class StartupsController < ApplicationController
   before_filter :authenticate_user!
   before_filter :must_be_activated!
-  before_filter :set_categories
+  before_filter :set_verticals
   def index
     @startups = Startup.order_by(:created_at, :desc).all
   end
@@ -49,7 +49,7 @@ class StartupsController < ApplicationController
     @startup.soft_delete
     redirect_to startups_path
   end
-  def set_categories
-    @categories = Category.all
+  def set_verticals
+    @verticals = Vertical.all
   end
 end

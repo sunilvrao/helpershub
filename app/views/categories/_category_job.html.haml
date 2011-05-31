@@ -1,4 +1,5 @@
-%li.category
+%li#menu-item-62.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-62
   %a(href="#{category_requests_path(category)}" class="#{'selected' if selected==category.slug}")
-    %span.count= category.request_count
     =category.name
+    #span.count= (category.request_count)
+

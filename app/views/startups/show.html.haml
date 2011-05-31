@@ -15,3 +15,5 @@
       =link_to "New Request", new_startup_request_path(@startup), :class=>"actionbutton"
     %hr
     =render @startup.requests
+-content_for :secondary do
+  =render :partial=>"secondary-nav"

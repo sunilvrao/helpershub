@@ -6,6 +6,8 @@ class Startup
   field :address, :type=>String
   field :country, :type=>String
   field :description, :type => String
+  field :twitter_id, :type=>String
+  field :facebook_page, :type=>String
   field :slug, :type=>String
   field :deleted, :type=>Boolean
   field :deleted_at, :type=>DateTime
@@ -16,6 +18,7 @@ class Startup
   validates_uniqueness_of :slug
   before_create :set_slug
   has_many :follows, :as=>:followable
+  has_and_belongs_to_many :verticals
 
   default_scope where(:deleted_at=>nil)
 

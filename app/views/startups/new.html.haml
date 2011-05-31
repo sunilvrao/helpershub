@@ -1,3 +1,13 @@
-#main_container
-  %h1 Register your startup
-  =render :partial=>"form"
+#main_area
+  #breadcrumbs
+  .entry.page
+    .entry-top
+      .entry-content
+        %h2.title
+          Register your startup
+        .clear
+          .page-separator
+        =render :partial=>"form"
+
+-content_for :secondary do
+  =render :partial=>"secondary-nav"

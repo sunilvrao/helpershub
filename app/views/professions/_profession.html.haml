@@ -1,0 +1,5 @@
+%li#menu-item-62.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-62
+  %a(href="#{profession_profiles_path(profession)}" class="#{'selected' if selected==profession.slug}")
+    =profession.name
+    #span.count= (profession.profile_count)
+

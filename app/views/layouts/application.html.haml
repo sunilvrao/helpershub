@@ -1,51 +1,41 @@
 !!!
 %html{:xmlns => "http://www.w3.org/1999/xhtml"}
-  %head
+  %head{:profile => "http://gmpg.org/xfn/11"}
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "noindex,nofollow", :name => "robots"}/
     %title Helper's Hub | Welcome
-    =stylesheet_link_tag "hhstyles", "formtastic", "formtastic_changes"
+    =stylesheet_link_tag "style", "font", "shortcodes", "formtastic", "formtastic_changes", "pagenavi-css.css"
     =stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/base/jquery-ui.css"
-    /[if lt IE 7.]
-      <script defer type="text/javascript" src="scripts/pngfix.js"></script>
-  %body
+    /[if lt IE 7]
+      =stylesheet_link_tag "ie6style"
+      <script type="text/javascript">DD_belatedPNG.fix('img#logo, p#slogan, #menu, #top-overlay, #featured-overlay, span.overlay, .entry-content p.meta-info, #controllers span#right-arrow, #controllers span#left-arrow, #footer-content, #footer');</script>
+    /[if IE 7]
+      =stylesheet_link_tag "ie7style"
+    /[if IE 8]
+      =stylesheet_link_tag "ie8style"
+    :css
+      .recentcomments a
+      {
+          display: inline !important;
+          padding: 0 !important;
+          margin: 0 !important;
+      }
+  %body#home
     =render :partial => '/layouts/header'
-    #graybg
-      - if not current_user
-        #joinHelpersHub
-          #whyJoin
-            %h2 Why you should join Helper's Hub.
-            %p This is the place where entrepreneurs, local business heads, support groups and civic minded volunteers converge. 
-          #joinButton
-            //%a#join{:href => "join"} Join
-            //%a#signIn{:href => "signIn"} Sign In
-            =link_to "Join", signin_path, :id=>"join"
-            =link_to "Sign In", signin_path, :id=>"signIn"
-      -else
-        #signed_in_as
-          You are currently signed in as 
-          =link_to current_user.full_name,profile_path
-          \. Not you? 
-          =link_to "Sign out", signout_path
-      #hub
-        #sideNavContainer
-          %ul#sideNav
-            %li#search
-              %form
-                %input{:type => "text", :value => "search"}/
-                %input{:src => "/images/searchButton.gif", :type => "image", :value => "GO"}/
-            -if yield(:sidebar).blank?
-              =render :partial=>"welcome/categories_sidebar" 
-            -else
-              =yield :sidebar
-        =yield
+    =render :partial => '/layouts/header-bottom'
+    #content
+      #right-shadow
+        #top-shadow
+        .container.clearfix
+          =yield
         .clear
-      #footerOuter
-        =render :partial => '/layouts/footer'
-    #copyrightOuter
-      =render :partial => '/layouts/copyright'
+        / end .container
+      / end #right-shadow
+    / end #content
+    =render :partial => '/layouts/footer'
     -if flash[:notice]
       #flash
         =flash[:notice]
         %span.dismiss
           %a(href="#" title="Click here to dismiss") x
-    =javascript_include_tag "jquery.min.js", "rails.js","https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.js","application.js"
+    =javascript_include_tag "l10n.js","DD_belatedPNG_0.0.8a-min.js", "jquery.min.js", "rails.js","jquery.js","application.js"

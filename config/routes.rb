@@ -12,6 +12,10 @@ Helpershub::Application.routes.draw do
   end
 
   resources :profiles
+  resources :professions, :only=>[] do
+    resources :profiles, :only=>[:all]
+  end
+
   resources :users, :only=>[:edit, :update]
 
   resources :requests do
@@ -32,6 +36,10 @@ Helpershub::Application.routes.draw do
       get 'follow' => "startups#follow"
       get 'unfollow' => "startups#unfollow"
     end
+  end
+
+  resources :verticals, :only=>[] do
+    resources :startups, :only=>[:index]
   end
 
   root :to=>"frontpage#index"

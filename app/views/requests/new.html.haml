@@ -1,9 +1,19 @@
-#main_container
-  %h3.new_request_title Create a new request
-  - if @startups.blank?
-    %p.warn
-      Please 
-      =link_to "register your startup", new_startup_path
-      before creating a request.
-  -else
-    =render :partial=>"form"
+#main_area
+  #breadcrumbs
+  .entry.page
+    .entry-top
+      .entry-content
+        - if @startups.blank?
+          %p.warn
+            Please
+            =link_to "register your startup", new_startup_path
+            before creating a request.
+        -else
+          %h2.title
+            Create a new request
+          .page-separator
+          .clear
+            =render :partial=>"form"
+
+-content_for :secondary do
+  =render :partial=>"secondary-nav"

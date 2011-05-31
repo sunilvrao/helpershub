@@ -1,0 +1,21 @@
+%ul#primary-menu.nav
+  %li.menu-item(class = "#{'current-menu-item' if controller_name=='requests'}")
+    %a(href="#{requests_path}")
+      %strong Requests
+      %span
+        Get things done.
+  %li.menu-item
+    %a{:href => "http://www.elegantthemes.com/preview/AskIt/?page_id=48"}
+      %strong Contributors
+      %span
+        Mentors/Volunteers
+  %li.menu-item(class = "#{'current-menu-item' if controller_name=='startups'}")
+    %a(href="#{startups_path}")
+      %strong Startups
+      %span
+        Ideas & Dreams
+  %li.menu-item
+    %a{:href => "http://www.elegantthemes.com/preview/AskIt/?page_id=54"}
+      %strong About Us
+      %span
+        Get to know us

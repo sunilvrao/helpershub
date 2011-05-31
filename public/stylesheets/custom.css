@@ -1,0 +1,12 @@
+/* line 1, ../../app/stylesheets/custom.sass */
+#signed-in-as {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: right;
+}
+/* line 6, ../../app/stylesheets/custom.sass */
+#signed-in-as strong {
+  text-shadow: 0 1px 1px #666666;
+  color: black;
+}

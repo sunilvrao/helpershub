@@ -1,40 +1,21 @@
 #header
   #header-inner
     .container
-      #header-logo
-        %a{:href => "#{root_path}"}
-          %img{:alt => "Helper's Hub Logo", :src => "/images/logo.png"}/
-          /%span.logotext Helper's Hub
-      #signed-in-as
+      %a{:href => "#{root_path}"}
+        %img{:alt => "Helper's Hub Logo", :src => "/images/logo.png"}/
+        /%span.logotext Helper's Hub
+      %p#signed-in-as
         - if current_user
           %strong
             You are currently signed in as
           =link_to current_user.full_name,profile_path
-          \.
+          %br
           %strong
             Not you?
           =link_to "Sign out", signout_path
-      %ul#primary-menu.nav
-        %li#menu-item-57.menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-item.current_page_item.menu-item-home
-          %a(href="#{requests_path}" class="#{'selected' if controller_name=='requests'}")
-            %strong Requests
-            %span
-              Get things done.
-        %li#menu-item-50.menu-item.menu-item-type-post_type.menu-item-object-page
-          %a{:href => "http://www.elegantthemes.com/preview/AskIt/?page_id=48"}
-            %strong Contributors
-            %span
-              Mentors/Volunteers
-        %li#menu-item-89.menu-item.menu-item-type-post_type.menu-item-object-page
-          %a(href="#{startups_path}" class="#{'selected' if controller_name=='startups'}")
-            %strong Startups
-            %span
-              Ideas & Dreams
-        %li#menu-item-56.menu-item.menu-item-type-post_type.menu-item-object-page
-          %a{:href => "http://www.elegantthemes.com/preview/AskIt/?page_id=54"}
-            %strong About Us
-            %span
-              Get to know us
+      = render :partial => 'layouts/utils/nav_primary'
     / end .container
   / end #header-inner
 / end #header
+
+= render :partial => 'layouts/header-bottom'

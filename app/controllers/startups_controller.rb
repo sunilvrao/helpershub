@@ -51,5 +51,6 @@ class StartupsController < ApplicationController
   end
   def set_verticals
     @verticals = Vertical.all
+    @selected_vertical = params[:vertical_id]
   end
 end

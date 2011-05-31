@@ -1,5 +1,5 @@
-%li#menu-item-62.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-62
-  %a(href="#{category_requests_path(category)}" class="#{'selected' if selected==category.slug}")
+%li.menu-item(class="#{'current-menu-item' if selected==category.slug}")
+  %a(href="#{category_requests_path(category)}")
     =category.name
-    #span.count= (category.request_count)
+    (#{category.request_count})
 

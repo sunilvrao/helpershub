@@ -9,3 +9,5 @@ log/*.log
 tmp/
 config/mongoid.yml
 public/uploads
+nbproject
+.rvmrc

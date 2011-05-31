@@ -4,7 +4,7 @@
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{:content => "noindex,nofollow", :name => "robots"}/
     %title Helper's Hub | Welcome
-    =stylesheet_link_tag "font","askit/style", "formtastic", "formtastic_changes", "pagenavi-css.css", "custom.css"
+    =stylesheet_link_tag "font","askit/style", "askit/shortcodes","formtastic", "formtastic_changes", "pagenavi-css.css", "custom.css"
     =stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/base/jquery-ui.css"
     /[if lt IE 7]
       =stylesheet_link_tag "askit/ie6style"
@@ -28,7 +28,16 @@
       #right-shadow
         #top-shadow
         .container.clearfix
-          =yield
+          - if yield(:sidebar).blank?
+            #main-area.fullwidth
+              = yield
+          - else
+            #main-area
+              = yield
+            #sidebar
+              #sidebar-bottom
+                #sidebar-content
+                  = yield :sidebar
         .clear
         / end .container
       / end #right-shadow

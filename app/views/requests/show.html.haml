@@ -1,13 +1,15 @@
-#main_container
-  - if current_user==@request.owner
-    .action_buttons
-      =link_to "Edit request", edit_request_path(@request), :class=>"actionbutton"
-  =render @request
-  .commitments
-    %h3 Showing Commitments
-    =render @request.commitments
-  .comments
-    %h3 Comments
-    =render @comments
-    - @comment = @request.comments.build
-    =render :partial=>"comments/form"
+- if current_user==@request.owner
+  = content_for :sidebar do
+    .widget-button
+      = link_to edit_request_path(@request), :class=>"actionbutton", :id=>"call_to_action" do
+        %span Edit Request
+
+=render @request
+.commitments
+  %h3 Showing Commitments
+  =render @request.commitments
+.comments
+  %h3 Comments
+  =render @comments
+  - @comment = @request.comments.build
+  =render :partial=>"comments/form"

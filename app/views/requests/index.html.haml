@@ -1,11 +1,16 @@
-#main_container
-  #sub_header
-    %h3 Requests
-    =link_to 'New Requst', new_request_path, :class=>"actionbutton", :id=>"new_request"
+= content_for :sidebar do
+  .widget-button
+    = link_to new_request_path, :class=>"actionbutton", :id=>"call_to_action" do
+      %span New Request
+
+= render :partial => 'layouts/utils/main_area_tabs'
+
+#main-recent
   =render @requests
-  #pagination
-    #links
-      =paginate @requests
-    - if @category or @request
-      #view_all
-        =link_to 'view all', requests_path
+  .clear
+#pagination
+  #links
+    =paginate @requests
+  - if @category or @request
+    #view_all
+      =link_to 'view all', requests_path

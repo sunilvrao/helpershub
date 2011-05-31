@@ -1,5 +1,5 @@
 %li.menu-item(class="#{'current-menu-item' if selected==vertical.slug}")
   %a(href="#{vertical_startups_path(vertical)}")
     =vertical.name
-    (#{vertical.startup_count})
+    %span #{vertical.startup_count}
 

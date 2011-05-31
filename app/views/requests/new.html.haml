@@ -1,19 +1,18 @@
-#main_area
-  #breadcrumbs
-  .entry.page
-    .entry-top
-      .entry-content
-        - if @startups.blank?
-          %p.warn
-            Please
-            =link_to "register your startup", new_startup_path
-            before creating a request.
-        -else
-          %h2.title
-            Create a new request
-          .page-separator
-          .clear
-            =render :partial=>"form"
+#breadcrumbs
+.entry.page
+  .entry-top
+    .entry-content
+      - if @startups.blank?
+        %p.warn
+          Please
+          =link_to "register your startup", new_startup_path
+          before creating a request.
+      -else
+        %h2.title
+          Create a new request
+        .page-separator
+        .clear
+          =render :partial=>"form"
 
 -content_for :secondary do
   =render :partial=>"secondary-nav"

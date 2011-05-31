@@ -1,13 +1,28 @@
-.post
-  %h3= link_to request.title, request
-  %h5
-    Posted by:
-    =link_to request.startup.name, request.startup
-    on #{request.created_at.strftime("%d %b %Y")}
-  .applyDetails
-    =link_to "commit",commit_request_path(request), :class=>"apply"
-    =link_to "view details", request
-  .orgLogo
-    %img(src="#{request.startup.logo.thumb.url}")
-  .projectDescription
-    %p= shrink(request.description)
+.entry
+  .entry-top
+    .entry-content
+      %span.comment-number
+        = link_to request.commitments.size, '#', :title => "#{pluralize(request.commitments.size, 'commitment')}"
+      %h2.title= link_to request.title, request
+      %span.quote
+      - if controller.action_name == 'index'
+        %span.author
+          \-
+          = link_to request.startup.name, request.startup
+          , #{request.created_at.strftime("%d %b %Y")}
+      %br.clear
+      - if controller.action_name == 'index'
+        =link_to commit_request_path(request), :class=>"apply small-button smallsilver right" do
+          %span commit
+        %br.clear
+      - else
+        .postmeta
+          %p.postinfo
+            Posted by
+            = link_to request.startup.name, request.startup
+            on #{request.created_at.strftime("%d %b %Y")}
+        .post-content
+          %p #{request.description}
+          .clear
+      -#.orgLogo
+        -#%img(src="#{request.startup.logo.thumb.url}")

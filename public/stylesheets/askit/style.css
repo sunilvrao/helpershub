@@ -244,7 +244,7 @@ ul#primary-menu {  }
 /*-------------------[COMMENTS]-------------------*/
 /*------------------------------------------------*/
 
-h3#comments { font-family: 'Yanone Kaffeesatz', Arial, sans-serif; font-size: 30px; color: #a6a6a6; text-shadow: 1px 1px 1px #fff; }
+h3#comments, h3#commitments { font-family: 'Yanone Kaffeesatz', Arial, sans-serif; font-size: 30px; color: #a6a6a6; text-shadow: 1px 1px 1px #fff; }
 #comment-wrap { width:682px; }
 	.commentlist div.avatar-box { float: right; width: 71px; height: 108px; background: url(../../images/avatar-container-bg.png) no-repeat; padding: 15px 0px 0px 18px; position: relative; }
 		div.avatar { position: relative; margin-bottom: 7px; }

@@ -13,7 +13,8 @@
       %br.clear
       - if controller.action_name == 'index'
         .alignright
-          =link_to commit_request_path(request), :class=>"apply small-button smallsilver" do
+          =#link_to commit_request_path(request), :class=>"apply small-button smallsilver" do
+          = link_to "/requests/#{request.slug}#commitments", :class=>"apply small-button smallsilver" do
             %span commit
         %br.clear
       - else

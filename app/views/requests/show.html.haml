@@ -10,6 +10,9 @@
   #comment-wrap
     %h3#comments Commitments
     =render @request.commitments
+    - @commitment = @request.commitments.build
+    %h3#commitments How do you think you'd help?
+    = render :partial => "commit_form"
 
 .clear
 #comment-wrap

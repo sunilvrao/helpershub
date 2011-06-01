@@ -1,0 +1,6 @@
+=semantic_form_for [@request,@commitment] do |f|
+  %fieldset.inputs
+    %ol
+      =f.input :description,:as=>:text, :label=> false
+      =f.input :request_id, :as=>:hidden
+  =f.buttons

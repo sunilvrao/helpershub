@@ -1,5 +1,5 @@
 %li.menu-item(class="#{'current-menu-item' if selected==category.slug}")
   %a(href="#{category_requests_path(category)}")
     =category.name
-    %span #{category.request_count}
+    %span.widget-comment-number #{category.request_count}
 

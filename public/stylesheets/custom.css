@@ -10,3 +10,14 @@
   text-shadow: 0 1px 1px #666666;
   color: black;
 }
+
+/* line 11, ../../app/stylesheets/custom.sass */
+ul#secondary-menu li {
+  margin: 0 10px;
+  padding: 0;
+}
+/* line 14, ../../app/stylesheets/custom.sass */
+ul#secondary-menu .widget-comment-number {
+  left: -15px;
+  top: -3px;
+}

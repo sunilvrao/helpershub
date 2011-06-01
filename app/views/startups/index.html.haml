@@ -20,12 +20,6 @@
         =render @startups
         %span.comment-number.unanswered
           %a{:href => "http://www.elegantthemes.com/preview/AskIt/?p=99#comment-wrap"} 0
-        %h2.title
-          %a{:href => "http://www.elegantthemes.com/preview/AskIt/?p=99"} How do you allow to post from frontend ?
-        %span.quote
-        %span.author
-          \-
-          %a{:href => "http://www.elegantthemes.com/preview/AskIt/?author=1959", :title => "Posts by gobi"} gobi
         .clear
         .tags
           %a{:href => "http://www.elegantthemes.com/preview/AskIt/?tag=fresh"}
@@ -36,12 +30,9 @@
       / end .entry-content
     / end .entry-top
   / end .entry
-#sidebar
-  #sidebar-bottom
-    #sidebar-content
-      .widget-button
-        %a#call_to_action{:href => "http://www.elegantthemes.com/preview/AskIt/?page_id=54"}
-          %span Submit a Question
-=link_to "Create your startup", new_startup_path, :class=>"actionbutton", :id=>"call_to_action"
+= content_for :sidebar do
+  .widget-button
+    = link_to new_startup_path, :class=>"actionbutton", :id=>"call_to_action" do
+      %span Create your startup
 -content_for :secondary do
   =render :partial=>"secondary-nav"

@@ -205,7 +205,7 @@ font-family:'Yanone Kaffeesatz',Arial,sans-serif; font-size:12px; height:21px; l
 
 ul#primary-menu {  }
 	ul#primary-menu li { margin-left: 9px; }
-		ul#primary-menu a {text-decoration: none; padding: 22px 9px 0px 21px; height: 62px; }
+		ul#primary-menu a {text-decoration: none; padding: 22px 15px 0px 21px; height: 62px; }
 			ul#primary-menu a strong { font-size: 24px; color: #fff; text-transform: uppercase;  }
 			ul#primary-menu a span { display:block; font-size: 18px; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; color: #6c6c6c; width:95px; text-shadow: 1px 1px 1px #131313; }
 				ul#primary-menu { position: absolute; bottom: 0px; right: 0px; z-index: 10; }

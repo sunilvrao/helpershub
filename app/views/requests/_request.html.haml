@@ -12,8 +12,9 @@
           , #{request.created_at.strftime("%d %b %Y")}
       %br.clear
       - if controller.action_name == 'index'
-        =link_to commit_request_path(request), :class=>"apply small-button smallsilver right" do
-          %span commit
+        .alignright
+          =link_to commit_request_path(request), :class=>"apply small-button smallsilver" do
+            %span commit
         %br.clear
       - else
         .postmeta

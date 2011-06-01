@@ -1,4 +1,15 @@
-.comment
-  - require 'pp'; pp comment
-  .description #{comment.user.full_name} on #{comment.created_at.strftime("%d-%b-%y %I:%M %p")}
-  .content= comment.content
+.comment-body.clearfix
+  .avatar-box
+    .avatar
+      = image_tag 'http://1.gravatar.com/avatar/ff57aeda46a620056fe78b7f4906923e?s=53&d=&r=G', :class => 'avatar avatar-53', :width => 53, :height => 53
+      .overlay
+    %span.comment-date #{comment.created_at.strftime("%d-%b-%y %I:%M %p")}
+    .comment_join
+  .comment-wrap
+    .comment-wrap-inner.clearfix
+      .comment-author.vcard
+        %span.fn #{comment.user.full_name} says:
+      .comment-content
+        %p= comment.content
+      -#.reply-container
+        -#= link_to 'Reply', '#respond', :class => 'comment-reply-link'

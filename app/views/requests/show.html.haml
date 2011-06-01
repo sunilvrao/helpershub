@@ -5,11 +5,19 @@
         %span Edit Request
 
 =render @request
-.commitments
-  %h3 Showing Commitments
-  =render @request.commitments
-.comments
-  %h3 Comments
-  =render @comments
+
+- if @request.commitments.present?
+  #comment-wrap
+    %h3#comments Commitments
+    =render @request.commitments
+
+.clear
+#comment-wrap
+  - if @comments.present?
+    %h3#comments Comments
+    - @comments.each do |comment|
+      %ol.commentlist.clearfix
+        %li= render comment
+
   - @comment = @request.comments.build
   =render :partial=>"comments/form"

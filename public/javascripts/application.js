@@ -4,6 +4,8 @@ $(document).ready(function(){
     $("#flash").slideUp("slow");
     e.stopPropogation();
   });
-  //$("form .date").datepicker({dateFormat: "d MM yy"});
+  if($("form .date").length){
+    $("form .date").datepicker({dateFormat: "d MM yy"});
+  }
   //$("form .date").datepicker("option","dateFormat","d MM y");
 });

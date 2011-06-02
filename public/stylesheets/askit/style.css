@@ -194,8 +194,8 @@ font-family:'Yanone Kaffeesatz',Arial,sans-serif; font-size:12px; height:21px; l
 			.widget-unanswered { background: url("/images/author_comment_num.png") no-repeat !important; }
 			.ui-widget-content { padding-bottom: 7px !important; }
 
-	#call_to_action { background:url(../../images/button-bg.png) no-repeat; height: 59px; width: 228px; display:block; margin-left: 10px; text-decoration: none; }
-		#call_to_action span { font-size:29px; color: #fff; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; text-shadow: 1px 1px 1px rgba(0,0,0,0.3); padding-left: 17px; line-height: 50px; }
+	#call_to_action, #edit_startup, #delete_startup, #follow_startup { background:url(../../images/button-bg.png) no-repeat; height: 59px; width: 228px; display:block; margin-left: 10px; text-decoration: none; }
+		#call_to_action span, #edit_startup span, #delete_startup span, #follow_startup span { font-size:29px; color: #fff; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; text-shadow: 1px 1px 1px rgba(0,0,0,0.3); padding-left: 17px; line-height: 50px; }
 
 	.widget-button { padding-bottom: 7px; }
 

@@ -21,3 +21,8 @@ ul#secondary-menu .widget-comment-number {
   left: -15px;
   top: -3px;
 }
+
+/* line 19, ../../app/stylesheets/custom.sass */
+.entry-content .author-inner {
+  background: none;
+}

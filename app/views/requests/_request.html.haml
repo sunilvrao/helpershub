@@ -18,13 +18,14 @@
             %span commit
         %br.clear
       - else
-        .postmeta
-          %p.postinfo
-            Posted by
-            = link_to request.startup.name, request.startup
-            on #{request.created_at.strftime("%d %b %Y")}
-        .post-content
-          %p #{request.description}
-          .clear
+        - if controller.controller_name == 'requests'
+          .postmeta
+            %p.postinfo
+              Posted by
+              = link_to request.startup.name, request.startup
+              on #{request.created_at.strftime("%d %b %Y")}
+          .post-content
+            %p #{request.description}
+            .clear
       -#.orgLogo
         -#%img(src="#{request.startup.logo.thumb.url}")

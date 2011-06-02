@@ -1,38 +1,13 @@
-#main_area
-  #main-tabs
-    %ul#main-tabbed-area.clearfix
-      %li.active
-        %a{:href => ""}
-          %span Recent
-        %span.arrow
-      %li
-        %a{:href => ""}
-          %span Popular
-        %span.arrow
-      %li
-        %a{:href => ""}
-          %span Unanswered
-        %span.arrow
-  / end #main-tabs
-  .entry
-    .entry-top
-      .entry-content
-        =render @startups
-        %span.comment-number.unanswered
-          %a{:href => "http://www.elegantthemes.com/preview/AskIt/?p=99#comment-wrap"} 0
-        .clear
-        .tags
-          %a{:href => "http://www.elegantthemes.com/preview/AskIt/?tag=fresh"}
-            %span fresh
-          %a{:href => "http://www.elegantthemes.com/preview/AskIt/?tag=tonton"}
-            %span tonton
-        / end .tags
-      / end .entry-content
-    / end .entry-top
-  / end .entry
 = content_for :sidebar do
   .widget-button
     = link_to new_startup_path, :class=>"actionbutton", :id=>"call_to_action" do
       %span Create your startup
--content_for :secondary do
+
+= render :partial => 'layouts/utils/main_area_tabs'
+
+= render @startups
+.clear
+=# paginate @startups
+
+= content_for :secondary do
   =render :partial=>"secondary-nav"

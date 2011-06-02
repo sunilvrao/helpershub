@@ -1,18 +1,23 @@
-- if current_user==@request.owner
-  = content_for :sidebar do
-    .widget-button
+= content_for :sidebar do
+  .widget-button
+    - if current_user==@request.owner
       = link_to edit_request_path(@request), :class=>"actionbutton", :id=>"call_to_action" do
         %span Edit Request
+    - else
+      = link_to '#commitments', :class=>"actionbutton", :id=>"call_to_action" do
+        %span Commit
+
 
 =render @request
 
-- if @request.commitments.present?
-  #comment-wrap
+
+#comment-wrap
+  - if @request.commitments.present?
     %h3#comments Commitments
     =render @request.commitments
-    - @commitment = @request.commitments.build
-    %h3#commitments How do you think you'd help?
-    = render :partial => "commit_form"
+  - @commitment = @request.commitments.build
+  %h3#commitments How do you think you'd help?
+  = render :partial => "commit_form"
 
 .clear
 #comment-wrap

@@ -1,19 +1,26 @@
-#main_container
-  .action_links
-    -unless current_user.is_following?(@startup)
-      =link_to "Follow Startup", follow_startup_path(@startup), :class=>"actionbutton", :id=>"follow_startup"
-    -else
-      =link_to "Unfollow Startup", unfollow_startup_path(@startup), :class=>"actionbutton", :id=>"unfollow_startup"
+= content_for :sidebar do
+  - if current_user and @startup.owner==current_user
+    =link_to edit_startup_path(@startup), :class=>"actionbutton", :id=>"edit_startup" do
+      %span Edit Startup
+    =link_to startup_url(@startup),:method=>"delete", :confirm=>"Are you sure you want to delete your startup?", :class=>"actionbutton", :id=>"delete_startup" do
+      %span Delete Startup
+  - else
+    - if current_user.is_following?(@startup)
+      = link_to unfollow_startup_path(@startup), :class=>"actionbutton", :id=>"follow_startup" do
+        %span Unfollow Startup
+    - else
+      = link_to follow_startup_path(@startup), :class=>"actionbutton", :id=>"follow_startup" do
+        %span Follow Startup
+  = link_to new_startup_request_path(@startup), :class=>"actionbutton", :id=>"call_to_action" do
+    %span New Request
+
+
+
+    
         
-    - if current_user and @startup.owner==current_user
-      =link_to "Edit Startup", edit_startup_path(@startup), :class=>"actionbutton", :id=>"edit_startup"
-      =link_to "Delete Startup", startup_url(@startup),:method=>"delete", :confirm=>"Are you sure you want to delete your startup?", :class=>"actionbutton", :id=>"delete_startup"
-  =render @startup
-  .requests
-    %h3.requests_list Listing requests
-    .action_links
-      =link_to "New Request", new_startup_request_path(@startup), :class=>"actionbutton"
-    %hr
-    =render @startup.requests
+=render @startup
+.requests
+  %h3#commitments Listing requests
+  =render @startup.requests
 -content_for :secondary do
   =render :partial=>"secondary-nav"

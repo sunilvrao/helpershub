@@ -4,6 +4,21 @@
       = f.input :title
       = f.input :description, :as=>:text
       = f.input :category_ids, :as=>:check_boxes, :collection=>@categories.collect(&:id), :label_method=>Proc.new{|c| Category.find(c).name}, :label=>"Categories"
+      = f.input :why_important, :as=>:text, :label=>"What makes this important for your venture?", :wrapper_html=>{:class=>"label-above-inpu"}
+      = f.input :ideal_profile, :as=>:text, :label=>"Ideal profile of the ideal helper?", :wrapper_html=>{:class=>"label-above-inpu"}
+      = f.input :completion_date,
+                :as=>:string,
+                :label=>"Your estimate to complete?",
+                :input_html=>{:class=>"date",:value=>@request.completion_date.strftime("%d %b %Y")}
+      = f.input :helper_expectation,
+                :as=>:select,
+                :label=>"What can the helper expect from helping?",
+                :collection => ["A chance to with a gazillion dollars (I will buy a lottery ticket on your name)",
+                                "Happy Hour on me",
+                                "I'll wash your dishes for a week",
+                                "My first born",
+                                "You name it"],
+                :wrapper_html=>{:class=>"label-above-inpu"}
     .page-separator
     %br.clear
     %h3.title Relevant Dates

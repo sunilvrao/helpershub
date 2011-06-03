@@ -12,6 +12,10 @@ class Request
   field :views_count, :type=>Integer
   field :location,:type=>String
   field :slug, :type=>String
+  field :why_important, :type=>String
+  field :ideal_profile, :type=>String
+  field :completion_date, :type=>DateTime, :default=>DateTime.now
+  field :helper_expectation, :type=>String
   belongs_to :startup
   belongs_to :owner, :class_name=>"User"
   has_and_belongs_to_many :categories

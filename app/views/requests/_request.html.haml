@@ -26,6 +26,19 @@
               on #{request.created_at.strftime("%d %b %Y")}
           .post-content
             %p #{request.description}
-            .clear
+            .et-box.et-info
+              .et-box-content
+                %dl.one_half
+                  %dt Why is this important?
+                  %dd #{request.why_important}
+                  %dt Completion estimate:
+                  %dd #{request.completion_date.strftime("%d %b %Y")}
+                %dl.one_half.last
+                  %dt Ideal helper
+                  %dd #{request.ideal_profile}
+                  %dt Helper's Expectations?
+                  %dd #{request.helper_expectation}
+                .clear
+            %br.clear
       -#.orgLogo
         -#%img(src="#{request.startup.logo.thumb.url}")

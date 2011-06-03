@@ -1,6 +1,6 @@
 /* line 6, ../../app/stylesheets/formtastic_changes.sass */
 form.formtastic fieldset ol li label {
-  width: 20%;
+  width: 22%;
   color: #303030;
   font-size: 20px;
   font-family: "Yanone Kaffeesatz", Arial, sans-serif;
@@ -16,9 +16,11 @@ form.formtastic fieldset ol li input {
   -khtml-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #aaaaaa;
+  font-size: 14px;
 }
-/* line 16, ../../app/stylesheets/formtastic_changes.sass */
+/* line 17, ../../app/stylesheets/formtastic_changes.sass */
 form.formtastic fieldset ol li textarea {
+  font-size: 14px;
   padding: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -28,31 +30,49 @@ form.formtastic fieldset ol li textarea {
   border-radius: 5px;
   border: 1px solid #aaaaaa;
 }
-/* line 20, ../../app/stylesheets/formtastic_changes.sass */
+/* line 22, ../../app/stylesheets/formtastic_changes.sass */
+form.formtastic fieldset ol li select {
+  margin-top: 5px;
+  padding: 4px;
+  font-size: 14px;
+}
+/* line 26, ../../app/stylesheets/formtastic_changes.sass */
 form.formtastic fieldset ol li p.inline-errors {
   margin: 0.5em 0 0 0;
 }
-/* line 22, ../../app/stylesheets/formtastic_changes.sass */
+/* line 28, ../../app/stylesheets/formtastic_changes.sass */
 form.formtastic fieldset ol li p.inline-hints {
   margin: 0.5em 0 0 0;
-  font-size: smaller;
 }
-/* line 25, ../../app/stylesheets/formtastic_changes.sass */
+/* line 31, ../../app/stylesheets/formtastic_changes.sass */
+form.formtastic fieldset ol li.label-above-input label {
+  width: 100%;
+}
+/* line 33, ../../app/stylesheets/formtastic_changes.sass */
+form.formtastic fieldset ol li.label-above-input textarea {
+  margin-top: 5px;
+  margin-left: 20%;
+}
+/* line 36, ../../app/stylesheets/formtastic_changes.sass */
+form.formtastic fieldset ol li.label-above-input input {
+  margin-left: 20%;
+}
+/* line 39, ../../app/stylesheets/formtastic_changes.sass */
 form.formtastic fieldset.buttons {
   padding-left: 0;
 }
 
-/* line 29, ../../app/stylesheets/formtastic_changes.sass */
+/* line 43, ../../app/stylesheets/formtastic_changes.sass */
 #request_category_ids_input ol {
-  width: 79%;
-  padding-left: 20%;
+  width: 77%;
+  padding-left: 22%;
 }
-/* line 32, ../../app/stylesheets/formtastic_changes.sass */
+/* line 46, ../../app/stylesheets/formtastic_changes.sass */
 #request_category_ids_input ol li {
   width: 100%;
   float: left;
 }
-/* line 35, ../../app/stylesheets/formtastic_changes.sass */
+/* line 49, ../../app/stylesheets/formtastic_changes.sass */
 #request_category_ids_input ol li label {
   width: 100%;
 }

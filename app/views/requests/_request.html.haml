@@ -1,7 +1,7 @@
 .entry
   .entry-top
     .entry-content
-      %span.comment-number
+      %span.comment-number{ :class => "#{'unanswered' if request.commitments.size == 0}"}
         = link_to request.commitments.size, '#', :title => "#{pluralize(request.commitments.size, 'commitment')}"
       %h2.title= link_to request.title, request
       %span.quote

@@ -89,6 +89,7 @@ GEM
     gherkin (2.3.7)
       json (>= 1.4.6)
     haml (3.1.1)
+    high_voltage (0.9.4)
     i18n (0.5.0)
     jquery-rails (1.0)
       rails (~> 3.0)
@@ -237,6 +238,7 @@ DEPENDENCIES
   devise
   formtastic
   haml (~> 3.1)
+  high_voltage
   jquery-rails
   kaminari
   mini_magick

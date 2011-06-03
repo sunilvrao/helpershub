@@ -66,6 +66,12 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="high_voltage" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="jquery-rails" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
@@ -252,6 +258,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] addressable (v2.2.4, /Users/sunil2rao/.rvm/gems/ruby-1.9.2-p136/gems/addressable-2.2.4)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] multi_json (v1.0.3, /Users/sunil2rao/.rvm/gems/ruby-1.9.2-p136/gems/multi_json-1.0.3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-mocks (v2.6.0, /Users/sunil2rao/.rvm/gems/ruby-1.9.2-p136/gems/rspec-mocks-2.6.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] high_voltage (v0.9.4, /Users/sunil2rao/.rvm/gems/ruby-1.9.2-p136/gems/high_voltage-0.9.4)" level="application" />
   </component>
 </module>
 

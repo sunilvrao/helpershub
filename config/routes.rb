@@ -11,6 +11,8 @@ Helpershub::Application.routes.draw do
     end
   end
 
+  resources :pages
+
   resources :profiles
   resources :professions, :only=>[] do
     resources :profiles, :only=>[:all]

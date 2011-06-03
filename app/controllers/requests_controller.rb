@@ -53,7 +53,7 @@ class RequestsController < ApplicationController
 
   def update
     @request=Request.where(:slug=>params[:id]).first
-    category_ids = params[:request].delete(:category_ids)
+    category_ids = params[:request][:category_ids]
     category_ids.delete("")
     removed_cats = @request.category_ids.collect(&:to_s) - category_ids
     added_cats = category_ids - @request.category_ids.collect(&:to_s)

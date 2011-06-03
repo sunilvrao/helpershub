@@ -1,25 +1,22 @@
 .post-content
-  #register-form
-    =semantic_form_for @startup, :html=>{:enctype=>"multipart/form-data"} do |f|
-      %fieldset.inputs
-        %ol
-          .title
-            %h2
-              Start Up
-          =f.input :name, :label=>"Name"
-          =f.input :description, :as=>:text
-          =f.input :address
-          =f.input :vertical_ids, :as=>:select, :collection=>@verticals.collect(&:id), :label_method=>Proc.new{|c| Vertical.find(c).name}, :label=>"Focus"
-          -unless @startup.logo.thumb.blank?
-            %p Current Logo
-            %img.current_logo(src="#{@startup.logo.thumb.url}")
-          =f.input :logo, :as=>:file
-          .clear
-          .page-separator
-          .title
-            %h2
-              On the Web
-          =f.input :url
-          =f.input :twitter_id, :label=>"Twitter"
-          =f.input :facebook_page, :label=>"Facebook Page"
-          =f.buttons
+  =semantic_form_for @startup, :html=>{:enctype=>"multipart/form-data"} do |f|
+    %h3.title Start Up
+    = f.inputs do
+      =f.input :name, :label=>"Name"
+      =f.input :description, :as=>:text
+      =f.input :address
+      =f.input :vertical_ids, :as=>:select, :collection=>@verticals.collect(&:id), :label_method=>Proc.new{|c| Vertical.find(c).name}, :label=>"Focus"
+      -unless @startup.logo.thumb.blank?
+        %li.string.required
+          %label Current Logo
+          %img.current_logo(src="#{@startup.logo.thumb.url}")
+      =f.input :logo, :as=>:file
+
+    .page-separator
+    %br.clear
+    %h3.title On the Web
+    = f.inputs do
+      =f.input :url
+      =f.input :twitter_id, :label=>"Twitter"
+      =f.input :facebook_page, :label=>"Facebook Page"
+    =f.buttons

@@ -1,0 +1,3 @@
+%ul#secondary-menu.nav.clearfix
+  - @categories.each do |cat|
+    =render :partial=>"categories/category_users", :locals=>{:category=>cat, :selected=>@selected_category}

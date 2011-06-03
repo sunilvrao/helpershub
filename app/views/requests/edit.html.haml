@@ -1,3 +1,10 @@
-#main_container
-  %h3.new_request_title Edit request
-  =render :partial=>"form"
+.entry.page
+  .entry-top
+    .entry-content
+      %h2.title Edit Request
+      .page-separator
+      .clear
+        =render :partial=>"form"
+
+-content_for :secondary do
+  =render :partial=>"secondary-nav"

@@ -18,7 +18,7 @@ Helpershub::Application.routes.draw do
     resources :profiles, :only=>[:all]
   end
 
-  resources :users, :only=>[:edit, :update]
+  resources :users, :only=>[:index, :show, :edit, :update]
 
   resources :requests do
     resources :commitments, :only=>[:create]
@@ -30,6 +30,7 @@ Helpershub::Application.routes.draw do
 
   resources :categories, :only=>[] do
     resources :requests, :only=>[:index]
+    resources :users, :only=>[:index]
   end
 
   resources :startups do

@@ -4,8 +4,8 @@
       %strong Requests
       %span
         Get things done.
-  %li.menu-item
-    %a{:href => "http://www.elegantthemes.com/preview/AskIt/?page_id=48"}
+  %li.menu-item(class = "#{'current-menu-item' if controller_name=='users'}")
+    %a{:href => "#{users_path}"}
       %strong Contributors
       %span
         Mentors/Volunteers

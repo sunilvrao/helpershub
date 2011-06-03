@@ -1,27 +1,20 @@
 .post-content
-  #register-form
   =semantic_form_for @request do |f|
-    %fieldset.inputs
-      %ol
-        .title
-        %h2
-          New Request
-        =f.input :title
-        =f.input :description, :as=>:text
-        =f.input :category_ids, :as=>:check_boxes, :collection=>@categories.collect(&:id), :label_method=>Proc.new{|c| Category.find(c).name}, :label=>"Categories"
-        .clear
-        .page-separator
-        .title
-          %h2
-            Relevant Dates
-        =f.input :start_date, :input_html=>{:class=>"date",:value=>@request.start_date.strftime("%d %b %Y")}
-        =f.input :end_date, :input_html=>{:class=>"date",:value=>@request.end_date.strftime("%d %b %Y")}
-        .clear
-        .page-separator
-        .clear
-        .title
-          %h2
-            Other Informations
-        =f.input :location
-        =f.input :startup_id,:as=>:select, :collection=>@startups
+    = f.inputs do
+      = f.input :title
+      = f.input :description, :as=>:text
+      = f.input :category_ids, :as=>:check_boxes, :collection=>@categories.collect(&:id), :label_method=>Proc.new{|c| Category.find(c).name}, :label=>"Categories"
+    .page-separator
+    %br.clear
+    %h3.title Relevant Dates
+    = f.inputs do
+      = f.input :start_date, :input_html=>{:class=>"date",:value=>@request.start_date.strftime("%d %b %Y")}
+      = f.input :end_date, :input_html=>{:class=>"date",:value=>@request.end_date.strftime("%d %b %Y")}
+
+    .page-separator
+    %br.clear
+    %h3.title Other Information
+    = f.inputs do
+      =f.input :location
+      =f.input :startup_id,:as=>:select, :collection=>@startups
     =f.buttons

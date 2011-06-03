@@ -1,0 +1,10 @@
+.profile_image.alignright
+  %img(src="#{current_user.avatar.large.url}")
+=semantic_form_for current_user, :html=>{:multipart=>true} do |f|
+  = f.inputs do
+    =f.input :full_name
+    =f.input :email, :label=>"Email", :hint=>"All your notifications would come here"
+    =f.input :category_ids, :as=>:check_boxes, :collection=>@categories.collect(&:id), :label_method=>Proc.new{|c| Category.find(c).name}, :label=>"Categories"
+    =f.input :bio, :as=>:text, :label=>"Tell us a little bit about yourself"
+    =f.input :avatar, :as=>:file
+  =f.buttons

@@ -1,9 +1,11 @@
 /* line 6, ../../app/stylesheets/formtastic_changes.sass */
 form.formtastic fieldset ol li label {
-  width: 100%;
-  margin: 5px 0;
+  width: 20%;
+  color: #303030;
+  font-size: 20px;
+  font-family: "Yanone Kaffeesatz", Arial, sans-serif;
 }
-/* line 9, ../../app/stylesheets/formtastic_changes.sass */
+/* line 11, ../../app/stylesheets/formtastic_changes.sass */
 form.formtastic fieldset ol li input {
   margin: 5px 0;
   padding: 5px;
@@ -15,7 +17,7 @@ form.formtastic fieldset ol li input {
   border-radius: 5px;
   border: 1px solid #aaaaaa;
 }
-/* line 14, ../../app/stylesheets/formtastic_changes.sass */
+/* line 16, ../../app/stylesheets/formtastic_changes.sass */
 form.formtastic fieldset ol li textarea {
   padding: 5px;
   -moz-border-radius: 5px;
@@ -26,16 +28,31 @@ form.formtastic fieldset ol li textarea {
   border-radius: 5px;
   border: 1px solid #aaaaaa;
 }
-/* line 18, ../../app/stylesheets/formtastic_changes.sass */
+/* line 20, ../../app/stylesheets/formtastic_changes.sass */
 form.formtastic fieldset ol li p.inline-errors {
   margin: 0.5em 0 0 0;
 }
-/* line 20, ../../app/stylesheets/formtastic_changes.sass */
+/* line 22, ../../app/stylesheets/formtastic_changes.sass */
 form.formtastic fieldset ol li p.inline-hints {
   margin: 0.5em 0 0 0;
   font-size: smaller;
 }
-/* line 23, ../../app/stylesheets/formtastic_changes.sass */
+/* line 25, ../../app/stylesheets/formtastic_changes.sass */
 form.formtastic fieldset.buttons {
   padding-left: 0;
+}
+
+/* line 29, ../../app/stylesheets/formtastic_changes.sass */
+#request_category_ids_input ol {
+  width: 79%;
+  padding-left: 20%;
+}
+/* line 32, ../../app/stylesheets/formtastic_changes.sass */
+#request_category_ids_input ol li {
+  width: 100%;
+  float: left;
+}
+/* line 35, ../../app/stylesheets/formtastic_changes.sass */
+#request_category_ids_input ol li label {
+  width: 100%;
 }

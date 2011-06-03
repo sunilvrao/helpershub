@@ -9,6 +9,7 @@ class Category
   validates_uniqueness_of :name, :slug
   before_create :set_slug
   has_and_belongs_to_many :requests
+  has_and_belongs_to_many :users
   def set_slug
     unless self.slug
       slug_text = self.name.strip.downcase.gsub(/[^a-z0-9]+/,'-')

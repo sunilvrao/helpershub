@@ -1,0 +1,19 @@
+= content_for :sidebar do
+  .widget-button
+    = link_to '/profile', :class=>"actionbutton", :id=>"call_to_action" do
+      %span Update Your Profile
+
+= content_for :secondary do
+  =render :partial=>"secondary-nav"
+
+= render :partial => 'layouts/utils/main_area_tabs'
+
+#main-recent
+  - if @category
+    #view_all
+      =link_to users_path, :class => 'small-button smallteal' do
+        %span view all
+    .clear
+  =render @users
+  .clear
+  =paginate @users

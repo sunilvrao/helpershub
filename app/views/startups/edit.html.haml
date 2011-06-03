@@ -1,5 +1,13 @@
-#main_container
-  %h1 Edit your startup
-  =render :partial=>"form"
+#main_area
+  #breadcrumbs
+  .entry.page
+    .entry-top
+      .entry-content
+        %h2.title
+          Edit your startup
+        .clear
+          .page-separator
+        =render :partial=>"form"
+
 -content_for :secondary do
   =render :partial=>"secondary-nav"

@@ -1,0 +1,16 @@
+.entry.page
+  .entry-top
+    .entry-content
+      .author-inner.post-content
+        %span.comment-number{:class => "#{'unanswered' if user.requests.count == 0}"}
+          = link_to user.requests.count, '#', :title => "#{pluralize(user.requests.count, 'request')}"
+        .author-image
+          %image(src="#{user.avatar.thumb.url}" title="#{user.full_name} avatar")
+          .author-overlay
+        .author-info
+          %h1
+            = link_to user.full_name, user
+          %h3= mail_to user.email, nil, :encode => "hex"
+          %p= user.bio
+          %p
+            Joined about #{time_ago_in_words user.created_at} ago.

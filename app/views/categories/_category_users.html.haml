@@ -1,0 +1,4 @@
+%li.menu-item(class="#{'current-menu-item' if selected==category.slug}")
+  %a(href="#{category_users_path(category)}")
+    =category.name
+    %span.widget-comment-number{:class => "#{'widget-unanswered' if category.volunteer_count == 0}"} #{category.volunteer_count}

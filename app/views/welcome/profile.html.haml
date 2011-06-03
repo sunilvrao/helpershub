@@ -1,15 +1,8 @@
-#main_container
-  #profile
-    %h2 Setup your profile
-    .profile_image
-      %img(src="#{current_user.avatar.large.url}")
-    .details
-      =semantic_form_for current_user, :html=>{:multipart=>true} do |f|
-        %fieldset
-          %ol
-            =f.input :full_name
-            =f.input :email, :label=>"Email", :hint=>"All your notifications would come here"
-            =f.input :bio, :as=>:text, :label=>"Tell us a little bit about yourself"
-            =f.input :avatar, :as=>:file
-            =f.buttons
+.entry.page
+  .entry-top
+    .entry-content
+      %h2.title Setup your profile
+      .page-separator
+      %br.clear
+      = render :partial => 'users/form'
 

@@ -1,66 +1,30 @@
-#hubMainContainer
-  .post
-    %h3
-      %a{:href => "#"} Posting title ellentesque dapibus sodales enim.
-    %h5
-      Posted by:
-      %a{:href => "#"} Fmondragon Creative Studio
-      on Tuesday April 26, 2011
-    .applyDetails
-      %a.apply{:href => "#"} apply
-      %a{:href => "#"} view details
-    .orgLogo
-      %img{:src => "images/orgLogo_fmcs.gif"}/
-    .projectDescription
-      %p
-        Lorem ipsum dolor sit amet,
-        %a{:href => "#"} consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus etma.
-  .post
-    %h3
-      %a{:href => "#"} Aliquam ultrices scelerisque sem.
-    %h5
-      Posted by:
-      %a{:href => "#"} Helper's Hub
-      on Tuesday April 26, 2011
-    .applyDetails
-      %a.apply{:href => "#"} apply
-      %a{:href => "#"} view details
-    .orgLogo
-      %img{:src => "images/orgLogo_hh.gif"}/
-    .projectDescription
-      %p
-        Lorem ipsum dolor sit amet,
-        %a{:href => "#"} consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus etma.
-  .post
-    %h3
-      %a{:href => "#"} Suspendisse id velit vitae ligula volutpat condimentum.
-    %h5
-      Posted by:
-      %a{:href => "#"} Excelerate Labs
-      on Tuesday April 26, 2011
-    .applyDetails
-      %a.apply{:href => "#"} apply
-      %a{:href => "#"} view details
-    .orgLogo
-      %img{:src => "images/orgLogo_exc.gif"}/
-    .projectDescription
-      %p
-        Lorem ipsum dolor sit amet,
-        %a{:href => "#"} consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus etma.
-#nav
-  %ul#bullets
-    %li
-      %a{:href => "#"} 1
-    %li
-      %a{:href => "#"} 2
-    %li
-      %a{:href => "#"} 3
-    %li
-      %a{:href => "#"} 4
-  %a#viewAll{:href => "#"} view all
+= content_for :sidebar do
+  .widget-button
+    = link_to '/profile', :class=>"actionbutton", :id=>"call_to_action" do
+      %span Update Your Profile
+.entry.page
+  .entry-top
+    .entry-content
+      .author-inner.post-content
+        %span.comment-number{:class => "#{'unanswered' if current_user.requests.count == 0}"}
+          = link_to current_user.requests.count, '#', :title => "#{pluralize(current_user.requests.count, 'request')}"
+        .author-image
+          %image(src="#{current_user.avatar.thumb.url}" title="#{current_user.full_name} avatar")
+          .author-overlay
+        .author-info
+          %h1
+            = link_to current_user.full_name, current_user
+          %h3= mail_to current_user.email, nil, :encode => "hex"
+          %p= current_user.bio
+          %p
+            Joined about #{time_ago_in_words current_user.created_at} ago.
 -content_for :secondary do
-  %li.category
-    Stuff1
+  %ul#secondary-menu.nav.clearfix
+    %li.menu-item(class="#{'current-menu-item'}")
+      =link_to "How It Works", page_path(:id=>"howitworks")
+    %li.menu-item(class="#{'current-menu-item'}")
+      =link_to "FAQs", page_path(:id=>"faq")
+    %li.menu-item(class="#{'current-menu-item'}")
+      =link_to "Terms of Service", page_path(:id=>"terms")
+    %li.menu-item(class="#{'current-menu-item'}")
+      =link_to "Privacy", page_path(:id=>"privacy")

@@ -150,7 +150,7 @@ img#about-image { float: left; margin: 3px 8px 8px 0px; }
 			.post-content ul li ul, .post-content ul li ol, .comment-content ul li ul, .comment-content ul li ol { padding: 2px 0px 2px 20px; }
 			.post-content ol li ul, .post-content ol li ol, .comment-content ol li ul, .comment-content ol li ol  { padding: 2px 0px 2px 35px; }
 
-	.page-separator { height: 1px; background: url(../../images/post-meta-topbg.png) repeat-x; margin:25px -27px -3px -30px; }
+	.page-separator { height: 1px; background: url(../../images/post-meta-topbg.png) repeat-x; margin:0; }
 
 	.fullwidth { width: 960px !important; }
 
@@ -171,7 +171,7 @@ img#about-image { float: left; margin: 3px 8px 8px 0px; }
 	#register-form .login-remember label { font-size: 12px; font-family: Arial, sans-serif; width: 150px; }
 	#register-form #rememberme { float:left; margin-right:6px; }
 
-	#register-form .page-separator { margin:25px -45px 16px -47px; }
+	#register-form .page-separator { margin:0; }
 
 	#register-form h2 { font-size: 30px; }
 

@@ -7,4 +7,16 @@ class Notifier < ActionMailer::Base
     @startup=request.startup
     mail(:from=>"noreply@helpershub.com", :to=>@user.email, :subject=>"A new request from #{@startup.name}")
   end
+  def new_user_registered(user)
+    @user = user
+    mail(:from=>"noreply@helpershub.com", :to=>@user.email, :subject=>"Thanks for registering with Helpers Hub")
+  end
+  def user_approved(user)
+    @user = user
+    mail(:from=>"noreply@helpershub.com", :to=>@user.email, :subject=>"Your membership has been approved")
+  end
+  def user_banned(user)
+    @user = user
+    mail(:from=>"noreply@helpershub.com", :to=>@user.email, :subject=>"Your membership has been rejected")
+  end
 end

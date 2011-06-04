@@ -7,6 +7,7 @@ Helpershub::Application.routes.draw do
     resources :users, :only=>[] do
       member do
         post "approve"=>"admin#approve"
+        post "ban"=>"admin#ban"
       end
     end
   end

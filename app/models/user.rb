@@ -5,7 +5,9 @@ class User
   field :bio, :type => String
   field :email, :type => String
   field :activated, :type=>Boolean, :default=>false
+  field :banned, :type=>Boolean, :default=>false
   field :activated_at, :type=>DateTime
+  field :banned_at, :type=>DateTime
   field :profile_set, :type=>Boolean, :default=>false
   references_many :startups, :inverse_of=>:owner
   embeds_many :services
@@ -19,6 +21,12 @@ class User
   def activate!
     self.activated=true
     self.activated_at=DateTime.now
+    self.save!
+  end
+
+  def ban!
+    self.banned=true
+    self.banned_at=DateTime.now
     self.save!
   end
 

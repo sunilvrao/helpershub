@@ -11,3 +11,16 @@ job "request.notify" do |args|
   end
 end
 
+job "user.registered" do |args|
+  user = User.find(args["id"])
+  Notifier.new_user_registered(user).deliver!
+end
+
+job "user.approved" do |args|
+  user = User.find(args["id"])
+  Notifier.user_approved(user).deliver!
+end
+job "user.banned" do |args|
+  user = User.find(args["id"])
+  Notifier.user_banned(user).deliver!
+end

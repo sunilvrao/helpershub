@@ -72,6 +72,7 @@ class SessionsController < ApplicationController
           u.bio = @bio if @bio
           s = u.services.build(@auth)
           u.save!
+          Stalker.enqueue('user.registered',:id=>u.id)
           session[:current_user_id]=u.id.to_s
           @user=u
         end

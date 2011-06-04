@@ -102,18 +102,14 @@
       .container.clearfix
         %ul#footer-menu.bottom-nav
           %li#menu-item-57.menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-item.current_page_item.menu-item-home.menu-item-57
-            %a{:href => "http://www.elegantthemes.com/preview/AskIt/"} Home
-          %li#menu-item-50.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-50
-            %a{:href => "http://www.elegantthemes.com/preview/AskIt/?page_id=48"} About
-          %li#menu-item-89.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-89
-            %a{:href => "http://www.elegantthemes.com/preview/AskIt/?page_id=87"} Shortcodes
-          %li#menu-item-56.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-56
-            %a{:href => "http://www.elegantthemes.com/preview/AskIt/?page_id=54"} Submit
+            =link_to "About | ", page_path(:id=>"aboutus")
+            =link_to "FAQs  | ", page_path(:id=>"faq")
+            =link_to "Terms of Service  | ", page_path(:id=>"terms")
+            =link_to "Privacy", page_path(:id=>"privacy")
         %p#copyright
-          Designed by
-          %a{:href => "http://www.elegantthemes.com", :title => "Elegant Themes"} Elegant Themes
-          | Powered by
-          %a{:href => "http://www.wordpress.org"} WordPress
+          &copy; 2011
+          %a{:href => "http://www.helpershub.com", :title => "Helper's Hub"} Helper's Hub
+          | All rights reserved.
       / end .container
     / end #footer-bottom
   / end #footer-content

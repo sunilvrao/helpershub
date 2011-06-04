@@ -16,6 +16,8 @@ gem 'formtastic'
 gem 'kaminari'
 gem 'devise'
 gem 'stalker'
+gem 'high_voltage'
+
 group :development, :test do
   gem 'capybara'
   gem 'rspec-rails'

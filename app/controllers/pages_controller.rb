@@ -14,4 +14,6 @@ class PagesController < HighVoltage::PagesController
   def terms
   end
 
+  def howitworks
+  end
 end

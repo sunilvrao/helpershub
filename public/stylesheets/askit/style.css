@@ -90,7 +90,7 @@ img#about-image { float: left; margin: 3px 8px 8px 0px; }
 /*---------------[MAIN LAYOUT INFO]---------------*/
 /*------------------------------------------------*/
 
-#header { background: #232323 url(../../images/header-bg.png) repeat-x; }
+#header { background: #232323 url(../../images/hh-bg.png) repeat-x; }
 	#header .container { padding-top: 28px; height: 130px;}
 		.container { text-align: left; margin: 0 auto; width: 960px; position: relative; }
 			#logo { padding-left: 15px; }
@@ -316,7 +316,7 @@ h3#comments, h3#commitments { font-family: 'Yanone Kaffeesatz', Arial, sans-seri
 /*---------------------[FOOTER]-------------------*/
 /*------------------------------------------------*/
 
-#footer { background: #222222 url(../../images/footer-bg.png) repeat-x; }
+#footer { background: #222222 url(../../images/hhbtm-bg.png) repeat; }
 	#footer-content { background: url(../../images/footer-top-bg.png) repeat-x; }
 		.footer-widget {width: 221px; margin-right: 24px; float: left; padding-top: 44px; padding-bottom: 35px; }
 		#footer-content .last {margin-right: 0px;}

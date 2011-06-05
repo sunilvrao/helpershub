@@ -17,6 +17,7 @@ gem 'kaminari'
 gem 'devise'
 gem 'stalker'
 gem 'high_voltage'
+gem 'breadcrumbs_on_rails'
 
 group :development, :test do
   gem 'capybara'

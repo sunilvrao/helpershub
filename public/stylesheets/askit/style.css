@@ -74,6 +74,7 @@ dl dt { font-weight: bold; }
 dd  { margin-left: 1.5em;}
 blockquote  { margin: 1.5em; padding: 1em; color: #666666; background: #e6e6e6; font-style: italic; border: 1px solid #dcdcdc; }
 	blockquote p { padding-bottom: 0px; }
+.heading {"padding-bottom: 10px; border-bottom: 1px solid #e7e7e7; margin: 80px 0 20px 0;"}
 
 input[type=text],input.text, input.title, textarea, select { background-color:#fff; border:1px solid #bbb; padding: 2px; color: #4e4e4e; }
 input[type=text]:focus, input.text:focus, input.title:focus, textarea:focus, select:focus { border-color:#2D3940; color: #3e3e3e; }

@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f789e78-fdb1-4c63-850a-5e5c24e4af05" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/helpershub.iml" afterPath="$PROJECT_DIR$/.idea/helpershub.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/hh-bg.png" afterPath="$PROJECT_DIR$/public/images/hh-bg.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/aboutus.html.haml" afterPath="$PROJECT_DIR$/app/views/pages/aboutus.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/faq.html.haml" afterPath="$PROJECT_DIR$/app/views/pages/faq.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/howitworks.html.haml" afterPath="$PROJECT_DIR$/app/views/pages/howitworks.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/privacy.html.haml" afterPath="$PROJECT_DIR$/app/views/pages/privacy.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/terms.html.haml" afterPath="$PROJECT_DIR$/app/views/pages/terms.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/utils/_nav_primary.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/utils/_nav_primary.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/requests/index.html.haml" afterPath="$PROJECT_DIR$/app/views/requests/index.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/askit/style.css" afterPath="$PROJECT_DIR$/public/stylesheets/askit/style.css" />
     </list>
     <ignored path="helpershub.iws" />
@@ -39,25 +34,16 @@
       <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/requests/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="10" column="68" selection-start="312" selection-end="326" vertical-scroll-proportion="-4.6153846">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/admin_controller.rb">
+      <file leaf-file-name="shortcodes.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/askit/shortcodes.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_footer.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="10" selection-start="1685" selection-end="1685" vertical-scroll-proportion="0.0">
+            <state line="80" column="13" selection-start="7362" selection-end="7373" vertical-scroll-proportion="-8.730769">
               <folding />
             </state>
           </provider>
@@ -66,25 +52,43 @@
       <file leaf-file-name="aboutus.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pages/aboutus.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="0" selection-end="960" vertical-scroll-proportion="0.0">
+            <state line="1" column="3" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="howitworks.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pages/howitworks.html.haml">
+      <file leaf-file-name="startups_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/startups_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
+            <state line="42" column="67" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="faq.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pages/faq.html.haml">
+      <file leaf-file-name="notifier.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/mailers/notifier.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="0" selection-end="756" vertical-scroll-proportion="0.0">
+            <state line="22" column="0" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_nav_primary.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/utils/_nav_primary.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="11" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_footer.html.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="8" selection-start="979" selection-end="979" vertical-scroll-proportion="0.32592592">
               <folding />
             </state>
           </provider>
@@ -108,19 +112,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/askit/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="52" selection-start="3563" selection-end="3563" vertical-scroll-proportion="0.66573817">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/frontpage/index.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="76" column="1" selection-start="2700" selection-end="2700" vertical-scroll-proportion="-11.961538">
               <folding />
             </state>
           </provider>
@@ -143,22 +138,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/startups/index.html.haml" />
         <option value="$PROJECT_DIR$/app/views/layouts/utils/_main_area_tabs.html.haml" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/utils/_nav_primary.html.haml" />
         <option value="$PROJECT_DIR$/app/views/users/_user.html.haml" />
         <option value="$PROJECT_DIR$/app/views/welcome/index.html.haml" />
         <option value="$PROJECT_DIR$/app/views/users/index.html.haml" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/pages/aboutus.html.haml" />
         <option value="$PROJECT_DIR$/app/views/pages/howitworks.html.haml" />
         <option value="$PROJECT_DIR$/app/views/pages/faq.html.haml" />
         <option value="$PROJECT_DIR$/app/views/pages/terms.html.haml" />
         <option value="$PROJECT_DIR$/app/views/pages/privacy.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/requests/index.html.haml" />
         <option value="$PROJECT_DIR$/public/stylesheets/askit/style.css" />
+        <option value="$PROJECT_DIR$/app/views/pages/aboutus.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/layouts/utils/_nav_primary.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.haml" />
       </list>
     </option>
   </component>
@@ -225,11 +220,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -269,7 +260,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpershub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpershub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -287,25 +292,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontpage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpershub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpershub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="mailers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -690,55 +677,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/welcome/profile.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="46" selection-start="28" selection-end="72" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="11" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="31" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/requests/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="10" selection-start="1685" selection-end="1685" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/frontpage/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/frontpage.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="110" column="69" selection-start="5544" selection-end="5544" vertical-scroll-proportion="0.94074076">
@@ -756,13 +694,6 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/admin_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/aboutus.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="0" selection-end="960" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -795,9 +726,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/askit/shortcodes.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="13" selection-start="7362" selection-end="7373" vertical-scroll-proportion="-8.730769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/requests/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="68" selection-start="312" selection-end="326" vertical-scroll-proportion="-4.6153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/askit/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="52" selection-start="3563" selection-end="3563" vertical-scroll-proportion="0.66573817">
+        <state line="76" column="1" selection-start="2700" selection-end="2700" vertical-scroll-proportion="-11.961538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/aboutus.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="3" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/startups_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="67" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/utils/_main_area_tabs.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="6" selection-start="270" selection-end="270" vertical-scroll-proportion="0.40191388">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mailers/notifier.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/utils/_nav_primary.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="11" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="8" selection-start="979" selection-end="979" vertical-scroll-proportion="0.32592592">
           <folding />
         </state>
       </provider>

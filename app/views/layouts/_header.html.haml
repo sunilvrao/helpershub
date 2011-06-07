@@ -8,11 +8,13 @@
         - if current_user
           %strong
             You are currently signed in as
-          =link_to current_user.full_name,profile_path
+          %strong
+            =link_to current_user.full_name,profile_path
           %br
           %strong
             Not you?
-          =link_to "Sign out", signout_path
+          %strong
+            =link_to "Sign out", signout_path
       = render :partial => 'layouts/utils/nav_primary'
     / end .container
   / end #header-inner

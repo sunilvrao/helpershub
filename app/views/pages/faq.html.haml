@@ -1,4 +1,54 @@
 #breadcrumbs
+  %a{:href => "#{root_path}"}
+    %span.logotext Home
+  %span.raquo >>
+  Frequently asked..
+
+.entry
+  .entry-top
+    .entry-content
+      .post-content
+        %span
+          %blockquote
+            %p
+              Helper's Hub (HH) is a Social Volunteers community framework for mentors and entrepreneurs.
+        #accordion
+          %h2.current Entrepreneurs
+          .pane{:style => "display:block"} ... pane content ...
+          %h2 Contributors/Mentors
+          .pane ... pane content ...
+          %h2 Sponsors
+          .pane ... pane content ...
+    %br.clear
+-content_for :secondary do
+  %ul#secondary-menu.nav.clearfix
+    %li.menu-item(class="#{'menu-item'}")
+      =link_to "How It Works", page_path(:id=>"howitworks")
+    %li.menu-item(class="#{'current-menu-item'}")
+      =link_to "FAQs", page_path(:id=>"faq")
+    %li.menu-item(class="#{'menu-item'}")
+      =link_to "Terms of Service", page_path(:id=>"terms")
+    %li.menu-item(class="#{'menu-item'}")
+      =link_to "Privacy", page_path(:id=>"privacy")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#breadcrumbs
 %h1
   Frequently Asked ...
 %p

@@ -1,26 +1,56 @@
 #breadcrumbs
-%h1
+  %a{:href => "#{root_path}"}
+    %span.logotext Home
+  %span.raquo >>
   About Us
-%p
-  Helper's Hub is a Social Volunteers community framework for mentors and entrepreneurs
-%p
-  HH is an initiative focused on applying the power and scalability of social community volunteerism to enable the progression and advancement of early stage entrepreneurial endeavors.
-%ul
-  Our guiding principles are
-  %li
-    People will give information or knowledge most readily
-  %li
-    People will give their time
-  %li
-    People will give their money
 
+.entry
+  .entry-top
+    .entry-content
+      .clear
+      %h1
+        Getting to know us
+      .two_third
+        %blockquote
+          %p
+            %span
+              %em
+                Helper's Hub (HH) is a Social Volunteers community framework for mentors and entrepreneurs.
+        %p
+          %span
+            %em
+              HH is an initiative focused on applying the power and scalability of social volunteerism as a catalyst for early stage entrepreneurs to progress their endeavors and gain momentum toward the goal of establishing sustainable high growth ventures.
+        .one_third
+          %p
+            %span
+              =image_tag "/images/hh-funnel.png", :float=>"left", :height => "150", :width => "200", :title=>"Entrepreneurial Funnel"
+        %span
+          %em
+            %p
+              Existing entrepreneurial support eco-systems typically follow a venture capital selection process when identifying how to distribute precious resources like high caliber talent, grants and prizes leaving much potential on the sidelines.
+            %p
+              Helpers Hub activates both ends of the funnel by federating the resource allocation process to a reputation based social community support ecosystem providing scalability.
+      .one_third.last
+        .clear
+        .et-box.et-shadow
+          .et-box-content
+            %h5
+              People will most readily give
+            %ul
+              %li
+                Information or knowledge ...then
+              %li
+                Their time ....AND THEN
+              %li
+                Their money.
+      %br.clear
 -content_for :secondary do
   %ul#secondary-menu.nav.clearfix
-    %li.menu-item(class="#{'current-menu-item'}")
+    %li.menu-item(class="#{'menu-item'}")
       =link_to "How It Works", page_path(:id=>"howitworks")
-    %li.menu-item(class="#{'current-menu-item'}")
+    %li.menu-item(class="#{'menu-item'}")
       =link_to "FAQs", page_path(:id=>"faq")
-    %li.menu-item(class="#{'current-menu-item'}")
+    %li.menu-item(class="#{'menu-item'}")
       =link_to "Terms of Service", page_path(:id=>"terms")
-    %li.menu-item(class="#{'current-menu-item'}")
+    %li.menu-item(class="#{'menu-item'}")
       =link_to "Privacy", page_path(:id=>"privacy")

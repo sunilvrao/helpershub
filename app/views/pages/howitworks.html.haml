@@ -1,24 +1,41 @@
 #breadcrumbs
-%h1
-  This is how it works
-%p
-  For Entrepreneurs
-%ul
-  Our guiding principles are
-  %li
-    People will give information or knowledge most readily
-  %li
-    People will give their time
-  %li
-    People will give their money
+  %a{:href => "#{root_path}"}
+    %span.logotext Home
+  %span.raquo >>
+  How it Works
 
+.entry
+  .entry-top
+    .entry-content
+      .post-content
+        .one_half
+          %span
+            %blockquote
+              %p
+                Helper's Hub (HH) is a Social Volunteers community framework for mentors and entrepreneurs.
+            %em
+              %p
+                Early stage entrepreneurs, by definition, are resource constrained.  Their needs, in terms of technical, business, legal, sales and marketing and related advisory expertise, far out-weigh their capacity to secure them in traditional ways.
+              %p
+                Helpers Hub enables attainment of tactical and strategic entrepreneurial milestones by connecting entrepreneurs with civic-minded volunteers willing to contribute their time and energy.  People tend to give their time toward interesting ideas and the people behind them who are actively working on bringing the next generation of innovation to market.   Commitment by the entrepreneur to give back completes the cycle.
+              %p
+                HH is an initiative focused on applying the power and scalability of social volunteerism as a catalyst for early stage entrepreneurs to progress their endeavors and gain momentum toward the goal of establishing sustainable high growth ventures.
+        .one_half.last
+          #accordion
+            %h2.current Entrepreneurs
+            .pane{:style => "display:block"} ... pane content ...
+            %h2 Contributors/Mentors
+            .pane ... pane content ...
+            %h2 Sponsors
+            .pane ... pane content ...
+      %br.clear
 -content_for :secondary do
   %ul#secondary-menu.nav.clearfix
     %li.menu-item(class="#{'current-menu-item'}")
       =link_to "How It Works", page_path(:id=>"howitworks")
-    %li.menu-item(class="#{'current-menu-item'}")
+    %li.menu-item(class="#{'menu-item'}")
       =link_to "FAQs", page_path(:id=>"faq")
-    %li.menu-item(class="#{'current-menu-item'}")
+    %li.menu-item(class="#{'menu-item'}")
       =link_to "Terms of Service", page_path(:id=>"terms")
-    %li.menu-item(class="#{'current-menu-item'}")
+    %li.menu-item(class="#{'menu-item'}")
       =link_to "Privacy", page_path(:id=>"privacy")

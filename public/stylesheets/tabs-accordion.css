@@ -1,0 +1,48 @@
+
+/* root element for accordion. decorated with rounded borders and gradient background image */
+#accordion {
+	background: #f9f9f9 url(/images/askit/shortcodes/images/et-learn-more-bg.png) repeat-x left top;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 16px 13px 0px 18px;
+    margin: 10px 0px;
+}
+
+/* accordion header */
+#accordion h2 {
+	background: url(/images/askit/shortcodes/images/et-learn-more-closed.png) no-repeat right top;
+    cursor: pointer;
+    padding: 3px 45px 20px 0px;
+    font: 18px Century Gothic, Arial, sans-serif;
+    color: #535353;
+    letter-spacing: 0px;
+    display: block;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+/* currently active header */
+#accordion h2.current {
+	cursor:default;
+	background: url(/images/askit/shortcodes/images/et-learn-more-opened.png) no-repeat right top;
+}
+
+/* accordion pane */
+#accordion .pane {
+	border:1px solid #fff;
+	border-width:0 2px;
+	display:none;
+	height:180px;
+	padding:15px;
+	color:#fff;
+	font-size:12px;
+}
+
+/* a title inside pane */
+#accordion .pane h3 {
+	font-weight:normal;
+	margin:0 0 -5px 0;
+	font-size:16px;
+	color:#999;
+}

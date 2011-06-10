@@ -23,11 +23,36 @@
         .one_half.last
           #accordion
             %h2.current Entrepreneurs
-            .pane{:style => "display:block"} ... pane content ...
+            .widget-content.pane{:style => "display:block"}
+              %ul
+                %li.cat-item
+                  Create your Startup's profile.
+                %li.cat-item
+                  Publish a task that your need help with.
+                %li.cat-item
+                  Review Comments and Commits from various contributors.
+                %li.cat-item
+                  Close the published help request.
+                %li.cat-item
+                  Solicit feedback and also provide feedback on the engagement.
             %h2 Contributors/Mentors
-            .pane ... pane content ...
+            .widget-content.pane
+              %ul
+                %li.cat-item
+                  Review and follow (twitter style) various startups.
+                %li.cat-item
+                  Receive email notification on "help" request from your favorite startups.
+                %li.cat-item
+                  Discuss and/or commit to helping the startup's requests.
+                %li.cat-item
+                  Provide and receive feedback.
             %h2 Sponsors
-            .pane ... pane content ...
+            .widget-content.pane
+              %ul
+                %li.cat-item
+                  Help build a local entrepreneurial eco-system.
+                %li.cat-item
+                  Build your business reputation as a Social Enterprise.
       %br.clear
 -content_for :secondary do
   %ul#secondary-menu.nav.clearfix
@@ -35,7 +60,7 @@
       =link_to "How It Works", page_path(:id=>"howitworks")
     %li.menu-item(class="#{'menu-item'}")
       =link_to "FAQs", page_path(:id=>"faq")
-    %li.menu-item(class="#{'menu-item'}")
-      =link_to "Terms of Service", page_path(:id=>"terms")
-    %li.menu-item(class="#{'menu-item'}")
-      =link_to "Privacy", page_path(:id=>"privacy")
+    -#%li.menu-item(class="#{'menu-item'}")
+    -#  =link_to "Terms of Service", page_path(:id=>"terms")
+    -#%li.menu-item(class="#{'menu-item'}")
+    -#  =link_to "Privacy", page_path(:id=>"privacy")

@@ -2,29 +2,38 @@
   .widget-button
     = link_to '/profile', :class=>"actionbutton", :id=>"call_to_action" do
       %span Update Your Profile
+    .one-third.last
+      #accordion
+        %h2.current My Requests
+        .pane{:style => "display:block"} %h3... pane content ...
+        %h2 Followers
+        .pane ... pane content ...
+        %h2 Following
+        .pane ... pane content ...
 .entry.page
   .entry-top
     .entry-content
-      .author-inner.post-content
-        %span.comment-number{:class => "#{'unanswered' if current_user.requests.count == 0}"}
-          = link_to current_user.requests.count, '#', :title => "#{pluralize(current_user.requests.count, 'request')}"
-        .author-image
-          %image(src="#{current_user.avatar.thumb.url}" title="#{current_user.full_name} avatar")
-          .author-overlay
-        .author-info
-          %h1
-            = link_to current_user.full_name, current_user
-          %h3= mail_to current_user.email, nil, :encode => "hex"
-          %p= current_user.bio
-          %p
-            Joined about #{time_ago_in_words current_user.created_at} ago.
+      .post-content
+        .author-inner.post-content
+          %span.comment-number{:class => "#{'unanswered' if current_user.requests.count == 0}"}
+            = link_to current_user.requests.count, '#', :title => "#{pluralize(current_user.requests.count, 'request')}"
+          .author-image
+            %image(src="#{current_user.avatar.thumb.url}" title="#{current_user.full_name} avatar")
+            .author-overlay
+          .author-info
+            %h1
+              = link_to current_user.full_name, current_user
+            %h3= mail_to current_user.email, nil, :encode => "hex"
+            %p= current_user.bio
+            %p
+              Joined about #{time_ago_in_words current_user.created_at} ago.
 -content_for :secondary do
   %ul#secondary-menu.nav.clearfix
-    %li.menu-item(class="#{'current-menu-item'}")
-      =link_to "How It Works", page_path(:id=>"howitworks")
-    %li.menu-item(class="#{'current-menu-item'}")
-      =link_to "FAQs", page_path(:id=>"faq")
-    %li.menu-item(class="#{'current-menu-item'}")
-      =link_to "Terms of Service", page_path(:id=>"terms")
-    %li.menu-item(class="#{'current-menu-item'}")
-      =link_to "Privacy", page_path(:id=>"privacy")
+    %li.menu-item(class="#{'menu-item'}")
+      =link_to "My Requests", page_path(:id=>"howitworks")
+    %li.menu-item(class="#{'menu-item'}")
+      =link_to "My Startups", page_path(:id=>"faq")
+    %li.menu-item(class="#{'menu-item'}")
+      =link_to "Followers", page_path(:id=>"terms")
+    %li.menu-item(class="#{'menu-item'}")
+      =link_to "Following", page_path(:id=>"privacy")

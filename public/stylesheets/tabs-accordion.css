@@ -19,7 +19,6 @@
     color: #535353;
     letter-spacing: 0px;
     display: block;
-    border-bottom: 1px solid #e7e7e7;
 }
 
 /* currently active header */
@@ -33,9 +32,10 @@
 	border:1px solid #fff;
 	border-width:0 2px;
 	display:none;
-	height:180px;
+/*	height:180px; */
+    height:auto;
 	padding:15px;
-	color:#fff;
+    color: #535353;
 	font-size:12px;
 }
 
@@ -43,6 +43,8 @@
 #accordion .pane h3 {
 	font-weight:normal;
 	margin:0 0 -5px 0;
-	font-size:16px;
-	color:#999;
+    font: 10px Century Gothic, Arial, sans-serif;
+    color: #535353;
+    letter-spacing: 0px;
 }
+#accordion ul { list-style: none; }

@@ -343,7 +343,7 @@ h3#comments, h3#commitments { font-family: 'Yanone Kaffeesatz', Arial, sans-seri
 	#sidebar-bottom { background:url(../../images/sidebar-bottom.png) no-repeat bottom left; padding-bottom:24px; width: 250px;}
 		#sidebar-content { background:url(../../images/sidebar-content.png) repeat-y; }
 			#sidebar-content h4.widgettitle {padding: 3px 24px 15px; color: #525252; font-size: 24px; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; font-weight: lighter; text-shadow: 1px 1px 1px #fff;}
-				.widget-content { background:url(../../images/widget-content.png) no-repeat top left; padding: 20px 24px;  }
+				.widget-content { background:url(../../images/widget-content.png) repeat-x top left; padding: 20px 24px;  }
 					.widget-content ul li {background:url(../../images/sidebar-bullet.png) no-repeat 0px 10px;  line-height: 25px; padding-left: 14px;}
 						.widget-content ul li a {color:#424242; text-shadow: 1px 1px 1px #fff; }
 			#sidebar .widget { padding-left: 1px; }

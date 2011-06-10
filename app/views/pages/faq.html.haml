@@ -11,58 +11,79 @@
         %span
           %blockquote
             %p
-              Helper's Hub (HH) is a Social Volunteers community framework for mentors and entrepreneurs.
+              Some of the most frequently asked question about Helper's Hub (HH) are ...
         #accordion
-          %h2.current Entrepreneurs
-          .pane{:style => "display:block"} ... pane content ...
-          %h2 Contributors/Mentors
-          .pane ... pane content ...
-          %h2 Sponsors
-          .pane ... pane content ...
-    %br.clear
+          %h2 What is a Request? a Comment? a Commit?
+          .widget-content.pane
+            %ul
+              %li.cat-item
+                A
+                %strong
+                  Request
+                is any tactical task that an Entrepreneur need help with.  Like needing an introduction to Subject mater Expert (SME), reviewing a business plan, product/solution testing, etc.
+              %li.cat-item
+                A
+                %strong
+                  Comment
+                as the name indicates, is a question/comment/clarification that will help understand the request not just for you but for all of the participating private community.
+              %li.cat-item
+                A
+                %strong
+                  Commit
+                is a indication of your willingness to help the startup with the request.
+          %h2 Who can make a request?
+          .widget-content.pane
+            Only a user who is associated with a startup can make a request.
+          %h2 Who can comment on a request?
+          .widget-content.pane
+            Any user can comment on a request.
+          %h2 Who can commit to a request?
+          .widget-content.pane
+            Any user who is
+            %strong
+              not
+            associated with the startup can commit to a request.  But, please sure that you have the time and know-how to honor your commitment.
+          %h2 How can I participate?
+          .widget-content.pane
+            This is exclusive community.  It is invitation only.  A registration will have to be approved before participating.
+          %h2 I’m an entrepreneur:  Can I commit to someones request?
+          .widget-content.pane
+            Absolutely.  A user of this site is contributor by default.  If you register a startup then you are considered an entrepreneur.
+          %h2 I’m an entrepreneur:  How many requests can I make?
+          .widget-content.pane
+            As many as you can handle and get help for.
+          %h2 I’m an entrepreneur:  How much should I pay for getting help?
+          .widget-content.pane
+            Nothing.  All we expect in return is you give back to the community by helping other who are in the same boat as are(were).
+          %h2 I’m an entrepreneur:  Will my startup/idea be safe and protected?
+          .widget-content.pane
+            This is private community of other entrepreneurs like you and mentors who are committed to your success.  So your ideas/startup will be as safe as it can be.
+
+          %h2 I’m a service provider:  Why should I contribute?*
+          .widget-content.pane
+            %ul
+              %li.cat-item
+                Help build a local entrepreneurial eco-system.
+              %li.cat-item
+                Build your business reputation as a Social Enterprise.
+          %h2 As a Contributor, can I charge a service fee to via Helpers Hub?
+          .widget-content.pane
+            %strong
+              NO. Participation and contribution is purely voluntary and for the common good.
+          %h2 How do I get updates about startups that I am interested in?
+          .widget-content.pane
+            Every startup has a twitter style "Follow" option.  You can follow the startup of your interest and get updates.
+          %h2 How oftern do I get updates?
+          .widget-content.pane
+            From your favorite startups, you get instant updates.  You will also get a general daily updates.  All via email.
+      %br.clear
 -content_for :secondary do
   %ul#secondary-menu.nav.clearfix
     %li.menu-item(class="#{'menu-item'}")
       =link_to "How It Works", page_path(:id=>"howitworks")
     %li.menu-item(class="#{'current-menu-item'}")
       =link_to "FAQs", page_path(:id=>"faq")
-    %li.menu-item(class="#{'menu-item'}")
-      =link_to "Terms of Service", page_path(:id=>"terms")
-    %li.menu-item(class="#{'menu-item'}")
-      =link_to "Privacy", page_path(:id=>"privacy")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#breadcrumbs
-%h1
-  Frequently Asked ...
-%p
-  %strong
-    How will HH help Entrepreneurs
-  %br
-  HH is an initiative focused on applying the power and scalability of social community volunteerism to enable the progression and advancement of early stage entrepreneurial endeavors.
--content_for :secondary do
-  %ul#secondary-menu.nav.clearfix
-    %li.menu-item(class="#{'current-menu-item'}")
-      =link_to "How It Works", page_path(:id=>"howitworks")
-    %li.menu-item(class="#{'current-menu-item'}")
-      =link_to "FAQs", page_path(:id=>"faq")
-    %li.menu-item(class="#{'current-menu-item'}")
-      =link_to "Terms of Service", page_path(:id=>"terms")
-    %li.menu-item(class="#{'current-menu-item'}")
-      =link_to "Privacy", page_path(:id=>"privacy")
+    -#%li.menu-item(class="#{'menu-item'}")
+    -#  =link_to "Terms of Service", page_path(:id=>"terms")
+    -#%li.menu-item(class="#{'menu-item'}")
+    -#  =link_to "Privacy", page_path(:id=>"privacy")

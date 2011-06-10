@@ -1,21 +1,25 @@
 .entry
   .entry-top
     .entry-content
-      %span.comment-number{ :class => "#{'unanswered' if request.commitments.size == 0}"}
-        = link_to request.commitments.size, '#', :title => "#{pluralize(request.commitments.size, 'commitment')}"
+      /%span.comment-number{ :class => "#{'unanswered' if request.commitments.size == 0}"}
+      /  = link_to request.commitments.size, '#', :title => "#{pluralize(request.commitments.size, 'commitment')}"
       %h2.title= link_to request.title, request
       %span.quote
-      - if controller.action_name == 'index'
+      - a_name = controller.action_name
+      - index_like = a_name == 'index' || a_name == 'uncommitted' || a_name == 'popular'
+      - if index_like
         %span.author
           \-
           = link_to request.startup.name, request.startup
           , #{request.created_at.strftime("%d %b %Y")}
       %br.clear
-      - if controller.action_name == 'index'
+      - if index_like
         .alignright
           =#link_to commit_request_path(request), :class=>"apply small-button smallsilver" do
           = link_to "/requests/#{request.slug}#commitments", :class=>"apply small-button smallsilver" do
-            %span commit
+            %span= pluralize(request.commitments.size,'commit')
+          = link_to "/requests/#{request.slug}", :class=>"apply small-button smallsilver" do
+            %span= pluralize(request.comments.size,'comment')
         %br.clear
       - else
         - if controller.controller_name == 'requests'

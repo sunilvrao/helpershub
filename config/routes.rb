@@ -19,7 +19,11 @@ Helpershub::Application.routes.draw do
     resources :profiles, :only=>[:all]
   end
 
-  resources :users, :only=>[:index, :show, :edit, :update]
+  resources :users, :only=>[:index, :show, :edit, :update] do
+    collection do
+      get "active" => "users#most_active"
+    end
+  end
 
   resources :requests do
     resources :commitments, :only=>[:create]
@@ -27,11 +31,24 @@ Helpershub::Application.routes.draw do
     member do
       get "commit"
     end
+    collection do
+      get "uncommitted"
+      get "popular"
+    end
   end
 
   resources :categories, :only=>[] do
-    resources :requests, :only=>[:index]
-    resources :users, :only=>[:index]
+    resources :requests, :only=>[:index] do
+      collection do
+        get "uncommitted"
+        get "popular"
+      end
+    end
+    resources :users, :only=>[:index] do
+      collection do
+        get "active" => "users#most_active"
+      end
+    end
   end
 
   resources :startups do

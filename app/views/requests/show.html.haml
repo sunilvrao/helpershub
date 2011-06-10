@@ -3,6 +3,14 @@
     - if current_user==@request.owner
       = link_to edit_request_path(@request), :class=>"actionbutton", :id=>"call_to_action" do
         %span Edit Request
+      = semantic_form_for @request, :html => {:id => 'activate-request-form'} do |f|
+        = f.inputs do
+          = f.input :active, :as => :hidden, :value => !@request.active
+        %button#close_request{:type => 'submit'}
+          - if @request.active
+            %span Close Request
+          - else
+            %span Activate Request
     - else
       = link_to '#commitments', :class=>"actionbutton", :id=>"call_to_action" do
         %span Commit

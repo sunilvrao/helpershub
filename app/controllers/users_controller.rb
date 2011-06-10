@@ -7,6 +7,13 @@ class UsersController < ApplicationController
     @users = @category.users.page(params[:page]) if @category
   end
 
+  def most_active
+    @category = Category.where(:slug=>params[:category_id]).first if params[:category_id]
+    @users = User.most_active.page(params[:page]) unless @category
+    @users = @category.users.most_active.page(params[:page]) if @category
+    render :action => :index
+  end
+
   def show
     @user = User.find(params[:id])
   end

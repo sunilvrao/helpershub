@@ -1,0 +1,39 @@
+- a_name = controller.action_name
+
+- c_name = 'requests'
+- if params[:category_id].present?
+  - c_name = "category_#{c_name}"
+- elsif params[:startup_id].present?
+  - c_name = "startup_#{c_name}"
+
+#main-tabs
+  %ul.clearfix#main-tabbed-area
+    - if a_name == 'index'
+      %li.active
+        = link_to send("#{c_name}_path") do
+          %span Recent
+        %span.arrow
+    - else
+      %li
+        = link_to send("#{c_name}_path") do
+          %span Recent
+
+    - if a_name == 'popular'
+      %li.active
+        = link_to send("#{a_name}_#{c_name}_path") do
+          %span Popular
+        %span.arrow
+    - else
+      %li
+        = link_to send("popular_#{c_name}_path") do
+          %span Popular
+
+    - if a_name == 'uncommitted'
+      %li.active
+        = link_to send("#{a_name}_#{c_name}_path") do
+          %span Uncommitted
+        %span.arrow
+    - else
+      %li
+        = link_to send("uncommitted_#{c_name}_path") do
+          %span Uncommitted

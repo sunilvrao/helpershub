@@ -9,6 +9,7 @@ class User
   field :activated_at, :type=>DateTime
   field :banned_at, :type=>DateTime
   field :profile_set, :type=>Boolean, :default=>false
+  field :commit_count, :type=>Integer, :default=>0
   references_many :startups, :inverse_of=>:owner
   embeds_many :services
   references_many :requests, :inverse_of=>:owner
@@ -17,6 +18,8 @@ class User
   has_and_belongs_to_many :categories
   accepts_nested_attributes_for :profile
   mount_uploader :avatar, AvatarUploader
+
+  scope :most_active, order_by([:commit_count,:desc])
 
   def activate!
     self.activated=true

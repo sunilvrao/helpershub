@@ -16,13 +16,17 @@ class Request
   field :ideal_profile, :type=>String
   field :completion_date, :type=>DateTime, :default=>DateTime.now
   field :helper_expectation, :type=>String
+  field :commit_count, :type=>Integer, :default=>0
   belongs_to :startup
   belongs_to :owner, :class_name=>"User"
   has_and_belongs_to_many :categories
   has_many :commitments
   has_many :comments, :as=>:commentable
   validates_presence_of :title, :start_date, :end_date, :startup
-  
+  scope :active, where(:active => true)
+  scope :uncommitted, where(:commit_count => 0)
+  scope :popular, order_by([:commit_count,:desc])
+
   before_create :set_slug
   paginates_per 5
   def set_slug

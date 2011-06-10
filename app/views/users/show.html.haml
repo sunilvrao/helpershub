@@ -1,7 +1,8 @@
 = content_for :sidebar do
-  .widget-button
-    = link_to '/profile', :class=>"actionbutton", :id=>"call_to_action" do
-      %span Update Your Profile
+  - if @user == current_user
+    .widget-button
+      = link_to '/profile', :class=>"actionbutton", :id=>"call_to_action" do
+        %span Update Your Profile
 
 -content_for :secondary do
   =render :partial=>"secondary-nav"

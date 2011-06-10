@@ -53,16 +53,20 @@ class RequestsController < ApplicationController
 
   def update
     @request=Request.where(:slug=>params[:id]).first
-    category_ids = params[:request][:category_ids]
-    category_ids.delete("")
-    removed_cats = @request.category_ids.collect(&:to_s) - category_ids
-    added_cats = category_ids - @request.category_ids.collect(&:to_s)
+    if params[:request][:category_ids].present?
+      category_ids = params[:request][:category_ids]
+      category_ids.delete("")
+      removed_cats = @request.category_ids.collect(&:to_s) - category_ids
+      added_cats = category_ids - @request.category_ids.collect(&:to_s)
+    end
     if(@request.update_attributes(params[:request]))
-      added_cats.each do |c|
-        Category.find(c).inc(:request_count,1)
-      end
-      removed_cats.each do |c|
-        Category.find(c).inc(:request_count,-1)
+      if params[:request][:category_ids].present?
+        added_cats.each do |c|
+          Category.find(c).inc(:request_count,1)
+        end
+        removed_cats.each do |c|
+          Category.find(c).inc(:request_count,-1)
+        end
       end
       flash[:notice] = "Request updated successfully"
       redirect_to @request
@@ -74,6 +78,24 @@ class RequestsController < ApplicationController
   def commit
     @request= Request.where(:slug=>params[:id]).first
     @commitment= @request.commitments.build
+  end
+
+  def uncommitted
+    @startup = Startup.where(:slug=>params[:startup_id]).first if params[:startup_id]
+    @category = Category.where(:slug=>params[:category_id]).first if params[:category_id]
+    @requests= Request.uncommitted.page(params[:page]) unless @startup or @category
+    @requests= @startup.requests.uncommitted.page(params[:page]) if @startup
+    @requests= @category.requests.uncommitted.page(params[:page]) if @category
+    render :action => :index
+  end
+
+  def popular
+    @startup = Startup.where(:slug=>params[:startup_id]).first if params[:startup_id]
+    @category = Category.where(:slug=>params[:category_id]).first if params[:category_id]
+    @requests= Request.popular.page(params[:page]) unless @startup or @category
+    @requests= @startup.requests.popular.page(params[:page]) if @startup
+    @requests= @category.requests.popular.page(params[:page]) if @category
+    render :action => :index
   end
   
   private

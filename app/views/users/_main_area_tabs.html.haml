@@ -1,0 +1,27 @@
+- a_name = controller.action_name
+
+- c_name = 'users'
+- if params[:category_id].present?
+  - c_name = "category_#{c_name}"
+
+#main-tabs
+  %ul.clearfix#main-tabbed-area
+    - if a_name == 'index'
+      %li.active
+        = link_to send("#{c_name}_path") do
+          %span Recent
+        %span.arrow
+    - else
+      %li
+        = link_to send("#{c_name}_path") do
+          %span Recent
+
+    - if a_name == 'most_active'
+      %li.active
+        = link_to send("active_#{c_name}_path") do
+          %span Most Active
+        %span.arrow
+    - else
+      %li
+        = link_to send("active_#{c_name}_path") do
+          %span Most Active

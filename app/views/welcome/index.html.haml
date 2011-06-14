@@ -2,14 +2,44 @@
   .widget-button
     = link_to '/profile', :class=>"actionbutton", :id=>"call_to_action" do
       %span Update Your Profile
-    .one-third.last
-      #accordion
-        %h2.current My Requests
-        .pane{:style => "display:block"} %h3... pane content ...
-        %h2 Followers
-        .pane ... pane content ...
-        %h2 Following
-        .pane ... pane content ...
+  #archives-3.widget.widget_archive
+    %h4.widgettitle Recent Followers
+    .widget-content
+      %ul
+        %li
+          .author-image
+            %image(src="#{current_user.avatar.thumb.url}" title="#{current_user.full_name} avatar")
+          .author-info
+            = link_to current_user.full_name, current_user
+        %li
+          .author-image
+            %image(src="#{current_user.avatar.thumb.url}" title="#{current_user.full_name} avatar")
+          .author-info
+            = link_to current_user.full_name, current_user
+        %li
+          .author-image
+            %image(src="#{current_user.avatar.thumb.url}" title="#{current_user.full_name} avatar")
+          .author-info
+            = link_to current_user.full_name, current_user
+  #archives-3.widget.widget_archive
+    %h4.widgettitle Following (#{current_user.follows.count})
+    .widget-content
+      %ul
+        %li
+          .author-image
+            %image(src="#{current_user.avatar.thumb.url}" title="#{current_user.full_name} avatar")
+          .author-info
+            = link_to current_user.full_name, current_user
+        %li
+          .author-image
+            %image(src="#{current_user.avatar.thumb.url}" title="#{current_user.full_name} avatar")
+          .author-info
+            = link_to current_user.full_name, current_user
+        %li
+          .author-image
+            %image(src="#{current_user.avatar.thumb.url}" title="#{current_user.full_name} avatar")
+          .author-info
+            = link_to current_user.full_name, current_user
 .entry.page
   .entry-top
     .entry-content

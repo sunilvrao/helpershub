@@ -12,7 +12,7 @@
           #anticipate-header
             %h1#logo
               %a{:href => "#{root_path}" }
-                %img{:alt => "Helper's Hub Logo", :src => "/images/helpers_hub_logo.png"}/
+                %img{:alt => "Excelerate Labs Logo", :src => "/images/exceleratelogo.gif"}/
               #joinButton
                 =link_to "Join", signin_path, :id=>"join"
                 =link_to "Sign In", signin_path, :id=>"signIn"
@@ -36,7 +36,7 @@
                 %img{:alt => "Facebook", :src => "/images/facebook.png"}/
             / end #anticipate-social-icons
             #anticipate-subscribe
-              %form#searchform{:action => "#", :method => "post"}
-                %input#searchinput{:name => "anticipate_email", :type => "text", :value => "Enter your email to receive updates..."}/
-                %input#searchsubmit{:type => "submit", :value => "Submit"}/
+              %form#subscribeform{:action => "#", :method => "post"}
+                %input#subscribeinput{:name => "anticipate_email", :type => "text", :value => "Email for updates:"}/
+                %input#subscribesubmit{:type => "submit", :value => "Submit"}/
             / end #anticipate-subscribe

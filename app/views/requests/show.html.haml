@@ -1,8 +1,11 @@
 = content_for :sidebar do
   .widget-button
     - if current_user==@request.owner
-      = link_to edit_request_path(@request), :class=>"actionbutton", :id=>"call_to_action" do
-        %span Edit Request
+      - if @request.active
+        = link_to edit_request_path(@request), :class=>"actionbutton", :id=>"call_to_action" do
+          %span Edit Request
+      - else
+        %h4.widgettitle Request Closed
       = semantic_form_for @request, :html => {:id => 'activate-request-form'} do |f|
         = f.inputs do
           = f.input :active, :as => :hidden, :value => !@request.active

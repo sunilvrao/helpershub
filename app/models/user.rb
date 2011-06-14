@@ -15,6 +15,7 @@ class User
   references_many :requests, :inverse_of=>:owner
   has_one :profile
   has_many :follows
+  has_many :followers, :as=>:followable
   has_and_belongs_to_many :categories
   accepts_nested_attributes_for :profile
   mount_uploader :avatar, AvatarUploader

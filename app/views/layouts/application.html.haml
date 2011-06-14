@@ -49,3 +49,10 @@
         %span.dismiss
           %a(href="#" title="Click here to dismiss") x
     =javascript_include_tag "l10n.js","DD_belatedPNG_0.0.8a-min.js", "jquery.min.js", "jquery-ui.min.js", "jquery.tools.min.js", "rails.js","askit.js", "superfish.js", "application.js"
+    :javascript
+      var uvOptions = {};
+      (function() {
+        var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+        uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/qRvlOttd9Ojo1rFdS14z7w.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+      })();

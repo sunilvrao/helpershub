@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f789e78-fdb1-4c63-850a-5e5c24e4af05" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/excelerateLogo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/welcome/_request.html.haml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/mongoid.yml.sample" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/helpershub.iml" afterPath="$PROJECT_DIR$/.idea/helpershub.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/frontpage/index.html.haml" afterPath="$PROJECT_DIR$/app/views/frontpage/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/frontpage.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/frontpage.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/requests/show.html.haml" afterPath="$PROJECT_DIR$/app/views/requests/show.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/welcome/index.html.haml" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/frontpage.css" afterPath="$PROJECT_DIR$/public/stylesheets/frontpage.css" />
     </list>
     <ignored path="helpershub.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,7 +38,7 @@
       <file leaf-file-name="frontpage.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/frontpage.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="112" selection-start="1820" selection-end="1820" vertical-scroll-proportion="0.7630923">
+            <state line="14" column="81" selection-start="455" selection-end="455" vertical-scroll-proportion="0.029925186">
               <folding />
             </state>
           </provider>
@@ -850,7 +837,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/frontpage.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="112" selection-start="1820" selection-end="1820" vertical-scroll-proportion="0.7630923">
+        <state line="14" column="81" selection-start="455" selection-end="455" vertical-scroll-proportion="0.029925186">
           <folding />
         </state>
       </provider>

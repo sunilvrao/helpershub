@@ -8,6 +8,9 @@ class WelcomeController < ApplicationController
     end
   end
   def dashboard
+    @requests = current_user.requests.limit(5)
+    @follows = Follow.where(:followable_id => current_user.id)
+    @following = current_user.follows.where(:followable_type => 'User')
     render :index
   end
   def set_categories

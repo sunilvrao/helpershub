@@ -23,6 +23,10 @@ Helpershub::Application.routes.draw do
     collection do
       get "active" => "users#most_active"
     end
+    member do
+      get 'follow' => "users#follow"
+      get 'unfollow' => "users#unfollow"
+    end
   end
 
   resources :requests do

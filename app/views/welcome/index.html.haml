@@ -4,12 +4,24 @@
       %span Update Your Profile
     .one-third.last
       #accordion
-        %h2.current My Requests
-        .pane{:style => "display:block"} %h3... pane content ...
-        %h2 Followers
-        .pane ... pane content ...
-        %h2 Following
-        .pane ... pane content ...
+        - if @requests.present?
+          %h2.current My Requests
+          .pane{:style => "display:block"}
+            %ol
+              - @requests.each do |r|
+                %li= link_to r.title, request_path(r.slug)
+        - if @follows.present?
+          %h2 Followers
+          .pane
+            %ol
+              - @follows.each do |follow|
+                %li= link_to follow.user.full_name, user_path(follow.user)
+        - if @following.present?
+          %h2 Following
+          .pane
+            %ol
+              - @following.each do |following|
+                %li= link_to following.followable.full_name, user_path(following.followable)
 .entry.page
   .entry-top
     .entry-content

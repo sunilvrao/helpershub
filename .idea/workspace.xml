@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f789e78-fdb1-4c63-850a-5e5c24e4af05" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/frontpage/index.html.haml" afterPath="$PROJECT_DIR$/app/views/frontpage/index.html.haml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/ITA_logo.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/frontpage.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/frontpage.html.haml" />
     </list>
     <ignored path="helpershub.iws" />
@@ -55,19 +54,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/frontpage/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="31" selection-start="308" selection-end="308" vertical-scroll-proportion="0.29347825">
+            <state line="9" column="31" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="frontpage.html.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="frontpage.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/frontpage.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1946" selection-end="1946" vertical-scroll-proportion="0.0">
+            <state line="14" column="73" selection-start="447" selection-end="447" vertical-scroll-proportion="0.032608695">
               <folding />
             </state>
           </provider>
@@ -149,8 +148,8 @@
         <option value="$PROJECT_DIR$/app/views/pages/faq.html.haml" />
         <option value="$PROJECT_DIR$/app/views/pages/howitworks.html.haml" />
         <option value="$PROJECT_DIR$/app/views/pages/aboutus.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/layouts/frontpage.html.haml" />
         <option value="$PROJECT_DIR$/app/views/frontpage/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/layouts/frontpage.html.haml" />
       </list>
     </option>
   </component>
@@ -724,16 +723,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/frontpage.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/frontpage/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1946" selection-end="1946" vertical-scroll-proportion="0.0">
+        <state line="9" column="31" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/frontpage/index.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/frontpage.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="31" selection-start="308" selection-end="308" vertical-scroll-proportion="0.29347825">
+        <state line="14" column="73" selection-start="447" selection-end="447" vertical-scroll-proportion="0.032608695">
           <folding />
         </state>
       </provider>

@@ -45,7 +45,8 @@ module Helpershub
     config.filter_parameters += [:password]
     require 'yaml'
     @mailer_config = YAML::load(File.open(Rails.root.join("config/mailer.yml")))[Rails.env]
-    SPREFIX = YAML::load(File.open(Rails.root.join("config", "stalker.yml")))[Rails.env]["stalker_prefix"]
+    $SPREFIX = YAML::load(File.open(Rails.root.join("config", "stalker.yml")))[Rails.env]["prefix"]
+    puts $SPREFIX
     config.action_mailer.default_url_options = { :host => @mailer_config['host'] }
     #A dummy setup for development - no deliveries, but logged
     config.action_mailer.delivery_method = :smtp

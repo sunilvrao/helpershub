@@ -34,7 +34,7 @@ class RequestsController < ApplicationController
         c.save!
       end
       flash[:notice]="Request saved successfully"
-      Stalker.enqueue("#{SPREFIX}.request.notify",:id=>@request.id)
+      Stalker.enqueue("#{$SPREFIX}.request.notify",:id=>@request.id)
       redirect_to @request
     else
       render :action=>:new

@@ -15,7 +15,9 @@ class User
   references_many :requests, :inverse_of=>:owner
   has_one :profile
   has_many :follows
+  has_many :invitations
   has_and_belongs_to_many :categories
+  has_and_belongs_to_many :teams
   accepts_nested_attributes_for :profile
   mount_uploader :avatar, AvatarUploader
 

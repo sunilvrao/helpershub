@@ -20,7 +20,14 @@ job "#{$SPREFIX}.user.approved" do |args|
   user = User.find(args["id"])
   Notifier.user_approved(user).deliver!
 end
+
 job "#{$SPREFIX}.user.banned" do |args|
   user = User.find(args["id"])
   Notifier.user_banned(user).deliver!
+end
+
+job "#{$SPREFIX}.user.invited" do |args|
+  invitation = Invitation.find(args["id"])
+  puts "sending invitation mail to #{invitation.email}" 
+  Notifier.user_invited(invitation).deliver!
 end

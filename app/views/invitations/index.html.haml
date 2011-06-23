@@ -19,10 +19,10 @@
           = f.buttons do
             = f.commit_button 'Invite'
 
-.entry.page
-  .entry-top
-    .entry-content
-      - if @invitees.present?
+- if @invitees.present?
+  .entry.page
+    .entry-top
+      .entry-content
         %table
           %tbody
             - @invitees.each do |i|

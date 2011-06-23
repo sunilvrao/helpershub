@@ -14,7 +14,7 @@ class Invitation
   validate :email_uniqueness
 
   scope :pending, where(:status => 'pending', :deleted => false)
-  scope :desc, order_by([:created_at,:desc])
+  scope :recent, order_by([:created_at,:desc])
 
   belongs_to :user
   belongs_to :startup
@@ -48,6 +48,10 @@ class Invitation
         errors.add(:email, "You cannot invite a user who is already a part of your organization.")
       end
     end
+  end
+  
+  def to_param
+    self.unique_id.to_s
   end
 
 end

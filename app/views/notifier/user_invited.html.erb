@@ -1,0 +1,8 @@
+<p>Hi There,</p>
+<p>You have been invited by <%= @invitation.user.full_name  %> to join <%= @invitation.startup.name %></p>
+
+<p> <%= link_to 'Click here to join', startup_invitation_url(@invitation.startup,@invitation) %> </p>
+<p>
+The Helpers Hub team.
+<%=link_to "www.helpershub.com", "http://www.helpershub.com"%>
+</p>

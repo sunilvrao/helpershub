@@ -4,6 +4,10 @@ class TeamsController < ApplicationController
 
   def show
     @startup = current_user.startups.where(:slug => params[:startup_id]).first
+    if @startup.team.blank?
+      @startup.team = Team.new
+      @startup.team.users = [current_user]
+    end
     if @startup.present?
       @users = @startup.team.users.page(params[:page])
     else

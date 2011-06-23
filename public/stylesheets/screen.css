@@ -1,152 +1,328 @@
-/*
-Syntax error: Undefined mixin 'rotate'.
-        on line 29 of /Users/vagmi/work/dharanasoft/helpershub/app/stylesheets/_signin.sass, in `rotate'
-        from line 29 of /Users/vagmi/work/dharanasoft/helpershub/app/stylesheets/_signin.sass
-        from line 2 of /Users/vagmi/work/dharanasoft/helpershub/app/stylesheets/screen.sass
+/* line 17, ../../../../../.rvm/gems/ruby-1.9.2-p180@hh/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
-24:   overflow: hidden
-25: 
-26: #user_info
-27:   background-color: #336699
-28:   #user_info_inner
-29:     width: 970px 
-30:     margin: 0 auto
-31:     text-align: right
-32:     overflow: visible
-33:     p
-34:       float: right
+/* line 20, ../../../../../.rvm/gems/ruby-1.9.2-p180@hh/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
 
-Backtrace:
-/Users/vagmi/work/dharanasoft/helpershub/app/stylesheets/_signin.sass:29:in `rotate'
-/Users/vagmi/work/dharanasoft/helpershub/app/stylesheets/_signin.sass:29
-/Users/vagmi/work/dharanasoft/helpershub/app/stylesheets/screen.sass:2
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:169:in `visit_mixin'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:230:in `visit_rule'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:230:in `visit_rule'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:230:in `visit_rule'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:230:in `visit_rule'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:230:in `visit_rule'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:145:in `block in visit_import'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:145:in `map'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:145:in `visit_import'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/tree/root_node.rb:20:in `render'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/engine.rb:291:in `_render'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/engine.rb:239:in `block in render'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/util.rb:298:in `silence_sass_warnings'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/engine.rb:239:in `render'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:181:in `block (2 levels) in update_stylesheets'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:175:in `each'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:175:in `block in update_stylesheets'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:173:in `each'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/plugin.rb:81:in `update_stylesheets'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/plugin.rb:54:in `check_for_updates'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/sass-3.1.1/lib/sass/plugin/rack.rb:51:in `call'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/actionpack-3.0.6/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/actionpack-3.0.6/lib/action_dispatch/middleware/head.rb:14:in `call'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/actionpack-3.0.6/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/actionpack-3.0.6/lib/action_dispatch/middleware/flash.rb:182:in `call'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/actionpack-3.0.6/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/actionpack-3.0.6/lib/action_dispatch/middleware/cookies.rb:302:in `call'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/actionpack-3.0.6/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/activesupport-3.0.6/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/actionpack-3.0.6/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/rack-1.2.2/lib/rack/sendfile.rb:107:in `call'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/actionpack-3.0.6/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/actionpack-3.0.6/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/railties-3.0.6/lib/rails/rack/logger.rb:13:in `call'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/activesupport-3.0.6/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/rack-1.2.2/lib/rack/lock.rb:11:in `block in call'
-<internal:prelude>:10:in `synchronize'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/actionpack-3.0.6/lib/action_dispatch/middleware/static.rb:30:in `call'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/railties-3.0.6/lib/rails/application.rb:168:in `call'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/railties-3.0.6/lib/rails/application.rb:77:in `method_missing'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/railties-3.0.6/lib/rails/rack/log_tailer.rb:14:in `call'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/rack-1.2.2/lib/rack/content_length.rb:13:in `call'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/rack-1.2.2/lib/rack/chunked.rb:15:in `call'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/thin-1.2.11/lib/thin/connection.rb:84:in `block in pre_process'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/thin-1.2.11/lib/thin/connection.rb:82:in `catch'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/thin-1.2.11/lib/thin/connection.rb:82:in `pre_process'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/thin-1.2.11/lib/thin/connection.rb:57:in `process'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/thin-1.2.11/lib/thin/connection.rb:42:in `receive_data'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/thin-1.2.11/lib/thin/backends/base.rb:61:in `start'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/thin-1.2.11/lib/thin/server.rb:159:in `start'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/rack-1.2.2/lib/rack/handler/thin.rb:14:in `run'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/rack-1.2.2/lib/rack/server.rb:213:in `start'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/railties-3.0.6/lib/rails/commands/server.rb:65:in `start'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/railties-3.0.6/lib/rails/commands.rb:30:in `block in <top (required)>'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/railties-3.0.6/lib/rails/commands.rb:27:in `tap'
-/Users/vagmi/.rvm/gems/ruby-1.9.2-p180@r3/gems/railties-3.0.6/lib/rails/commands.rb:27:in `<top (required)>'
-script/rails:6:in `require'
-script/rails:6:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined mixin 'rotate'.\A         on line 29 of /Users/vagmi/work/dharanasoft/helpershub/app/stylesheets/_signin.sass, in `rotate'\A         from line 29 of /Users/vagmi/work/dharanasoft/helpershub/app/stylesheets/_signin.sass\A         from line 2 of /Users/vagmi/work/dharanasoft/helpershub/app/stylesheets/screen.sass\A \A 24:   overflow: hidden\A 25: \A 26: #user_info\A 27:   background-color: #336699\A 28:   #user_info_inner\A 29:     width: 970px \A 30:     margin: 0 auto\A 31:     text-align: right\A 32:     overflow: visible\A 33:     p\A 34:       float: right"; }
+/* line 22, ../../../../../.rvm/gems/ruby-1.9.2-p180@hh/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../.rvm/gems/ruby-1.9.2-p180@hh/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../.rvm/gems/ruby-1.9.2-p180@hh/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../.rvm/gems/ruby-1.9.2-p180@hh/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../.rvm/gems/ruby-1.9.2-p180@hh/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../.rvm/gems/ruby-1.9.2-p180@hh/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 115, ../../../../../.rvm/gems/ruby-1.9.2-p180@hh/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 1, ../../app/stylesheets/_signin.sass */
+#signin {
+  width: 970px;
+  margin: 0px auto;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -moz-box-shadow: 0px 0px 4px #999999;
+  -webkit-box-shadow: 0px 0px 4px #999999;
+  box-shadow: 0px 0px 4px #999999;
+  padding: 20px 0;
+}
+/* line 14, ../../app/stylesheets/_signin.sass */
+#signin h1 {
+  color: #787979;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+}
+/* line 19, ../../app/stylesheets/_signin.sass */
+#signin ul.auth_services {
+  width: 582px;
+  margin-left: 225px;
+  margin-top: 20px;
+}
+/* line 24, ../../app/stylesheets/_signin.sass */
+#signin ul.auth_services li {
+  display: inline;
+  margin: 0;
+}
+/* line 28, ../../app/stylesheets/_signin.sass */
+#signin ul.auth_services li a img:hover {
+  -moz-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+/*========== FMONDRAGON STYLES ========== */
+/* line 9, ../../app/stylesheets/screen.sass */
+body {
+  background: #e7e7e0 white;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/*========== HEADER ========== */
+/* line 15, ../../app/stylesheets/screen.sass */
+#header {
+  border-top: solid 4px #333333;
+  border-bottom: solid 4px #336699;
+  background: url(/images/headerbg.gif) repeat-x left 0px;
+  height: 90px;
+}
+
+/* line 21, ../../app/stylesheets/screen.sass */
+#headerInner {
+  width: 970px;
+  margin: 0px auto;
+  background: url(/images/navBorder.png) repeat-y right top;
+  overflow: hidden;
+}
+
+/* line 27, ../../app/stylesheets/screen.sass */
+#user_info {
+  background-color: #336699;
+}
+/* line 29, ../../app/stylesheets/screen.sass */
+#user_info #user_info_inner {
+  width: 970px;
+  margin: 0 auto;
+  text-align: right;
+  overflow: visible;
+}
+/* line 34, ../../app/stylesheets/screen.sass */
+#user_info #user_info_inner p {
+  float: right;
+  color: #ffdf7e;
+  margin: 8px;
+}
+/* line 38, ../../app/stylesheets/screen.sass */
+#user_info #user_info_inner p a {
+  color: #ffdf7e;
+}
+/* line 40, ../../app/stylesheets/screen.sass */
+#user_info #user_info_inner ul {
+  float: right;
+}
+/* line 42, ../../app/stylesheets/screen.sass */
+#user_info #user_info_inner ul li {
+  float: left;
+}
+/* line 44, ../../app/stylesheets/screen.sass */
+#user_info #user_info_inner #logged_in {
+  height: 20px;
+}
+/* line 46, ../../app/stylesheets/screen.sass */
+#user_info #user_info_inner #logged_in p {
+  margin: 0;
+}
+/* line 48, ../../app/stylesheets/screen.sass */
+#user_info #user_info_inner #sign_up {
+  height: 32px;
+}
+
+/* line 52, ../../app/stylesheets/screen.sass */
+#header ul {
+  float: right;
+  margin-right: 4px;
+}
+/* line 55, ../../app/stylesheets/screen.sass */
+#header ul li {
+  float: left;
+  width: 140px;
+  text-align: center;
+  background: url(/images/navBorder.png) repeat-y left top;
+}
+/* line 60, ../../app/stylesheets/screen.sass */
+#header ul li a {
+  display: block;
+  height: 52px;
+  padding-top: 38px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  text-shadow: gray 0 1px 0;
+  margin-left: 4px;
+}
+/* line 70, ../../app/stylesheets/screen.sass */
+#header ul li a:hover {
+  background: url(/images/navbg_over.gif) repeat-x left top;
+}
+/* line 72, ../../app/stylesheets/screen.sass */
+#header #logo {
+  float: left;
+  width: 200px;
+  background: none;
+}
+/* line 76, ../../app/stylesheets/screen.sass */
+#header #logo a {
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 81, ../../app/stylesheets/screen.sass */
+#logo span.logotext {
+  position: absolute;
+  top: -999px;
+  left: -999px;
+}
+
+/*========== HUB ========== */
+/* line 88, ../../app/stylesheets/screen.sass */
+#hub {
+  border: solid 1px black;
+  min-height: 300px;
+  width: 970px;
+  margin: 0px auto;
+  position: relative;
+  z-index: 2;
+  background: white;
+}
+
+/*========== FOOTER ========== */
+/* line 99, ../../app/stylesheets/screen.sass */
+#footer {
+  background: #959a8f;
+  padding: 80px 0px 40px;
+  margin-top: -45px;
+}
+
+/* line 104, ../../app/stylesheets/screen.sass */
+#footerInner {
+  width: 925px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+/* line 109, ../../app/stylesheets/screen.sass */
+.browse {
+  text-shadow: gray 2px 2px 0;
+  width: 285px;
+  float: left;
+  margin: 0px 10px;
+  overflow: hidden;
+}
+
+/* line 117, ../../app/stylesheets/screen.sass */
+#footer h4 {
+  margin: 0px 10px 10px;
+}
+/* line 119, ../../app/stylesheets/screen.sass */
+#footer h4 a {
+  color: #ffdf7f;
+  text-decoration: none;
+  font-size: 18px;
+}
+/* line 123, ../../app/stylesheets/screen.sass */
+#footer p {
+  color: white;
+  font-size: 12px;
+  margin: 0px 10px 10px;
+  line-height: 16px;
+}
+/* line 128, ../../app/stylesheets/screen.sass */
+#footer a.footerbutton {
+  border: solid 3px white;
+  background: yellow;
+  padding: 5px 20px;
+  display: block;
+  text-align: center;
+  margin: 0px 7px;
+  -webkit-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  color: #666666;
+  text-decoration: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#ffdf7f));
+  background: -moz-linear-gradient(top, white, #ffdf7f);
+  text-shadow: none;
+  font-weight: bold;
+}
+/* line 145, ../../app/stylesheets/screen.sass */
+#footer a.footerbutton:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffdf7f), to(white));
+  background: -moz-linear-gradient(top, #ffdf7f, white);
+}
+
+/*#footer a.footerbutton{
+ *	background: url(../images/footerbutton.png) no-repeat center top;
+ *	display: block;
+ *	height: 35px;
+ *	text-align: center;
+ *	padding-top: 15px;
+ *	text-decoration: none;
+ *	text-shadow: none;
+ *	color: #666666;
+ *	font-weight: bold;
+ *	behavior: url("../scripts/iepngfix.htc");
+ *	} */
+/* line 162, ../../app/stylesheets/screen.sass */
+#copyright {
+  width: 925px;
+  margin: 10px auto;
+  font-size: 10px;
+  overflow: hidden;
+}
+
+/* line 168, ../../app/stylesheets/screen.sass */
+#fmondragon {
+  background: url(/images/fmondragon_logo.jpg) no-repeat center;
+  padding: 5px 34px;
+  text-indent: -99999px;
+  overflow: hidden;
+  float: right;
+}

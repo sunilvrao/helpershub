@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_filter :authenticate_user!
+  before_filter :must_be_activated!
   before_filter :set_categories
   def index
     @category = Category.where(:slug=>params[:category_id]).first if params[:category_id]

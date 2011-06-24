@@ -1,0 +1,19 @@
+= content_for :secondary do
+  %ul#secondary-menu.nav.clearfix
+    %li.menu-item
+      =link_to "Team", startup_team_path(@startup)
+    %li.menu-item.current-menu-item
+      =link_to "Invitations", startup_invitations_path(@startup)
+
+= content_for :sidebar do
+  %p sidebar
+
+.entry.page
+  .entry-top
+    .entry-content
+      %h2.title You've been invited to join "#{@startup.name}".
+      .post-content
+        %p
+          = link_to accept_startup_invitation_path(@startup,@invitation), :class=>"join big-button bigblue" do
+            %span Accept Invitation
+          %br.clear

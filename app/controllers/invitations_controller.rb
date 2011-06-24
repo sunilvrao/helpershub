@@ -1,6 +1,7 @@
 class InvitationsController < ApplicationController
-  before_filter :authenticate_user!
-  before_filter :must_be_activated!
+  before_filter :authenticate_user!, :except => [:show]
+  before_filter :must_be_activated!, :except => [:show]
+  
   def index
     @startup = current_user.startups.where(:slug => params[:startup_id]).first
     @invitees = @startup.invitations.recent.pending.page(params[:page]).per(10)
@@ -26,14 +27,21 @@ class InvitationsController < ApplicationController
   def show
     @invitation = Invitation.where(:unique_id => params[:id], :deleted => false).first
     @startup = Startup.where(:slug => params[:startup_id]).first
-    if @invitation.present?
-      @invitation.update_attributes(:accepted => true, :status => 'registered')
-      @startup.team.users.push(current_user)
-      current_user.teams.push(@startup.team)
-      redirect_to '/dashboard'
-    else
-      render :status => 404
+    if @invitation.blank? || @startup.blank?
+      redirect_to '/'
     end    
+  end
+  
+  def accept
+    @invitation = Invitation.where(:unique_id => params[:id], :deleted => false).first
+    @startup = Startup.where(:slug => params[:startup_id]).first
+    if @invitation.blank? || @startup.blank?
+      redirect_to '/'
+    else
+      @startup.team.users << current_user
+      @invitation.update_attributes(:accepted => true, :status => 'registered')
+      redirect_to '/dashboard'
+    end  
   end
 
 end

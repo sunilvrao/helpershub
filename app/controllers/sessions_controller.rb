@@ -71,7 +71,16 @@ class SessionsController < ApplicationController
           u = User.new(:full_name=>@auth[:uname], :email=>@auth[:email])
           u.bio = @bio if @bio
           s = u.services.build(@auth)
-          u.save!
+          
+          if request.env['omniauth.origin'].present?
+            origin = request.env['omniauth.origin'].split('/')
+            if origin[1]=='startups' && origin[origin.size-1] == 'accept'
+              u.activate!
+            end
+          else
+            u.save!
+          end          
+          
           Stalker.enqueue("#{$SPREFIX}.user.registered",:id=>u.id)
           session[:current_user_id]=u.id.to_s
           @user=u

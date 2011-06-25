@@ -4,12 +4,15 @@
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{:content => "noindex,nofollow", :name => "robots"}/
     %title Helper's Hub | Welcome
-    =stylesheet_link_tag "font","askit/style", "askit/shortcodes","formtastic", "formtastic_changes", "pagenavi-css.css", "custom.css", "tabs-accordion"
+    =stylesheet_link_tag "http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&v1"
+    =stylesheet_link_tag "askit/style", "askit/shortcodes","formtastic", "formtastic_changes", "pagenavi-css.css", "custom.css", "tabs-accordion"
     =stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/base/jquery-ui.css"
     /[if lt IE 7]
       =stylesheet_link_tag "askit/ie6style"
+      =javascript_include_tag "DD_belatedPNG_0.0.8a-min.js"
       :javascript
-        // DD_belatedPNG.fix('img#logo, p#slogan, #menu, #top-overlay, #featured-overlay, span.overlay, .entry-content p.meta-info, #controllers span#right-arrow, #controllers span#left-arrow, #footer-content, #footer');
+        DD_belatedPNG.fix('img#logo, p#slogan, #menu, #top-overlay, #featured-overlay, span.overlay, .entry-content p.meta-info, #controllers span#right-arrow, #controllers span#left-arrow, #footer-content, #footer');
+        
     /[if IE 7]
       =stylesheet_link_tag "askit/ie7style"
     /[if IE 8]
@@ -21,7 +24,7 @@
           padding: 0 !important;
           margin: 0 !important;
       }
-    =javascript_include_tag "cufon-yui.js", "League_Gothic_400.font.js"
+    = javascript_include_tag "cufon-yui.js", "League_Gothic_400.font.js"
   %body#home
     =render :partial => '/layouts/header'
     #content
@@ -48,4 +51,7 @@
         =flash[:notice]
         %span.dismiss
           %a(href="#" title="Click here to dismiss") x
-    =javascript_include_tag "l10n.js","DD_belatedPNG_0.0.8a-min.js", "jquery.min.js", "jquery-ui.min.js", "jquery.tools.min.js", "rails.js","askit.js", "superfish.js", "application.js"
+    :javascript
+      Cufon.now();
+    =javascript_include_tag "l10n.js","jquery.min.js", "jquery-ui.min.js", "jquery.tools.min.js", "rails.js", "superfish.js","askit.js" , "application.js"
+    

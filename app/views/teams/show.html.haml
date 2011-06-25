@@ -1,0 +1,16 @@
+= content_for :secondary do
+  %ul#secondary-menu.nav.clearfix
+    %li.menu-item.current-menu-item
+      =link_to "Team", startup_team_path(@startup)
+    %li.menu-item
+      =link_to "Invitations", startup_invitations_path(@startup)
+
+= content_for :sidebar do
+  - if current_user and @startup.owner==current_user
+    =link_to startup_invitations_path(@startup), :id => 'call_to_action' do
+      %span Invite Users
+
+#main-recent
+  =render @users
+  .clear
+  =paginate @users

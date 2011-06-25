@@ -57,6 +57,12 @@ Helpershub::Application.routes.draw do
 
   resources :startups do
     resources :requests, :shallow=>true
+    resource :team
+    resources :invitations do
+      member do
+        get 'accept'=>'invitations#accept'
+      end
+    end
     member do
       get 'follow' => "startups#follow"
       get 'unfollow' => "startups#unfollow"

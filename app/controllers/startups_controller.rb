@@ -12,6 +12,9 @@ class StartupsController < ApplicationController
     @startup = Startup.new(params[:startup])
     @startup.owner=current_user
     if(@startup.save)
+      @startup.team = Team.new
+      current_user.teams = [@startup.team]
+      @startup.team.users = [current_user]
       flash[:notice] = "Startup saved successfully"
       redirect_to @startup
     else

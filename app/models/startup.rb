@@ -20,6 +20,9 @@ class Startup
   has_many :follows, :as=>:followable
   has_and_belongs_to_many :verticals
 
+  has_one :team
+  has_many :invitations
+
   default_scope where(:deleted_at=>nil)
 
   def soft_delete

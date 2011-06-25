@@ -19,4 +19,9 @@ class Notifier < ActionMailer::Base
     @user = user
     mail(:from=>"noreply@helpershub.com", :to=>@user.email, :subject=>"Your membership has been rejected")
   end
+  
+  def user_invited(invitation)
+    @invitation = invitation
+    mail(:from=>"noreply@helpershub.com", :to=>@invitation.email, :subject=>"An invitation to join #{@invitation.startup.name}")
+  end
 end

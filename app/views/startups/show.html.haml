@@ -4,6 +4,8 @@
       %span Edit Startup
     =link_to startup_url(@startup),:method=>"delete", :confirm=>"Are you sure you want to delete your startup?", :class=>"actionbutton", :id=>"delete_startup" do
       %span Delete Startup
+    =link_to startup_team_path(@startup), :id => 'call_to_action' do
+      %span Team
   - else
     - if current_user.is_following?(@startup)
       = link_to unfollow_startup_path(@startup), :class=>"actionbutton", :id=>"follow_startup" do

@@ -6,9 +6,18 @@ class RequestsController < ApplicationController
   def index
     @startup = Startup.where(:slug=>params[:startup_id]).first if params[:startup_id]
     @category = Category.where(:slug=>params[:category_id]).first if params[:category_id]
+    @user =  current_user if params[:user_id] == current_user.id.to_s
     @requests= Request.page(params[:page]) unless @startup or @category
     @requests= @startup.requests.page(params[:page]) if @startup
     @requests= @category.requests.page(params[:page]) if @category
+    
+    if params[:user_id]
+      if @user
+        @requests= @user.requests.page(params[:page])
+      else
+        redirect_to requests_path
+      end
+    end
   end
   
   def new

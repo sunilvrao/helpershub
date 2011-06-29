@@ -6,7 +6,7 @@
 = content_for :secondary do
   =render :partial=>"secondary-nav"
 
-= render :partial => 'main_area_tabs'
+= render :partial => 'main_area_tabs' if @follows.blank?
 
 #main-recent
   - if @category
@@ -16,4 +16,7 @@
     .clear
   =render @users
   .clear
-  =paginate @users
+  - if @follows
+    = paginate @follows
+  - else
+    =paginate @users

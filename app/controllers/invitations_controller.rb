@@ -43,5 +43,20 @@ class InvitationsController < ApplicationController
       redirect_to '/dashboard'
     end  
   end
+  
+  def destroy
+    @invitation = Invitation.where(:unique_id => params[:id]).first
+    @startup = Startup.where(:slug => params[:startup_id]).first
+    @invitation.deleted = true
+    require 'pp'
+    pp 'I\'m here'
+    if @invitation.save
+      flash[:notice] = "The invitation was deleted."
+      redirect_to startup_invitations_path(@startup)
+    else
+      flash[:notice] = "There was some problem in deleting the invitation."
+      redirect_to :back
+    end
+  end
 
 end

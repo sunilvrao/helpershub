@@ -42,10 +42,10 @@
 -content_for :secondary do
   %ul#secondary-menu.nav.clearfix
     %li.menu-item(class="#{'menu-item'}")
-      =link_to "My Requests", page_path(:id=>"howitworks")
+      =link_to "My Requests", user_requests_path(current_user)
     %li.menu-item(class="#{'menu-item'}")
-      =link_to "My Startups", page_path(:id=>"faq")
+      =link_to "My Startups", user_startups_path(current_user)
     %li.menu-item(class="#{'menu-item'}")
-      =link_to "Followers", page_path(:id=>"terms")
+      =link_to "Followers", followers_user_path(current_user)
     %li.menu-item(class="#{'menu-item'}")
-      =link_to "Following", page_path(:id=>"privacy")
+      =link_to "Following", follows_user_path(current_user)

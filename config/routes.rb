@@ -26,7 +26,11 @@ Helpershub::Application.routes.draw do
     member do
       get 'follow' => "users#follow"
       get 'unfollow' => "users#unfollow"
+      get 'followers' => "users#followers"
+      get 'follows' => "users#follows"
     end
+    resources :requests, :only=>[:index]
+    resources :startups, :only=>[:index]
   end
 
   resources :requests do

@@ -3,7 +3,7 @@
     .entry-content
       .author-inner.post-content
         %span.comment-number{:class => "#{'unanswered' if startup.requests.count == 0}"}
-          = link_to startup.requests.count, '#', :title => "#{pluralize(startup.requests.count, 'request')}"
+          = link_to startup.requests.count, startup, :title => "#{pluralize(startup.requests.count, 'request')}"
         .author-image
           %image(src="#{startup.logo.thumb.url}" title="#{startup.name} Logo")
           .author-overlay

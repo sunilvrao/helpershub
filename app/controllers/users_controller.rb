@@ -7,6 +7,39 @@ class UsersController < ApplicationController
     @users = User.page(params[:page]) unless @category
     @users = @category.users.page(params[:page]) if @category
   end
+  
+  def followers
+    @user =  current_user if params[:id] == current_user.id.to_s
+    
+    if @user
+      @follows = Follow.where(:followable_type => 'User', :followable_id => @user.id).page(params[:page])
+      @users = []
+      @follows.each do |f|
+        @users << f.user_id.to_s
+      end
+      @users = User.find(@users)
+      
+      render :action => :index
+    else
+      redirect_to users_path
+    end
+    
+  end
+  
+  def follows
+    @user =  current_user if params[:id] == current_user.id.to_s
+    if @user
+      @follows = @user.follows.page(params[:page])
+      @users = []
+      @follows.each do |f|
+        @users << f.user_id.to_s
+      end
+      @users = User.find(@users)
+      render :action => :index
+    else
+      redirect_to users_path
+    end
+  end
 
   def most_active
     @category = Category.where(:slug=>params[:category_id]).first if params[:category_id]

@@ -23,6 +23,7 @@
 =render @startup
 .requests
   %h3#commitments Listing requests
-  =render @startup.requests
+  =render @requests
+  =paginate @requests
 -content_for :secondary do
   =render :partial=>"secondary-nav"

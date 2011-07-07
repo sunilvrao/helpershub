@@ -19,28 +19,6 @@ Helpershub::Application.routes.draw do
     resources :profiles, :only=>[:all]
   end
 
-  resources :users, :only=>[:index, :show, :edit, :update] do
-    collection do
-      get "active" => "users#most_active"
-    end
-    member do
-      get 'follow' => "users#follow"
-      get 'unfollow' => "users#unfollow"
-    end
-  end
-
-  resources :requests do
-    resources :commitments, :only=>[:create]
-    resources :comments, :only=>[:create]
-    member do
-      get "commit"
-    end
-    collection do
-      get "uncommitted"
-      get "popular"
-    end
-  end
-
   resources :categories, :only=>[] do
     resources :requests, :only=>[:index] do
       collection do
@@ -54,7 +32,37 @@ Helpershub::Application.routes.draw do
       end
     end
   end
+  
+  resources :users, :only=>[:index, :show, :edit, :update] do
+    collection do
+      get "active" => "users#most_active"
+    end
+    member do
+      get 'follow' => "users#follow"
+      get 'unfollow' => "users#unfollow"
+      get 'followers' => "users#followers"
+      get 'follows' => "users#follows"
+    end
+    resources :requests, :only=>[:index]
+    resources :startups, :only=>[:index]
+  end
+  
+  resources :requests do
+    resources :commitments, :only=>[:create]
+    resources :comments, :only=>[:create]
+    member do
+      get "commit"
+    end
+    collection do
+      get "uncommitted"
+      get "popular"
+    end
+  end
 
+  resources :verticals, :only=>[] do
+    resources :startups, :only=>[:index]
+  end
+  
   resources :startups do
     resources :requests, :shallow=>true
     resource :team
@@ -67,10 +75,6 @@ Helpershub::Application.routes.draw do
       get 'follow' => "startups#follow"
       get 'unfollow' => "startups#unfollow"
     end
-  end
-
-  resources :verticals, :only=>[] do
-    resources :startups, :only=>[:index]
   end
 
   root :to=>"frontpage#index"

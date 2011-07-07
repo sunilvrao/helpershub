@@ -3,11 +3,11 @@
     = link_to new_startup_path, :class=>"actionbutton", :id=>"call_to_action" do
       %span Create your startup
 
-= render :partial => 'main_area_tabs'
+=# render :partial => 'main_area_tabs'
 
 = render @startups
 .clear
-=# paginate @startups
+= paginate @startups
 
 = content_for :secondary do
   =render :partial=>"secondary-nav"

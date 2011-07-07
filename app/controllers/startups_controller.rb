@@ -3,7 +3,16 @@ class StartupsController < ApplicationController
   before_filter :must_be_activated!
   before_filter :set_verticals
   def index
-    @startups = Startup.order_by(:created_at, :desc).all
+    @user =  current_user if params[:user_id] == current_user.id.to_s
+    if params[:user_id]
+      if @user
+        @startups= @user.startups.page(params[:page])
+      else
+        redirect_to requests_path
+      end
+    else
+      @startups = Startup.order_by(:created_at, :desc).all.page(params[:page])
+    end
   end
   def new
     @startup = current_user.startups.build
@@ -23,6 +32,7 @@ class StartupsController < ApplicationController
   end
   def show
     @startup = Startup.where(:slug=>params[:id]).first
+    @requests = @startup.requests.page(params[:page])
   end
   def follow
     @startup = Startup.where(:slug=>params[:id]).first

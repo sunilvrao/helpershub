@@ -32,6 +32,7 @@ class StartupsController < ApplicationController
   end
   def show
     @startup = Startup.where(:slug=>params[:id]).first
+    @requests = @startup.requests.page(params[:page])
   end
   def follow
     @startup = Startup.where(:slug=>params[:id]).first

@@ -24,6 +24,8 @@ class Startup
   has_many :invitations
 
   default_scope where(:deleted_at=>nil)
+  
+  paginates_per 5
 
   def soft_delete
     self.deleted=true

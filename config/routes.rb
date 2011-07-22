@@ -1,5 +1,7 @@
 Helpershub::Application.routes.draw do
 
+  resources :contacts, :only => [:create]
+
   get "frontpage/index"
 
   devise_for :admins do 

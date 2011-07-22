@@ -26,3 +26,13 @@ ul#secondary-menu .widget-comment-number {
 .entry-content .author-inner {
   background: none;
 }
+
+/* line 22, ../../app/stylesheets/custom.sass */
+#flash {
+  position: absolute;
+  top: 211px;
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}

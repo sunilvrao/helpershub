@@ -59,8 +59,9 @@
 			// show container element
 			c.show();
 
-			$.getScript("http://twitter.com/javascripts/blogger.js");
-			$.getScript("http://twitter.com/statuses/user_timeline/"+o.userName+".json?callback=twitterCallback2&count="+o.numTweets, function() {
+//			$.getScript("http://twitter.com/javascripts/blogger.js");
+//http://api.twitter.com/1/statuses/user_timeline.json?screen_name=vagmi&count=11&page=1&include_rts=false&include_entities=true&callback=twitterlib1311343743839
+			$.getScript("http://api.twitter.com/1/statuses/user_timeline.json?screen_name="+o.userName+"&include_rts=true&callback=twitterCallback2&count="+o.numTweets, function() {
 				// remove preLoader from container element
 				$(preLoaderHTML).remove();
 

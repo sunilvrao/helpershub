@@ -25,15 +25,13 @@ $(document).ready(function(){
       return false;
     }
   });
-
   $('#tweets').getTwitter({
-    userName: "jquery",
+    userName: "itabuzz",
     numTweets: 5,
     loaderText: "loading tweets...",
     slideIn: true,
     showProfileLink: true,
     showHeading: false
   });
-
   
 });

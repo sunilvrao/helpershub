@@ -31,3 +31,9 @@ job "#{$SPREFIX}.user.invited" do |args|
   puts "sending invitation mail to #{invitation.email}" 
   Notifier.user_invited(invitation).deliver!
 end
+
+job "#{$SPREFIX}.contact.sent" do |args|
+  c = Contact.new(:id => 1, :email => args['email'], :subject => args['subject'], :message => args['message'])
+  puts "sending contact us mail from #{c.email}"
+  Notifier.contact_notification(c).deliver!
+end

@@ -2,6 +2,13 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
   
   layout :layout_by_resource
+
+  before_filter :init_contact_obj
+
+  def init_contact_obj
+    @contact = Contact.new(:id => 1)
+  end
+
   private
 
   def layout_by_resource

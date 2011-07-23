@@ -4,6 +4,7 @@
       #linkcat-2.footer-widget.widget_links
         %h4.widgettitle
           Twittes
+        #tweets
         -#%ul.xoxo.blogroll
         -#  %li
         -#    %a{:href => "http://codex.wordpress.org/"} Documentation
@@ -31,7 +32,16 @@
       #recent-posts-2.footer-widget.widget_recent_entries
         %h4.widgettitle
           Contact Excelerate Labs
-
+        = semantic_form_for @contact, :url => contacts_path do |f|
+          = f.inputs do
+            - if current_user.email.present?
+              = f.input :email, :as => :hidden, :input_html => {:value => current_user.email}
+            - else
+              = f.input :email, :as => :email
+            = f.input :subject
+            = f.input :message, :as => :text
+          = f.buttons do
+            = f.commit_button 'Send'
       / end .footer-widget
     / end .container
     #footer-bottom

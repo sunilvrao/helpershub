@@ -1,5 +1,7 @@
 Helpershub::Application.routes.draw do
 
+  resources :contacts, :only => [:create]
+
   get "frontpage/index"
 
   devise_for :admins do 
@@ -65,12 +67,13 @@ Helpershub::Application.routes.draw do
   
   resources :startups do
     resources :requests, :shallow=>true
-    resource :team
-    resources :invitations do
-      member do
-        get 'accept'=>'invitations#accept'
-      end
-    end
+    #resource :team
+    
+    #resources :invitations do
+    #  member do
+    #    get 'accept'=>'invitations#accept'
+    #  end
+    #end
     member do
       get 'follow' => "startups#follow"
       get 'unfollow' => "startups#unfollow"

@@ -24,4 +24,9 @@ class Notifier < ActionMailer::Base
     @invitation = invitation
     mail(:from=>"noreply@helpershub.com", :to=>@invitation.email, :subject=>"An invitation to join #{@invitation.startup.name}")
   end
+
+  def contact_notification(contact)
+    @contact = contact
+    mail(:from=>contact.email, :to=>'syed.rahman@dharanasoft.com', :subject=>contact.subject)
+  end
 end

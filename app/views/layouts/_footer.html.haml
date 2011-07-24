@@ -1,7 +1,7 @@
 #footer
   #footer-content
     .container.clearfix
-      #linkcat-2.footer-widget.widget_links
+      #linkcat-2.footer-widget.left.widget_links
         %h4.widgettitle
           Twittes
         #tweets
@@ -15,23 +15,9 @@
         -#  %li
         -#    %a{:href => "http://wordpress.org/support/"} Support Forum
       / end .footer-widget
-      #meta-2.footer-widget.widget_meta
+      #recent-posts-2.footer-widget.right.widget_recent_entries
         %h4.widgettitle
-          Information
-        %ul
-          %li
-            %strong
-              123, Main Street, Chicago, IL 60160
-          %li
-            %strong
-              Phone: 312-312-3123
-          %li
-            %strong
-
-      / end .footer-widget
-      #recent-posts-2.footer-widget.widget_recent_entries
-        %h4.widgettitle
-          Contact Excelerate Labs
+          Contact Illinois Technology Association
         = semantic_form_for @contact, :url => contacts_path do |f|
           = f.inputs do
             - if current_user.email.present?

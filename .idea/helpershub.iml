@@ -266,6 +266,17 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-mocks (v2.6.0, /Users/sunil2rao/.rvm/gems/ruby-1.9.2-p136/gems/rspec-mocks-2.6.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] high_voltage (v0.9.4, /Users/sunil2rao/.rvm/gems/ruby-1.9.2-p136/gems/high_voltage-0.9.4)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] breadcrumbs_on_rails (v2.0.0, /Users/sunil2rao/.rvm/gems/ruby-1.9.2-p136/gems/breadcrumbs_on_rails-2.0.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sass (v3.1.4, /Users/sunil2rao/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] capybara (v1.0.0, /Users/sunil2rao/.rvm/gems/ruby-1.9.2-p136/gems/capybara-1.0.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] formtastic (v1.2.4, /Users/sunil2rao/.rvm/gems/ruby-1.9.2-p136/gems/formtastic-1.2.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] mini_magick (v3.3, /Users/sunil2rao/.rvm/gems/ruby-1.9.2-p136/gems/mini_magick-3.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] carrierwave (v0.5.4, /Users/sunil2rao/.rvm/gems/ruby-1.9.2-p136/gems/carrierwave-0.5.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] kaminari (v0.12.4, /Users/sunil2rao/.rvm/gems/ruby-1.9.2-p136/gems/kaminari-0.12.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] compass (v0.11.3, /Users/sunil2rao/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.11.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] high_voltage (v1.0.0, /Users/sunil2rao/.rvm/gems/ruby-1.9.2-p136/gems/high_voltage-1.0.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] jquery-rails (v1.0.12, /Users/sunil2rao/.rvm/gems/ruby-1.9.2-p136/gems/jquery-rails-1.0.12)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] chunky_png (v1.2.0, /Users/sunil2rao/.rvm/gems/ruby-1.9.2-p136/gems/chunky_png-1.2.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] subexec (v0.1.0, /Users/sunil2rao/.rvm/gems/ruby-1.9.2-p136/gems/subexec-0.1.0)" level="application" />
   </component>
 </module>
 

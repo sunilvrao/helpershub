@@ -20,7 +20,7 @@
 			slideDuration: 750,
 			showHeading: true,
 			headingText: "Latest Tweets",
-			showProfileLink: true,
+			showProfileLink: false,
 			showTimestamp: true
 		};
 

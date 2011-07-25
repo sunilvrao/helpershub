@@ -23,8 +23,8 @@
               %a{:href => "http://www.facebook.com/helpershub", :target => "_blank"}
                 %img{:alt => "Facebook", :src => "/images/facebook.png"}/
             / end #anticipate-social-icons
-            #anticipate-subscribe
-              %form#searchform{:action => "#", :method => "post"}
-                %input#searchinput{:name => "anticipate_email", :type => "text", :value => "Enter your email to receive updates..."}/
-                %input#searchsubmit{:type => "submit", :value => "Submit"}/
-            / end #anticipate-subscribe
+            -#anticipate-subscribe
+            -#  %form#searchform{:action => "#", :method => "post"}
+            -#    %input#searchinput{:name => "anticipate_email", :type => "text", :value => "Enter your email to receive updates..."}/
+            -#    %input#searchsubmit{:type => "submit", :value => "Submit"}/
+            -#/ end #anticipate-subscribe

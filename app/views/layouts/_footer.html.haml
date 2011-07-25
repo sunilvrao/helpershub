@@ -17,26 +17,6 @@
       / end .footer-widget
       #recent-posts-2.footer-widget.right.widget_recent_entries
         %h4.widgettitle
-<<<<<<< HEAD
-          Information
-        %ul
-          %li
-            %strong
-              123, Main Street, Chicago, IL 60160
-          %li
-            %strong
-              Phone: 312-312-3123
-          %li
-            %strong
-
-      / end .footer-widget
-      #recent-posts-2.footer-widget.widget_recent_entries
-        %h4.widgettitle
-          Contact ITA
-        %form#register-form{:action => "#", :method => "post"}
-          %input{:name => "anticipate_email", :type => "text", :value => "Still under construction..."}/
-
-=======
           Contact Illinois Technology Association
         = semantic_form_for @contact, :url => contacts_path do |f|
           = f.inputs do
@@ -48,7 +28,6 @@
             = f.input :message, :as => :text
           = f.buttons do
             = f.commit_button 'Send'
->>>>>>> master
       / end .footer-widget
     / end .container
     #footer-bottom

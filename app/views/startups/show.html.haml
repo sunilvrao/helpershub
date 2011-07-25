@@ -1,18 +1,18 @@
 = content_for :sidebar do
   - if current_user and @startup.owner==current_user
     =link_to edit_startup_path(@startup), :class=>"actionbutton", :id=>"edit_startup" do
-      %span Edit Startup
+      %span Edit Enterprise
     =link_to startup_url(@startup),:method=>"delete", :confirm=>"Are you sure you want to delete your startup?", :class=>"actionbutton", :id=>"delete_startup" do
-      %span Delete Startup
+      %span Delete Enterprise
     /=link_to startup_team_path(@startup), :id => 'call_to_action' do
     /   %span Team
   - else
     - if current_user.is_following?(@startup)
       = link_to unfollow_startup_path(@startup), :class=>"actionbutton", :id=>"follow_startup" do
-        %span Unfollow Startup
+        %span Unfollow Enterprise
     - else
       = link_to follow_startup_path(@startup), :class=>"actionbutton", :id=>"follow_startup" do
-        %span Follow Startup
+        %span Follow Enterprise
   = link_to new_startup_request_path(@startup), :class=>"actionbutton", :id=>"call_to_action" do
     %span New Request
 

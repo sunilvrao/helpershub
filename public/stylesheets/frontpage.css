@@ -105,7 +105,7 @@ position:absolute; text-indent:-9999px; top:38%; width:27px; z-index: 300; }
 /*---------------------[FOOTER]-------------------*/
 /*------------------------------------------------*/
 
-	#anticipate-social-icons { float: left; margin-left: 46px; }
+	#anticipate-social-icons { float: center; margin-left: 335px; }
 		#anticipate-social-icons a { margin-right: 16px; }
 	#anticipate-subscribe { float: right; }
 		#searchform { float: right; background: url(../images/search-bg.png) no-repeat; width: 221; height: 32px; }

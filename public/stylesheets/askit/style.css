@@ -318,8 +318,9 @@ h3#comments, h3#commitments { font-family: 'Yanone Kaffeesatz', Arial, sans-seri
 /*------------------------------------------------*/
 
 #footer { background: #222222 url(../../images/hhbtm-bg.png) repeat; }
-	#footer-content { background: url(../../images/footer-top-bg.png) repeat-x; }
-		.footer-widget {width: 221px; margin-right: 24px; float: left; padding-top: 44px; padding-bottom: 35px; }
+	#footer-content { background: url(../../images/footer-top-bg.png) repeat-x;}
+		.footer-widget.left {width: 45%; margin-right: 2px; float: left; padding-top: 44px; padding-bottom: 35px; }
+        .footer-widget.right {width: 45%; margin-left: 2px; float: right; padding-top: 44px; padding-bottom: 35px; }
 		#footer-content .last {margin-right: 0px;}
 			.footer-widget h4.widgettitle { background: url(../../images/footer-widget-bg.png) no-repeat bottom left; padding-bottom:15px; font-size: 24px; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; font-weight: lighter; color: #cfc9a4; text-shadow: 1px 1px 1px #000; }
 				.footer-widget a { color: #fff; text-shadow: 1px 1px 1px #000; }

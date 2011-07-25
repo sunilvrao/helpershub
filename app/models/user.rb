@@ -22,6 +22,7 @@ class User
   mount_uploader :avatar, AvatarUploader
 
   scope :most_active, order_by([:commit_count,:desc])
+  paginates_per 5
 
   def activate!
     self.activated=true

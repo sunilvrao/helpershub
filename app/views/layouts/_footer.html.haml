@@ -1,9 +1,10 @@
 #footer
   #footer-content
     .container.clearfix
-      #linkcat-2.footer-widget.widget_links
+      #linkcat-2.footer-widget.left.widget_links
         %h4.widgettitle
           Twittes
+        #tweets
         -#%ul.xoxo.blogroll
         -#  %li
         -#    %a{:href => "http://codex.wordpress.org/"} Documentation
@@ -14,8 +15,9 @@
         -#  %li
         -#    %a{:href => "http://wordpress.org/support/"} Support Forum
       / end .footer-widget
-      #meta-2.footer-widget.widget_meta
+      #recent-posts-2.footer-widget.right.widget_recent_entries
         %h4.widgettitle
+<<<<<<< HEAD
           Information
         %ul
           %li
@@ -34,6 +36,19 @@
         %form#register-form{:action => "#", :method => "post"}
           %input{:name => "anticipate_email", :type => "text", :value => "Still under construction..."}/
 
+=======
+          Contact Illinois Technology Association
+        = semantic_form_for @contact, :url => contacts_path do |f|
+          = f.inputs do
+            - if current_user.email.present?
+              = f.input :email, :as => :hidden, :input_html => {:value => current_user.email}
+            - else
+              = f.input :email, :as => :email
+            = f.input :subject
+            = f.input :message, :as => :text
+          = f.buttons do
+            = f.commit_button 'Send'
+>>>>>>> master
       / end .footer-widget
     / end .container
     #footer-bottom

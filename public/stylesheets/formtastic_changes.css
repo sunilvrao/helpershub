@@ -84,3 +84,20 @@ form.formtastic fieldset.buttons {
   line-height: 59px;
   text-align: left;
 }
+
+/* line 60, ../../app/stylesheets/formtastic_changes.sass */
+#new_contact li {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+/* line 64, ../../app/stylesheets/formtastic_changes.sass */
+#new_contact li label {
+  width: 100%;
+  padding-bottom: 0.2em;
+  float: none;
+}
+/* line 68, ../../app/stylesheets/formtastic_changes.sass */
+#new_contact li .error {
+  border: 1px solid red;
+}
